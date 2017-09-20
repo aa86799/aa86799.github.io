@@ -5,17 +5,17 @@
   
   <title>ThreadPoolExecutor 线程池调度器 | stone的安卓世界</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[TOC] 可设置的主要参数 corePoolSize  核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。 核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。  maxPoolSize  当线程数大于或等于核心线程，且任务队列已">
+  <meta name="description" content="可设置的主要参数 corePoolSize  核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。 核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。  maxPoolSize  当线程数大于或等于核心线程，且任务队列已满时，线程池">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ThreadPoolExecutor 线程池调度器">
 <meta property="og:url" content="http://aa86799.github.io/2017/05/06/ThreadPoolExecutor分析/index.html">
 <meta property="og:site_name" content="stone的安卓世界">
-<meta property="og:description" content="[TOC] 可设置的主要参数 corePoolSize  核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。 核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。  maxPoolSize  当线程数大于或等于核心线程，且任务队列已">
+<meta property="og:description" content="可设置的主要参数 corePoolSize  核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。 核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。  maxPoolSize  当线程数大于或等于核心线程，且任务队列已满时，线程池">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-20T07:04:15.000Z">
+<meta property="og:updated_time" content="2017-09-20T08:10:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ThreadPoolExecutor 线程池调度器">
-<meta name="twitter:description" content="[TOC] 可设置的主要参数 corePoolSize  核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。 核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。  maxPoolSize  当线程数大于或等于核心线程，且任务队列已">
+<meta name="twitter:description" content="可设置的主要参数 corePoolSize  核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。 核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。  maxPoolSize  当线程数大于或等于核心线程，且任务队列已满时，线程池">
   
     <link rel="alternate" href="/atom.xml" title="stone的安卓世界" type="application/atom+xml">
   
@@ -90,8 +90,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<h1 id="可设置的主要参数"><a href="#可设置的主要参数" class="headerlink" title="可设置的主要参数"></a>可设置的主要参数</h1><ul>
+      <!-- Table of Contents -->
+        
+          <div id="toc" class="toc-article">
+            <strong class="toc-title">文章目录</strong>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#可设置的主要参数"><span class="toc-number">1.</span> <span class="toc-text">可设置的主要参数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参数对线程池任务调度的影响"><span class="toc-number">2.</span> <span class="toc-text">参数对线程池任务调度的影响</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Executors生成ThreadPoolExecutor"><span class="toc-number">3.</span> <span class="toc-text">Executors生成ThreadPoolExecutor</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成一个固定线程数的-ThreadPoolExecutor"><span class="toc-number">3.1.</span> <span class="toc-text">生成一个固定线程数的 ThreadPoolExecutor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成一个只含一个线程的ThreadPoolExecutor"><span class="toc-number">3.2.</span> <span class="toc-text">生成一个只含一个线程的ThreadPoolExecutor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成一个无界的并直接提交的ThreadPoolExecutor"><span class="toc-number">3.3.</span> <span class="toc-text">生成一个无界的并直接提交的ThreadPoolExecutor</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关于工作队列-workQueue-："><span class="toc-number">4.</span> <span class="toc-text">关于工作队列(workQueue)：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#排队有三种通用策略："><span class="toc-number">4.1.</span> <span class="toc-text">排队有三种通用策略：</span></a></li></ol></li></ol>
+          </div>
+         
+        <!-- toc end -->
+        <h1 id="可设置的主要参数"><a href="#可设置的主要参数" class="headerlink" title="可设置的主要参数"></a>可设置的主要参数</h1><ul>
 <li>corePoolSize</li>
 </ul>
 <p>核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。</p>
@@ -201,7 +208,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aa86799.github.io/2017/05/06/ThreadPoolExecutor分析/" data-id="cj7sppyhw0000yp9wq7egy87v" class="article-share-link">Share</a>
+      <a data-url="http://aa86799.github.io/2017/05/06/ThreadPoolExecutor分析/" data-id="cj7sr2h1g0000su9wh3mip38a" class="article-share-link">Share</a>
       
       
     </footer>
