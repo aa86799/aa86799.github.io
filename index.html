@@ -1,1201 +1,1057 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+
+
+
   
-  <title>stone的安卓世界</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="人生不是简单的if和else，很多时候都是在出现问题时才when and then">
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="人生不是简单的if和else，很多时候都是在出现问题时才when and then">
 <meta property="og:type" content="website">
 <meta property="og:title" content="stone的安卓世界">
 <meta property="og:url" content="http://aa86799.github.io/index.html">
 <meta property="og:site_name" content="stone的安卓世界">
 <meta property="og:description" content="人生不是简单的if和else，很多时候都是在出现问题时才when and then">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="stone的安卓世界">
 <meta name="twitter:description" content="人生不是简单的if和else，很多时候都是在出现问题时才when and then">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://aa86799.github.io/"/>
+
+
+
+
+
+  <title>stone的安卓世界</title>
   
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c320b0ecb313cd6edb2c2e257f8e139e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">stone的安卓世界</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">打鱼还是晒网 —— stone</a>
-        </h2>
-      
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">stone的安卓世界</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://aa86799.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-安卓api24以上的ApiDemos" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/21/安卓api24以上的ApiDemos/" class="article-date">
-  <time datetime="2017-09-21T07:46:49.000Z" itemprop="datePublished">2017-09-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/21/安卓api24以上的ApiDemos/">安卓api24以上的ApiDemos</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
       
-      <!-- Table of Contents -->
-         
-        <!-- toc end -->
-        <h1 id="源码下载"><a href="#源码下载" class="headerlink" title="源码下载"></a>源码下载</h1><p>地址：<a href="https://android.googlesource.com/platform/development.git" target="_blank" rel="external">https://android.googlesource.com/platform/development.git</a></p>
-<p>该项目以git管理，不同的tag标签上，就有不同的版本号。项目下samples目录就是代码示例，samples目录内，就有ApiDemos工程.</p>
-
+        <p class="site-subtitle">打鱼还是晒网 —— stone</p>
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://aa86799.github.io/2017/09/21/安卓api24以上的ApiDemos/" data-id="cj7u5ugub0001649w81jgijlc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git操作指南" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/20/git操作指南/" class="article-date">
-  <time datetime="2017-09-20T08:19:48.000Z" itemprop="datePublished">2017-09-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/20/git操作指南/">git 操作指南</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-         
-        <!-- toc end -->
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
-<p>git这个版本控制工具，早在两三年前我就开始使用了。不过后来换了新东家后，又开始变成了svn，最近又切成git了。<br>通过近期的使用，遇到了一些坑，遂引发此文，以作记录</p>
-<p>issue：某个commit整体不要了，想重置？add多了，想撤销？某个文件有问题，想还原到某次commit时的状态？想push到另外的远程仓库？什么！这行代码是哪个鬼加进去的，引起了bug？咦，这个bug，在好几个版本都存在，是哪次commit引起的？…  本文都能找到答案</p>
-<blockquote>
-<p>注：可以通过上面的目录，来选取自己感兴趣的内容，进行查看</p>
-</blockquote>
-<h1 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h1><hr>
-<p>链接：<br><a href="https://git-scm.com/download" target="_blank" rel="external">https://git-scm.com/download</a>    下载首页<br><a href="https://git-scm.com/download/win" target="_blank" rel="external">https://git-scm.com/download/win</a><br><a href="https://git-scm.com/download/linux" target="_blank" rel="external">https://git-scm.com/download/linux</a><br><a href="https://git-scm.com/download/mac" target="_blank" rel="external">https://git-scm.com/download/mac</a><br><a href="https://git-scm.com/downloads/guis/" target="_blank" rel="external">https://git-scm.com/downloads/guis/</a>  GUI工具</p>
-<p>mac下还可以通过<a href="https://brew.sh/" target="_blank" rel="external">brew</a>安装，再配合<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">zsh</a>的git短命令插件，来玩。</p>
-<p>下载安装好后，打开命令行，运行：<code>git --version</code><br>查看版本号，以确保git可用。如提示找不到命令git，请将其安装目录下的可执行文件(git.exe 或 就叫git)父目录路径，添加到环境变量中。</p>
-<h2 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h2><p>命令：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;aa86799@163.com&quot;</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>回车后会弹出提示：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/Users/stone/.ssh/id_rsa):</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>意思是：创建公钥/私钥文件，请键入文件的保存地址。默认直接回车就会生成在/Users/stone/.ssh/  下，私钥文件名：id_rsa，公钥文件名：id_rsa.pub。<br>密钥目录，一般都是在 users&gt;user&gt;.ssh 下。windows中为：C:\Users\Administrator.ssh</p>
-<p>也可以在输入创建命令时直接指定目录：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C &quot;aa86799@163.com&quot;</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>回车后，会提示：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty for no passphrase): </div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>意指，输入密码。不输，也可以，直接回车就行。然后会提示让你再输入一次密码。输入后，再回车，就会生成相应的密钥文件，在指定的目录位置。 </p>
-<h3 id="查看公钥"><a href="#查看公钥" class="headerlink" title="查看公钥"></a>查看公钥</h3><p>一般我们要把公钥，上传到服务器。<br>找到.pub结尾的公钥文件。<br>以命令行打开(mac/linux 用cat命令)，或用文本文件打开，复制出来，上传即可<br>类似内容：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfCwawUX/Milxu29sH5kZPFWWPoe/</div><div class="line">… aa86799@163.com</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><hr>
-<h2 id="设置user-name-、email"><a href="#设置user-name-、email" class="headerlink" title="设置user name 、email"></a>设置user name 、email</h2><p>设置Git的user name和email，用于显示在版本提交记录中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;stone&quot;   </div><div class="line">git config --global user.email &quot;aa86799@163.com&quot; </div><div class="line">--后可选 global、system、local</div></pre></td></tr></table></figure></p>
-<p>global  影响范围：系统用户下全局<br>system 影响范围：系统下全局<br>local 影响范围：当前项目下</p>
-<blockquote>
-<p>我一般的做法是，进入项目目录后，采用local来配置。因为对应多个git服务端，我想设置不同的邮件和名字。<br>更多参见<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git" target="_blank" rel="external">自定义 Git - 配置 Git</a></p>
-</blockquote>
-<h2 id="配置-ssh-config"><a href="#配置-ssh-config" class="headerlink" title="配置.ssh/config"></a>配置.ssh/config</h2><p>上面的命令执行后，会在.ssh目录下生成一个config文件。当然，不执行命令，也可以在其下，手动创建一个名为config的空文件。</p>
-<p>如下，我配置了github和oschina：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Host github.com</div><div class="line">   IdentityFile ~/.ssh/id_rsa.github</div><div class="line">   User git</div><div class="line"></div><div class="line">Host oschina.net</div><div class="line">   IdentityFile ~/.ssh/oschina_id_rsa</div><div class="line">   User git</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>一些可选配置参数说明： </p>
-<blockquote>
-<p><strong>Host</strong>  github.com  #主机名<br><strong>IdentityFile</strong>  ~/.ssh/id_rsa.github #公钥文件<br><strong>User</strong>  git  #连接服务器的用户名<br><strong>hostname</strong> www.github.com  #服务器ip地址，也可以是域名<br><strong>Port</strong>  5566  #服务器端口号<br><strong>RSAAuthentication</strong> yes  # 采用RSA加密认证<br><strong>PubkeyAuthentication</strong> yes  #采用公钥认证</p>
-</blockquote>
-<p>配置后，在本地与server的交互时，git才知道用哪一种具体的config。</p>
-<h1 id="git仓库"><a href="#git仓库" class="headerlink" title="git仓库"></a>git仓库</h1><hr>
-<h2 id="本地新建仓库"><a href="#本地新建仓库" class="headerlink" title="本地新建仓库"></a>本地新建仓库</h2><p>进入本地文件目录，一般就是某个项目的工程目录下，执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
-<p>会生成一个.git目录</p>
-<h2 id="关联远程仓库"><a href="#关联远程仓库" class="headerlink" title="关联远程仓库"></a>关联远程仓库</h2><p>比如关联github。<br>需要先在github上建立一个repository，比如名为：MyActionBar</p>
-<p>再进入项目根目录，键入命令，关联远程仓库：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin git@github.com:aa86799/MyActionBar.git</div></pre></td></tr></table></figure></p>
-<h2 id="git-clone远程仓库"><a href="#git-clone远程仓库" class="headerlink" title="git clone远程仓库"></a>git clone远程仓库</h2><p>比如clone 一个github上的项目，命令：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/googlesamples/android-architecture.git </div><div class="line">#直接clone出名为android-architecture的项目</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>后跟一个指定的项目名字：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/googlesamples/android-architecture.git myArchi #clone出一个名myArchi的项目</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<h2 id="配置本地user-name-、email"><a href="#配置本地user-name-、email" class="headerlink" title="配置本地user name 、email"></a>配置本地user name 、email</h2><p>配置命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --local user.name &quot;stone&quot;    </div><div class="line">git config --local user.email &quot;aa86799@163.com&quot;</div></pre></td></tr></table></figure></p>
-<p>会在.git中的config文件中添加如下内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[user]</div><div class="line">  name = stone</div><div class="line">  email = aa86799@163.com</div></pre></td></tr></table></figure>
-<h2 id="git-别名，短命令"><a href="#git-别名，短命令" class="headerlink" title="git 别名，短命令"></a>git 别名，短命令</h2><p>如果不想每次都输入完整的 Git 命令，可以通过 git config 文件来轻松地为每一个命令设置一个别名。如：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git config --global alias.co checkout</div><div class="line">$ git config --global alias.br branch</div><div class="line">$ git config --global alias.ci commit</div><div class="line">$ git config --global alias.st status</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>再例如，为了解决取消暂存文件的易用性问题，可以向 Git 中添加你自己的取消暂存别名：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global alias.unstage &apos;reset HEAD --&apos;</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>这会使下面的两个命令等价：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git unstage fileA</div><div class="line">$ git reset HEAD -- fileA</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>注：别名时，不能把git也放进去。当然有些脚本插件是可以的。<br>后文还有diff与merge工具的相关配置</p>
-</blockquote>
-<h1 id="版本控制操作"><a href="#版本控制操作" class="headerlink" title="版本控制操作"></a>版本控制操作</h1><hr>
-<p>以下罗列一些常用的命令操作与选项。</p>
-<blockquote>
-<p>下文中， 符号[ ]表示，命令后跟的内容，实际使用时，不需要符号[ ]。</p>
-</blockquote>
-<h2 id="branch-分支"><a href="#branch-分支" class="headerlink" title="branch 分支"></a>branch 分支</h2><p>仓库建好后，默认为master分支</p>
-<p>分支的好处：<br>如在svn中，每次开发一个新版本，都要新创建一个分支的目录，复制所有项目文件进去；而在git中只要创建一个新的分支，会瞬间创建成功。<br>还可以创建本地分支，进行自己的想要一些改动，只要不push到远程，就不会影响服务端项目。</p>
-<p>分支相关常用命令：</p>
-<ul>
-<li>查看本地所有分支：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>当前所在分支前面，会有一个星号(*)</p>
-<ul>
-<li>查看本地和远程所有分支：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -a</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><img src="http://img.blog.csdn.net/20170317140505613?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamp3d21scDQ1Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<ul>
-<li><p>显示分支更多信息<br>-v选项，会输出分支的最后提交记录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -v</div></pre></td></tr></table></figure>
-</li>
-<li><p>显示分支更多信息，包括关联的远程分支信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -vv</div></pre></td></tr></table></figure>
-</li>
-<li><p>创建本地分支(从当前分支最后commit)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch [newBranch]</div><div class="line">git checkout -b [newBranch]  #创建并切换到新分支</div><div class="line">git checkout -b [newBranch 9510eee]#从当前分支的某次commit记录为9510eee处，创建新分支，并切换到新分支</div><div class="line">git branch [newBranch 9510eee] #从commit记录为9510eee处，创建新分支</div></pre></td></tr></table></figure>
-</li>
-<li><p>创建与远程分支相关联的本地分支：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#检出远程master分支 到 本地分支 newBranch</div><div class="line">git branch [newBranch remote/master]</div><div class="line">git checkout -b [newBranch remote/master] #创建并切换到新分支</div></pre></td></tr></table></figure>
-</li>
-<li><p>删除分支：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d [specifiedBranch]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<blockquote>
-<p>如果报错：<br>error: The branch ‘a2’ is not fully merged.<br>If you are sure you want to delete it, run ‘git branch -D a2’.<br>表示分支a2有新的提交，但没有完整的合并到其他分支上。<br>如果想要删除，需要使用命令：git branch -D a2</p>
-</blockquote>
-<ul>
-<li>切换分支：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout [branchName]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<blockquote>
-<p>注：分支切换时，要注意，如果本地有修改未commit或stash，需要先commit或stash</p>
-</blockquote>
-<ul>
-<li><p>分支合并<br> 这部分内容放到下文#merge中</p>
-</li>
-<li><p>查看分支提交信息</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show-branch [develop] #后不跟，则查看所有分支的提交信息</div></pre></td></tr></table></figure>
-<h2 id="tag-标签"><a href="#tag-标签" class="headerlink" title="tag 标签"></a>tag 标签</h2><p>一般，项目的每个release稳定版，都要求有一个tag标签</p>
-<p>常用命令，</p>
-<ul>
-<li>显示当前所有标签：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><p>查找标签<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag -l &apos;v1.8.5*&apos; #查找前缀为v1.8.5的所有分支</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li>创建标签，并使用-m 添加说明信息：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag -a [v1.1] -m [v1.1 release version] #可以没有-m，但一般还是加上好</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<p>若想对过去的某次commit打tag：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag -a [v0.8 077d7ad] -m [&quot;v0.8&quot;] #-m时有没有双引号都可以</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li><p>共享标签<br>默认情况下，git push 命令并不会传送标签到远程仓库服务器上。 在创建完标签后你必须显式地推送标签到共享服务器上。 这个过程就像共享远程分支一样，你可以运行<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push origin [tagname]#推送某个tag到origin</div><div class="line">git push origin --tags #把所有不在远程仓库服务器origin上的标签全部传送</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li><p>删除标签：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git tag -d [tagName] #删除本地</div><div class="line">git tag -d -D [tagName]  #强制删除本地tag</div><div class="line">git push [origin] --delete tag [tagName]#删除远程origin上的tag</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>从一个标签检出一个新分支：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout -b [branch_name tag_name]</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="status-文件版本状态"><a href="#status-文件版本状态" class="headerlink" title="status 文件版本状态"></a>status 文件版本状态</h2><ul>
-<li>查看项目中文件的变动状态：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在输出信息中，会看到(这里只记录了开头修饰词)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">new file 已加入版本记录，但未commit</div><div class="line">modified 修改了版本记录中某文件</div><div class="line">deleted 删除了版本记录中某文件</div><div class="line">Untracked files 未加入版本记录(追踪)</div><div class="line">…</div></pre></td></tr></table></figure></p>
-<ul>
-<li>状态简览<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status -s</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>这里引用一个官方示例，输出如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git status -s</div><div class="line"> M README    #M在右，前面空了一个字符位置</div><div class="line">M  Rakefile  #M在左</div><div class="line">A  lib/git.rb</div><div class="line">M  lib/simplegit.rb</div><div class="line">?? LICENSE.txt</div></pre></td></tr></table></figure></p>
-<p>说明：<br>?? ——   Untracked file，未add到版本记录<br>A  ——  已add (详见下面的add命令)<br>R ——  rename，被重命名了<br>左M ——  新的修改，已add到版本记录<br>右M ——  新的修改，未add到版本记录，如要提交该修改，必须先add<br>左D 、右D —— 类似M，指文件删除记录，是否add到版本记录中</p>
-<h2 id="add-加入版本记录"><a href="#add-加入版本记录" class="headerlink" title="add 加入版本记录"></a>add 加入版本记录</h2><p>将文件加入版本记录。配合status命令，将需要加入版本记录的，有选择的加入。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git add //后跟目录路径，或某个具体文件路径</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li>-p选项<br>可以将一个文件的多处修改，分割成多个块来多次提交。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git add -p [flie] </div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>与-i命令中的暂存补丁效果一样。</p>
-<ul>
-<li>-i或–interactive选项<br>使用该选项，Git 将会进入一个交互式终端模式，基本上与 git status 是相同的信息。<br>显示类似下面的东西：</li>
-</ul>
-<p>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">git add -i</div><div class="line"></div><div class="line">           staged     unstaged path</div><div class="line">  1:        +1/-1      nothing a</div><div class="line">  2:    unchanged        +1/-0 b</div><div class="line"></div><div class="line">*** Commands ***</div><div class="line">  1: status   2: update   3: revert   4: add untracked</div><div class="line">  5: patch    6: diff   7: quit   8: help</div><div class="line">What now&gt; </div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>它将暂存的修改列在左侧，未暂存的修改列在右侧<br>在这块区域后是命令区域。 在这里你可以做一些工作，包括暂存文件、取消暂存文件、暂存文件的一部分、添加未被追踪的文件、查看暂存内容的区别。</p>
-<p><strong>a.暂存与取消暂存文件</strong><br>输入2或u，会提示需要暂存(即add)哪个文件，输入数字索引即可暂存。<br>输入3或r，会提示要取消暂存哪个文件<br>若在update或revert状态时，什么也不选，直接输入回车，就会将之前的输入操作执行完，并退出当前状态。</p>
-<p><strong>b.</strong>暂存补丁<br>输入5或p。会输出第一个未暂存文件的diff信息，类似<code>git add -p [file]</code>的块选择，如：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">diff --git a/b b/b</div><div class="line">index e69de29..01f02e3 100644</div><div class="line">--- a/b</div><div class="line">+++ b/b</div><div class="line">@@ -0,0 +1 @@</div><div class="line">+bbb</div><div class="line">\ No newline at end of file</div><div class="line">Stage this hunk [y,n,q,a,d,/,e,?]? </div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>输入？可查看更多选项。输入y暂存。然后会继续显示下一个未暂存文件的diff信息…</p>
-<h2 id="ignore-忽略文件"><a href="#ignore-忽略文件" class="headerlink" title="ignore 忽略文件"></a>ignore 忽略文件</h2><p>将不需要加入版本记录的文件，进行ignore操作。<br>需要在仓库目录下建立一个 .gitignore 文件(其与.git是平级的)<br>配置语法：</p>
-<p>　　以斜杠“/”开头表示目录，以防止递归；可以以”/“结尾指定目录</p>
-<p>　　以星号“*”通配多个字符；</p>
-<p>　　以问号“?”通配单个字符</p>
-<p>　　以方括号“[]”包含单个字符的匹配列表；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如 [0-9] 表示匹配所有 0 到 9 的数字）</p>
-<p>　　以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；</p>
-<blockquote>
-<p> git 对于 .ignore 配置文件是按行从上到下进行规则匹配的，意味着如果前面的规则匹配的范围更大，则后面的规则将不会生效</p>
-</blockquote>
-<h2 id="rm-移除文件跟踪"><a href="#rm-移除文件跟踪" class="headerlink" title="rm 移除文件跟踪"></a>rm 移除文件跟踪</h2><p>要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。 可以用 git rm 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。</p>
-<ul>
-<li>不再追踪暂存区文件</li>
-</ul>
-<p>如现有一个新文件PROJECTS.md，刚刚进行了add，还未提交过。</p>
-<p>如果只是简单地从工作目录中手工删除(rm)文件，运行 git status 时就会在 “Changes not staged for commit” 部分（也就是 未暂存清单）看到：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$ rm PROJECTS.md</div><div class="line">$ git status</div><div class="line">On branch master</div><div class="line">Your branch is up-to-date with &apos;origin/master&apos;.</div><div class="line">Changes not staged for commit:</div><div class="line">  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)</div><div class="line">  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</div><div class="line"></div><div class="line">        deleted:    PROJECTS.md</div><div class="line"></div><div class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>然后再运行 git rm 记录此次移除文件的操作：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ git rm PROJECTS.md</div><div class="line">rm &apos;PROJECTS.md&apos;</div><div class="line">$ git status</div><div class="line">On branch master</div><div class="line">Changes to be committed:</div><div class="line">  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</div><div class="line"></div><div class="line">    deleted:    PROJECTS.md</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>下一次提交时，该文件就不再纳入版本管理了。</p>
-<p> 如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f（译注：即 force 的首字母）。 这是一种安全特性，用于防止误删还没有添加到快照的数据，这样的数据不能被 Git 恢复。场景：对于新文件，刚进行了add，然后又修改了该文件，然后想 用git rm 取消追踪，就需要-f选项了。</p>
-<ul>
-<li>从 Git 仓库中删除版本追踪<br>另外一种情况是，我们想把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中。 换句话说，你想让文件保留在磁盘，但是并不想让 Git 继续跟踪。 当你忘记添加 .gitignore 文件，不小心把一个很大的日志文件或一堆 .a 这样的编译生成文件添加到暂存区时，这一做法尤其有用。 为达到这一目的，使用 –cached 选项：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rm --cached -r README</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<blockquote>
-<p>git rm 命令后面可以列出文件或者目录的名字，也可以使用 glob 模式(指shell所使用的简化了的正则表达式)。 比方说：</p>
-<p>git rm log/\<em>.log<br>注意到星号 </em> 之前的反斜杠 \， 因为 Git 有它自己的文件模式扩展匹配方式，所以我们不用shell 来帮忙展开。 此命令删除 log/ 目录下扩展名为 .log 的所有文件。<br>类似的比如：<br>git rm *~ 该命令为删除以 ~ 结尾的所有文件。</p>
-</blockquote>
-<h2 id="mv-移动文件，重命名"><a href="#mv-移动文件，重命名" class="headerlink" title="mv 移动文件，重命名"></a>mv 移动文件，重命名</h2><p>比如运行了下面三条命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ mv README.md README</div><div class="line">$ git rm README.md</div><div class="line">$ git add README</div></pre></td></tr></table></figure></p>
-<p>Git 会意识到这是一次改名操作。<br>可以使用如下一条命令，来进行改名操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git mv [file_from file_to]</div></pre></td></tr></table></figure></p>
-<h2 id="commit-提交"><a href="#commit-提交" class="headerlink" title="commit 提交"></a>commit 提交</h2><ul>
-<li>已add文件，commit</li>
-</ul>
-<p>所有改动过的且已加入版本记录的文件，可以使用commit来提交到本地仓库。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git commit -m [message] [file1] [file2]</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>可以不写commit信息，一般还是建议写。<br>commit哪些文件是可以指定的，中间用空格分隔，需要文件的完整路径。<br>若不指定具体文件，默认为仓库下所有改动过的且已加入版本记录的文件</p>
-<ul>
-<li>之前已在版本记录中，修改后未add文件，想直接commit<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git commit -a -m [message] [file1] [file2]</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>添加-a选项，即可</p>
-<ul>
-<li>撤销操作<br>有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。 此时，可以运行带有 –amend 选项的提交命令尝试重新提交：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git commit --amend</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>例如，你提交后发现忘记了暂存某些需要的修改，可以像下面这样操作：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git commit -m &apos;initial commit&apos;</div><div class="line">$ git add forgotten_file</div><div class="line">$ git commit --amend</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>最终你只会有一个提交 —— 第二次提交将代替第一次提交的结果。</p>
-<blockquote>
-<p>注：其他撤销例子见reset</p>
-</blockquote>
-<h2 id="cherry-pick-重新提交历史记录"><a href="#cherry-pick-重新提交历史记录" class="headerlink" title="cherry-pick 重新提交历史记录"></a>cherry-pick 重新提交历史记录</h2><p>用于将已经存在的commit 记录进行 再次提交。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git cherry-pick c9f98b9</div></pre></td></tr></table></figure></p>
-<p>如果有冲突，解决冲突后，先add，再commit</p>
-<h2 id="stash-储存"><a href="#stash-储存" class="headerlink" title="stash 储存"></a>stash 储存</h2><ul>
-<li>有时，突然来个紧急任务，需要切换分支，又不想为此单独提交一次。就可以使用stash命令。git会将未完成的修改保存到一个栈上，而你可以在任何时候重新应用这些改动。命令：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git stash</div><div class="line">git stash save #与上等价</div><div class="line">git stash save &quot;message&quot; #如果要加上备注信息message，还是要用带save的命令</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>之后，工具目录自动切换成上次提交时的状态。</p>
-<ul>
-<li>查看存储栈<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash list</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>类似输出：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">stash@&#123;0&#125;: WIP on master: 049d078 added the index file</div><div class="line">stash@&#123;1&#125;: WIP on master: c264051 Revert &quot;added file_size&quot;</div><div class="line">stash@&#123;2&#125;: WIP on master: 21d80a5 added number to log</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li>应用储存的任务<br>如上面说到，在其他分支改完问题了，再切换之前分支，来应用储存：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash apply stash@&#123;2&#125; #如果不指定哪一条stash，默认为最近的，即stash@&#123;0&#125;</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>如果，有多个储存，应用一个后(若有冲突，先解决冲突)，先将修改的add进暂存区，再apply其它的。</p>
-<ul>
-<li><p>移除储存<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash drop stash@&#123;0&#125;</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>清除所有储存<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash clear</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li><p>不储存已add的文件<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash --keep-index</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>储存从未add的文件<br>默认情况下，git stash 只会储藏已经在索引(版本记录)中的文件。<br>若要储藏任何创建的未跟踪文件：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git stash -u</div><div class="line">git stash --include-untracked #与-u等价</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-</ul>
-</li>
-<li><p>交互式指定要储存的文件<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash --patch</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>从储存创建一个分支<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash branch testchanges stash@&#123;1&#125;</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-</ul>
-<h2 id="push-推送"><a href="#push-推送" class="headerlink" title="push 推送"></a>push 推送</h2><ul>
-<li><p>完整push命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push [origin localMaster:master]#将本地分支localMaster推送到远程仓库origin的master上</div></pre></td></tr></table></figure>
-</li>
-<li><p>省略远程分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push [origin localMaster]#将本地分支localMaster推送到远程仓库origin上，如果远程不存在，则创建</div></pre></td></tr></table></figure>
-</li>
-<li><p>省略本地分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push [origin :master]#推荐一个空分支到origin/master，当然origin/master就为空了。</div></pre></td></tr></table></figure>
-</li>
-<li><p>push时指定当前分支与远程关联</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push --set-upstream [origin master] #以后使用git push就可以了</div></pre></td></tr></table></figure>
-</li>
-<li><p>如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push</div></pre></td></tr></table></figure>
-</li>
-<li><p>指定push的默认远程主机</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u [origin master]#以后再使用git push，即可。与第4点操作效果类似。</div></pre></td></tr></table></figure>
-</li>
-<li><p>删除远程分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push [origin] --delete [master]#删除origin/master分支</div></pre></td></tr></table></figure>
-</li>
-<li><p>push所有本地分支到远程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push --all [origin]</div></pre></td></tr></table></figure>
-</li>
-<li><p>覆盖远程分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push --force [origin] #这是一个危险的命令，一般不要这么做</div></pre></td></tr></table></figure>
-</li>
-<li><p>推送标签tag</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push [origin] --tags</div></pre></td></tr></table></figure>
-<blockquote>
-<p>注：push时，如果远程有更新，会失败。需要先pull，或使用rebase模式；若有冲突，需要解决冲突。关于冲突见#merge</p>
-</blockquote>
-<h2 id="fetch-获取remote最新信息"><a href="#fetch-获取remote最新信息" class="headerlink" title="fetch 获取remote最新信息"></a>fetch 获取remote最新信息</h2><p>拉取远程仓库上的所有新的信息。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git fetch [remote-name] #如果只关联了一个远程仓库，可以不用显式指定远程仓库名</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li>-p选项<br>与pull中的-p意义一样。</li>
-</ul>
-<h2 id="pull-拉取"><a href="#pull-拉取" class="headerlink" title="pull 拉取"></a>pull 拉取</h2><p>从远程获取最新版本并merge到本地</p>
-<p>1.仅使用如下命令，表示拉取与当前分支关联的远程分支最新版本，并合并：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull</div></pre></td></tr></table></figure></p>
-<p> 2.再比如，从远程仓库origin的newb分支，合并到master分支：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull [origin newb:master] #不写:master 表示与当前分支合并</div></pre></td></tr></table></figure></p>
-<p>3.使用–rebase选项<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull --rebase [origin newb:master] #rebase模式pull</div></pre></td></tr></table></figure></p>
-<p>4.-p选项<br>默认情况下，git pull 不会在拉取远程分支的时候，删除对应的本地分支。因为，可能其他人误删除了远程分支。如果要相应的在拉取时也删除本地对应分支：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull -p #</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>pull时，可能有冲突，关于冲突见#merge</p>
-</blockquote>
-<h2 id="reset、checkout-重置"><a href="#reset、checkout-重置" class="headerlink" title="reset、checkout 重置"></a>reset、checkout 重置</h2><ul>
-<li><p>HEAD<br>HEAD 是当前分支引用的指针，它总是指向该分支上的最后一次提交。 这表示 HEAD 将是下一次提交的父结点。 通常，理解 HEAD 的最简方式，就是将它看做 你的上一次提交 的快照。</p>
-</li>
-<li><p>撤销add<br>例如，你已经修改了两个文件并且想要将它们作为两次独立的修改提交，但是却意外地输入了 git add * 暂存了它们两个。 如何只取消暂存两个中的一个呢？ git status 命令提示了你：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ git add *</div><div class="line">$ git status</div><div class="line">On branch master</div><div class="line">Changes to be committed:</div><div class="line">  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</div><div class="line"></div><div class="line">    renamed:    README.md -&gt; README</div><div class="line">    modified:   CONTRIBUTING.md</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-</ul>
-<p>提示中就说了，可以用如下命令来撤销某个add：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git reset HEAD CONTRIBUTING.md</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>这样，并不会丢失 CONTRIBUTING.md 文件的修改。</p>
-<ul>
-<li><p>–hard选项<br>将当前分支，重置到某次提交(只要是reglog中存在的都可以)。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git reset --hard 1a410efbd13591db07496601ebc7a059dd55cfe9</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>用checkout命令来重置提交或文件</p>
-</li>
-</ul>
-<ol>
-<li>重置文件<br>如有一个已在版本记录中的文件a，现在做了修改，然后add，突然又觉得它的修改不需要了，想重置回到最近记录的样子，可用命令：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout [HEAD a] #HEAD指代最新提交，当然也可用SHA-1值。</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ol>
-<p>如果将文件a恢复到上上个版本，只需要将HEAD换成上上个commit的SHA-1值。这时，通过git status，看到文件a被修改了，且自动add。</p>
-<p>2.重置commit<br>就是将当前分支重置到某次commit，同时会生成一个临时分支，并切换到这个临时分支上。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout [077d7ad] #commit记录：077d7ad </div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>如图：<br><img src="http://img.blog.csdn.net/20170319215557533?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamp3d21scDQ1Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>这里还提示你可以后跟  -b 新分支名，来从该commit检出一个新分支。</p>
-<h2 id="log-日志，提交历史"><a href="#log-日志，提交历史" class="headerlink" title="log 日志，提交历史"></a>log 日志，提交历史</h2><p>查看提交历史<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log</div></pre></td></tr></table></figure></p>
-<p>会按提交时间列出所有的更新，最近的更新排在最上面。 这个命令会列出每个提交的 SHA-1 校验和、作者的名字和电子邮件地址、提交时间以及提交说明</p>
-<ul>
-<li><p>–oneline选项<br> 一行输出，只显示SHA-1 和 提交消息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --oneline</div></pre></td></tr></table></figure>
-</li>
-<li><p>–all选项<br>显示所有分支的历史记录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log —all</div></pre></td></tr></table></figure>
-</li>
-<li><p>-p选项</p>
-</li>
-</ul>
-<p>一个常用的选项是 -p，用来显示每次提交的内容差异(会输出diff差异)。 你也可以加上 -2 来仅显示最近两次提交：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -p -2</div></pre></td></tr></table></figure></p>
-<ul>
-<li>–stat选项<br> 查看每次提交的简略的统计信息<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --stat</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>比如，输出<br><img src="http://img.blog.csdn.net/20170319130828787?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamp3d21scDQ1Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<ul>
-<li><p>–shortstat<br> 只显示 –stat 中最后的行数修改添加移除统计</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --shortstat</div></pre></td></tr></table></figure>
-</li>
-<li><p>–name-only<br> 仅在提交信息后显示已修改的文件清单。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --name-only</div></pre></td></tr></table></figure>
-</li>
-<li><p>–name-status<br> 显示新增、修改、删除的文件清单。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --name-status</div></pre></td></tr></table></figure>
-</li>
-<li><p>–abbrev-commit<br> 仅显示 SHA-1 的前几个字符(默认显示七个字符，不过有时为了避免 SHA-1 的歧义，会增加字符数)，而非所有的 40 个字符</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --abbrev-commit</div></pre></td></tr></table></figure>
-</li>
-<li><p>–graph<br>显示 ASCII 图形表示的分支合并历史。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --graph</div></pre></td></tr></table></figure>
-</li>
-<li><p>–pretty<br>使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --pretty=</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如用 format，可以定制要显示的记录格式(<a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2#pretty_format" target="_blank" rel="external">format 常用的选项 </a>)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;</div><div class="line">ca82a6d - Scott Chacon, 6 years ago : changed the version number</div><div class="line">085bb3b - Scott Chacon, 6 years ago : removed unnecessary test</div><div class="line">a11bef0 - Scott Chacon, 6 years ago : first commit</div></pre></td></tr></table></figure></p>
-<ul>
-<li><p>–since, –after<br>仅显示指定时间之后的提交(since和after都可以)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --since=2.weeks #两周前的提交  这里用=或空格都可以</div></pre></td></tr></table></figure>
-</li>
-<li><p>–until, –before<br>仅显示指定时间之前的提交(until和before都可以)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --before 2016-10-01</div></pre></td></tr></table></figure>
-</li>
-<li><p>–author<br>仅显示指定作者相关的提交。(作者指的是实际作出修改的人)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --author [stone]</div></pre></td></tr></table></figure>
-</li>
-<li><p>–committer<br>仅显示指定提交者相关的提交。(提交者指的是最后将此工作成果提交到仓库的人)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --committer [zsan]</div></pre></td></tr></table></figure>
-</li>
-<li><p>–grep<br>仅显示含指定关键字的提交</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --oneline --grep &quot;add&quot;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如，输出：<br><img src="http://img.blog.csdn.net/20170319134705369?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamp3d21scDQ1Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<ul>
-<li><p>-g选项<br>这个命令会以标准日志的格式输出引用日志</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -g #后可跟分支名，若不跟，表示当前分支</div></pre></td></tr></table></figure>
-</li>
-<li><p>提交区间<br> 提交区间来解决 “这个分支还有哪些提交尚未合并到主分支？” 的问题。<br>  1.双点<br>  如，查看newb分支还有哪些提交未合并到master分支：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log master..newb#未被master包含的newb提交</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如，查看当前分支即将推送到origin/master的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log origin/master..HEAD #HEAD可以留空，默认当前分支最新就是HEAD</div></pre></td></tr></table></figure></p>
-<p> 2.多点<br>  Git 允许你在任意引用前加上 ^ 字符或者 –not 来指明你不希望提交被包含其中的分支。因此下列3个命令是等价的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git log refA..refB</div><div class="line">git log ^master newb#查询不包含在master中的，newb提交信息</div><div class="line">git log newb --not master</div></pre></td></tr></table></figure></p>
-<p>这个语法很好用，因为你可以在查询中指定超过两个的引用，这是双点语法无法实现的。 比如，你想查看所有被 master 或 newb 包含的但是不被 newc 包含的提交，你可以输入下面中的任意一个命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git log master newb ^newc</div><div class="line">git log master newb --not newc</div></pre></td></tr></table></figure></p>
-<p> 3.三点<br>查询两个引用中，被一个包含，但又不都包含的提交。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log newb...newc</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>注：当要退出log视图，在冒号后，按q即可<br>查看当前分支的commit记录。在reset 到历史版本后，git log命令是看不到新的提交记录的</p>
-</blockquote>
-<h2 id="查看分支引用"><a href="#查看分支引用" class="headerlink" title="查看分支引用"></a>查看分支引用</h2><p>如，你想要查看一个分支的最后一次提交的对象，假设 topic1 分支指向 ca82a6d ，那么以下的命令是等价的：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git show ca82a6dff817ec66f44342007202690a93763949</div><div class="line">git show topic1</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>如，想要查看分支topic1，对应的完整SHA-1值：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rev-parse topic1</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>或，想要查看某个简写SHA-1值对应的完整值：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rev-parse ca82a6d</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>注：在使用简写SHA-1的commit引用时，最低4位</p>
-</blockquote>
-<h2 id="reflog-引用日志"><a href="#reflog-引用日志" class="headerlink" title="reflog 引用日志"></a>reflog 引用日志</h2><ul>
-<li>当你正在工作时，Git 会默默地记录每一次你改变 HEAD 时它的值。 每一次你提交或改变分支，引用日志都会被更新<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reflog</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>类似输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">734713b HEAD@&#123;0&#125;: commit: fixed refs handling, added gc auto, updated</div><div class="line">d921970 HEAD@&#123;1&#125;: merge phedders/rdocs: Merge made by recursive.</div><div class="line">1c002dd HEAD@&#123;2&#125;: commit: added some blame and merge stuff</div><div class="line">1c36188 HEAD@&#123;3&#125;: rebase -i (squash): updating HEAD</div><div class="line">95df984 HEAD@&#123;4&#125;: commit: # This is a combination of two commits.</div><div class="line">1c36188 HEAD@&#123;5&#125;: rebase -i (squash): updating HEAD</div><div class="line">7e05da5 HEAD@&#123;6&#125;: rebase -i (pick): updating HEAD</div></pre></td></tr></table></figure></p>
-<p>每当你的 HEAD 所指向的位置发生了变化，Git 就会将这个信息存储到引用日志这个历史记录里。 通过这些数据，你可以很方便地获取之前的提交历史。 </p>
-<ul>
-<li><p>如果你想查看仓库中 HEAD 在五次前的所指向的提交，你可以使用 @{n} 来引用 reflog 中输出的提交记录：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git show HEAD@&#123;5&#125;</div><div class="line">git show master@&#123;3&#125; #查看master分支在前三次的的提交</div><div class="line">git show master@&#123;yesterday&#125;#查看昨天的</div><div class="line">git show HEAD@&#123;2.months.ago&#125;#查看2月前引用日志。</div><div class="line">#其它可用的时间值：years, months, days, hours, minutes, seconds</div></pre></td></tr></table></figure>
-</li>
-<li><p>可以运行 git log -g 来查看类似于 git log 输出格式的引用日志信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -g master</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>类似输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">commit 734713bc047d87bf7eac9674765ae793478c50d3</div><div class="line">Reflog: master@&#123;0&#125; (Scott Chacon &lt;schacon@gmail.com&gt;)</div><div class="line">Reflog message: commit: fixed refs handling, added gc auto, updated</div><div class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</div><div class="line">Date:   Fri Jan 2 18:32:33 2009 -0800</div><div class="line"></div><div class="line">    fixed refs handling, added gc auto, updated tests</div></pre></td></tr></table></figure></p>
-<ul>
-<li>可以使用 HEAD^ 来查看上一个提交，也就是 “HEAD 的父提交”。<br> 这个语法只适用于合并(merge)的提交，因为合并提交会有多个父提交。 第一父提交是你合并时所在分支，而第二父提交是你所合并的分支。</li>
-</ul>
-<p>如下的例子，当前分支提交了6b43d14、467e8c1，合并其他分支的提交2aef572，合并后的提交为6f12bbc。<br>通过<code>git log --pretty=format:&#39;%h %s&#39; --graph</code>查看log :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">*   6f12bbc 合并了</div><div class="line">|\  </div><div class="line">| * 2aef572 CC</div><div class="line">* | 467e8c1 AA</div><div class="line">* | 6b43d14 write newbbb</div><div class="line">|/  </div><div class="line">* 6772a20 newccc</div><div class="line">* d1a41a8 newc</div><div class="line">* db4f9bb newm</div><div class="line">* 6af9641 2update a</div><div class="line">*   0211e59 merge a</div><div class="line">|\  </div><div class="line">| * 9024fe6 update a</div><div class="line">* | 317888e modifyd a</div><div class="line">|/  </div><div class="line">* 1912753 update a</div><div class="line">* c7fcd00 upupup:</div><div class="line">* 077d7ad add aa</div><div class="line">* 2a518c5 aaffff</div></pre></td></tr></table></figure></p>
-<p>输入命令<code>git show HEAD^</code>，则会输出第一父提交467e8c1的提交信息<br>输入命令<code>git show HEAD^2</code>，则会输出第二父提交2aef572的提交信息</p>
-<ul>
-<li>可以使用 HEAD~ 来查看上一个提交。<br> <code>git show HEAD^</code>和<code>git show HEAD~</code>作用是等价的。<br>  但后面跟上数字的作用就不一样了。~ 只算当前分支的父提交<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git show 6f12bbc~2 #输出6b43d14引用</div><div class="line">git show 6f12bbc~8 #输出317888e引用</div><div class="line">git show 6f12bbc~7^2 #当前第7父提交的第2父，即输出9024fe6</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="merge-合并分支"><a href="#merge-合并分支" class="headerlink" title="merge 合并分支"></a>merge 合并分支</h2><ul>
-<li><p>列出是否合并到当前分支的分支</p>
-<p>1.已经合并到当前分支的分支<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch --merged</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>2.尚未合并到当前分支的分支<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch --no-merged</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>分支合并<br><strong>要记住的一点是，以当前分支，来merge其他分支。</strong><br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git merge [otherBranch]#当前分支合并otherBranch分支</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-</ul>
-<p>Git 会自行决定选取哪一个提交作为最优的共同祖先，并以此作为合并的基础。</p>
-<ul>
-<li>分支合并引发冲突<br>有时候合并操作不会如此顺利。 如果你在两个不同的分支中，对同一个文件的同一个部分进行了不同的修改，Git 就没法干净的合并它们，那就会引发冲突conflict。<br>例如，在master分支和newb分支，都修改了a文件，并提交了。现在想以master来合并newb分支。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git merge newb</div><div class="line">Auto-merging a</div><div class="line">CONFLICT (content): Merge conflict in a</div><div class="line">Automatic merge failed; fix conflicts and then commit the result.</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>提示说a文件有冲突。<br>当有冲突后，通过<code>git status</code>命令，看到：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">On branch master</div><div class="line">You have unmerged paths.</div><div class="line">  (fix conflicts and run &quot;git commit&quot;)</div><div class="line">  (use &quot;git merge --abort&quot; to abort the merge)</div><div class="line"></div><div class="line">Unmerged paths:</div><div class="line">  (use &quot;git add &lt;file&gt;...&quot; to mark resolution)</div><div class="line"></div><div class="line">  both modified:   a</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>现在打开a文件，看到：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</div><div class="line">aawww</div><div class="line">=======</div><div class="line">adminwww</div><div class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; newb</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p><code>&lt;&lt;</code>HEAD和==间的就是当前master分支上的内容；==和<code>&gt;&gt;</code>间的就是newb分支上的内容。<br>现在，只需手动清除不需要的内容(含这些说明字符)后，再add、commit即可。</p>
-<ul>
-<li>合并工具<br>如果你想使用图形化工具来解决冲突，可以运行 <code>git mergetool</code>，该命令会为你启动一个合适的可视化合并工具，并带领你一步一步解决这些冲突。<br>如果没有打开工具，根据提示，输入<code>git mergetool --tool-help</code>，会列出本地已支持的工具列表，和支持的其他工具列表(需要自行安装)。<br>比如，我这里本地支持opendiff工具，然后需要配置一下：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --local merge.tool opendiff</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="rebase-变基合并分支"><a href="#rebase-变基合并分支" class="headerlink" title="rebase 变基合并分支"></a>rebase <a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA" target="_blank" rel="external">变基</a>合并分支</h2><p>变基的大意就是指，指定基分支(紧跟在rebase后)，然后与指定分支分并。这时git会查询出两个分支共同的祖先，以基分支为基础，将要合并分支的commit取消掉，在 .git/rebase-apply/ 下生成一个patch文件。然后自动apply。(这里说的有点绕，看下面的命令后的注释，比较好理解)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#合并newb分支，newb为基，当前分支的新commit续到newb后，最终影响当前分支</div><div class="line">git rebase [newb] </div><div class="line"></div><div class="line">#newb分支为基，master中的变更，被续到newb后，最终影响master分支</div><div class="line">#这样跟先切换到master分支，再使用上面的reabse命令，效果一样</div><div class="line">git rebase [newb master]</div></pre></td></tr></table></figure>
-<p><strong>变基使得提交历史更加整洁</strong>。你在查看一个经过变基的分支的历史记录时会发现，尽管实际的开发工作是并行的，但它们看上去就像是串行的一样，提交历史是一条直线没有分叉。通过<code>git log --graph</code>图标式查看log，就能看到有些commit有分叉，那就是使用的merge方式进行合并了。</p>
-<ul>
-<li>rebase引发冲突<br>当解决了一个冲突，需要用”git-add”命令去更新这些内容的索引(index)，然后使用如下命令，继续应用下一个补丁。当所有冲突都解决了，也使用它，从而完成合并。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rebase --continue</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>当想跳过patch，即只想要rebase分支内容，可用如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rebase --skip</div></pre></td></tr></table></figure></p>
-<p>中断rebase合并操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rebase --abort</div></pre></td></tr></table></figure></p>
-<ul>
-<li>–onto选项<br> 这个是应用在有三个分支的合并场景的。<br>  如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rebase --onto [master server client]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>表示：以master为基，找出server、client在master上的共同祖先之后的修改，只将符合条件的client修改进行应用。最后被修改的分支为client，server只是起到一个组合查询的作用。</p>
-<blockquote>
-<p>变基的风险：不要对在你的仓库外有副本的分支执行变基。<br>如，你push了c3、c4、c5三个提交；然后被其他同事pull应用后；<br>你又使用rebase模式，合并了一个分支newb，若它们的共同祖先是c2，则c3、c4、c5就会先取消，后被重新应用并commit到newb分支的末尾。接着你再push，那么c3、c4、c5又会push一次。<br><strong>这时，其他人若要pull，要使用git pull –rebase</strong></p>
-<p>只要你把变基命令当作是在推送前清理提交使之整洁的工具，并且只在从未推送至共用仓库的提交上执行变基命令，就不会有事</p>
-<p>其它参见 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%86%99%E5%8E%86%E5%8F%B2" target="_blank" rel="external">Git-工具-重写历史</a>。里面有有意思的选项为：filter-branch</p>
-</blockquote>
-<h2 id="bisect-二分查找记录"><a href="#bisect-二分查找记录" class="headerlink" title="bisect 二分查找记录"></a>bisect 二分查找记录</h2><p>比如有一个bug，不知道哪个历史提交引起的。这时就可以用bisect相关命令来查找。该命令采用二分法查找</p>
-<ul>
-<li>开始查找：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> git bisect start</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>使用git log，能看到提交记录(如要用到，可以只取前7位)，<br>通过从提交记录检出成新分支或git reset方式，再运行调试，查看bug是否存在。<br>最好是重新拉一个新的项目仓库下来，专门来做这个调试工作。</p>
-<ul>
-<li><p>当确认bug存在时，标记找到问题：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git bisect good 33f4b9e #在33f4b9e提交记录中，有问题</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>接着再找一个相对较早一些的提交记录(自己评估下)，运行、调试。<br>若存在bug，操作同上。若不存在，标记未找到问题：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git bisect bad 0a94086 #在0a94086提交记录中，未找到</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>当至少有一个bad和一个good后，就会提示，大概还需要多少次就能定位到问题了：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Bisecting: 12 revisions left to test after this (roughly 4 steps)</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-</ul>
-<p>大意：中间还有12个版本，大概最多还要4次测试，就能定位到问题了。</p>
-<blockquote>
-<p>注：文末引用文章中，把没有问题的标记为good，有问题的才标记为bad。<br>这里的示例，是将有问题的标记为good，没有问题的标记为bad。 </p>
-</blockquote>
-<h2 id="blame-责任查找"><a href="#blame-责任查找" class="headerlink" title="blame 责任查找"></a>blame 责任查找</h2><p>这个命令可以将文件中的每一行的作者、最新的变更提交和提交时间展示出来。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git blame [file_name]</div></pre></td></tr></table></figure></p>
-<p><img src="http://img.blog.csdn.net/20170318164802910?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamp3d21scDQ1Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<h2 id="diff-比较文件改动差异"><a href="#diff-比较文件改动差异" class="headerlink" title="diff 比较文件改动差异"></a>diff 比较文件改动差异</h2><ul>
-<li>比较未暂存文件改动差异<br>比如一个已add的文件，经过改动后，尚未再次add，输入命令：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git diff</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>如图：比较SpacePresenter 最新版本记录(-)和当前改动(+)后，文件间的差异<br><img src="http://img.blog.csdn.net/20170319112307187?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamp3d21scDQ1Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<ul>
-<li>比较已暂存文件改动差异<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git diff --cached </div><div class="line">git diff --staged #功能同cached。 git1.6.1及更高版可用 </div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<blockquote>
-<p>比较文件的前后差异。可以通过GUI工具来查看，show difference<br>Git Diff 的插件版本<br>可以使用 git difftool 命令来用 Araxis ，emerge 或 vimdiff 等软件输出 diff 分析结果。 使用 git difftool –tool-help 命令来看你的系统支持哪些 Git Diff 插件。 如需要配置请使用 <code>git config --global diff.tool Araxis</code></p>
-</blockquote>
-<h2 id="patch-补丁"><a href="#patch-补丁" class="headerlink" title="patch 补丁"></a>patch 补丁</h2><p>如果项目，只有你一个人在维护。其他人想要commit、push是不行的。但他们clone下来项目，经过修改后，可以生成并发送一个patch给你，让你来合并代码。<br>用到的命令：<br>git format-patch  #生成patch文件<br>git apply xxx.patch #应用patch</p>
-<blockquote>
-<p>注：由于没有完全试验过，这里说的比较简略</p>
-</blockquote>
-<h2 id="remote-远程仓库"><a href="#remote-远程仓库" class="headerlink" title="remote 远程仓库"></a>remote 远程仓库</h2><p>如果是从远程仓库检出的项目，可以直接输入命令：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>至少能看到类似 origin 的输出。origin是一般默认的远程仓库名。</p>
-<ul>
-<li>-v选项<br>会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote -v</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>如，输出：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">origin  https://github.com/googlesamples/android-architecture.git (fetch)</div><div class="line">origin  https://github.com/googlesamples/android-architecture.git (push)</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>fetch，是客户端拉取最新信息的地址；push就是上传的地址。</p>
-<ul>
-<li>add选项<br>添加一个新的远程 Git 仓库，同时指定一个你可以轻松引用的简写：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote add [pb https://github.com/paulboone/ticgit]</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>如上，pb就是指定的远程仓库简写。<br>再用-v命令查看：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git remote -v</div><div class="line">origin  https://github.com/schacon/ticgit (fetch)</div><div class="line">origin  https://github.com/schacon/ticgit (push)</div><div class="line">pb  https://github.com/paulboone/ticgit (fetch)</div><div class="line">pb  https://github.com/paulboone/ticgit (push)</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>现在，就关联了两个远程仓库地址了。在fetch或push时，可以指定远程仓库名，如：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push [pb master] # push到远程仓库pb上的master分支</div><div class="line">git fetch [pb] # fetch远程仓库pb上所有新的信息</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li>show选项<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote show [origin]</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-<p>会输出fetch、push的url，当前所在分支，不在本地的远程分支，哪些远程分支已经从服务器上移除了，还有pull和push时本地与远程分支的关联</p>
-<ul>
-<li><p>rename选项<br>重命名引用的远程仓库名字<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote rename [pb paul]</div><div class="line">​</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>rm选项<br>删除远程仓库引用。<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote rm [paul]  #rm 换成 remove也是可以的</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<ul>
-<li>git远程删除分支后，本地git branch -a 依然能看到，需要修整：<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote prune [origin] //修整远程origin仓库</div><div class="line">​</div></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<p>比如远程删除的是optimize分支，命令运行后会输出  * [pruned] origin/optimize</p>
-<h2 id="clean-清理工作目录"><a href="#clean-清理工作目录" class="headerlink" title="clean 清理工作目录"></a>clean 清理工作目录</h2><p>你需要谨慎地使用这个命令，因为它被设计为从工作目录中移除未被追踪的文件。 如果你改变主意了，你也不一定能找回来那些文件的内容。 一个更安全的选项是运行 <code>git stash --all</code> 来移除每一样东西并存放在栈中。</p>
-<p>可以使用<code>git clean</code>命令去除冗余文件或者清理工作目录。 使用<code>git clean -f -d</code>命令来移除工作目录中所有未追踪的文件以及空的子目录。 -f 意味着 强制 或 “确定移除”。</p>
-<p>如果只是想要看看它会做什么，可以使用 -n 选项来运行命令，这意味着 “做一次演习然后告诉你 将要 移除什么”。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clean -d -n</div></pre></td></tr></table></figure></p>
-<p>输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Would remove test.o</div><div class="line">Would remove tmp/</div></pre></td></tr></table></figure></p>
-<p>默认情况下，git clean 命令只会移除没有忽略的未跟踪文件。 任何与 .gitiignore 或其他忽略文件中的模式匹配的文件都不会被移除。 如果你也想要移除那些文件，例如为了做一次完全干净的构建而移除所有由构建生成的 .o 文件，可以给 clean 命令增加一个 -x 选项。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clean -n -d -x</div></pre></td></tr></table></figure></p>
-<p>如果不知道 git clean 命令将会做什么，在将 -n 改为 -f 来真正做之前，总是先用 -n 来运行它做双重检查。</p>
-<h1 id="Git-打包"><a href="#Git-打包" class="headerlink" title="Git 打包"></a>Git 打包</h1><p><a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E6%89%93%E5%8C%85" target="_blank" rel="external">Git 工具 - 打包</a></p>
-<h1 id="使用GitHub上的开源项目"><a href="#使用GitHub上的开源项目" class="headerlink" title="使用GitHub上的开源项目"></a>使用GitHub上的开源项目</h1><hr>
-<p>当clone好项目后，可以建立自己的本地分支，进行调试等。<br>这样方便，以后合并项目某个分支，主分支单独更新等。</p>
-<ul>
-<li><a href="https://git-scm.com/book/zh/v2/GitHub-%E5%AF%B9%E9%A1%B9%E7%9B%AE%E5%81%9A%E5%87%BA%E8%B4%A1%E7%8C%AE" target="_blank" rel="external">对项目做出贡献</a></li>
-</ul>
-<h1 id="Git-与其他系统"><a href="#Git-与其他系统" class="headerlink" title="Git 与其他系统"></a>Git 与其他系统</h1><hr>
-<p> <a href="https://git-scm.com/book/zh/v2/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E8%BF%81%E7%A7%BB%E5%88%B0-Git" target="_blank" rel="external">迁移到 Git</a></p>
-<h1 id="Git-验证"><a href="#Git-验证" class="headerlink" title="Git 验证"></a>Git 验证</h1><p><a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E7%AD%BE%E7%BD%B2%E5%B7%A5%E4%BD%9C" target="_blank" rel="external">Git 工具 - 签署工作</a><br>用到gpg工具，这个需要单独安装，并配置环境</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><hr>
-<p><a href="https://git-scm.com/book/zh/v2/" target="_blank" rel="external">https://git-scm.com/book/zh/v2/</a>  《官方指南》<br><a href="http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html" target="_blank" rel="external">http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html</a>  《ignore语法》<br><a href="http://www.cnblogs.com/wish123/p/3963224.html" target="_blank" rel="external">http://www.cnblogs.com/wish123/p/3963224.html</a>   《diff命令详解》<br><a href="http://gitbook.liuhui998.com/5_4.html" target="_blank" rel="external">http://gitbook.liuhui998.com/5_4.html</a>  《查找问题的利器 - Git Bisect》<br><a href="http://www.oschina.net/translate/10-tips-git-next-level" target="_blank" rel="external">http://www.oschina.net/translate/10-tips-git-next-level</a>  《10 个迅速提升你 Git 水平的提示》<br><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a> 《Git远程操作详解》</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://aa86799.github.io/2017/09/20/git操作指南/" data-id="cj7u5ugue0002649w2jacxaro" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ThreadPoolExecutor分析" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/06/ThreadPoolExecutor分析/" class="article-date">
-  <time datetime="2017-05-06T09:40:33.000Z" itemprop="datePublished">2017-05-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/06/ThreadPoolExecutor分析/">ThreadPoolExecutor 线程池调度器</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-         
-        <!-- toc end -->
-        <h1 id="可设置的主要参数"><a href="#可设置的主要参数" class="headerlink" title="可设置的主要参数"></a>可设置的主要参数</h1><ul>
-<li>corePoolSize</li>
-</ul>
-<p>核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。</p>
-<p>核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默认情况下不会退出。</p>
-<ul>
-<li>maxPoolSize</li>
-</ul>
-<p>当线程数大于或等于核心线程，且任务队列已满时，线程池会创建新的线程，直到线程数量达到maxPoolSize。如果线程数已等于maxPoolSize，且任务队列已满，则已超出线程池的处理能力，线程池默认会拒绝处理任务而抛出异常。可以自定义处理多余任务的RejectedExecutionHandler</p>
-<p>该参数在某些情况下是无效的。</p>
-<ul>
-<li>keepAliveTime</li>
-</ul>
-<p>当已经执行过的线程空闲后，空闲时间小于keepAliveTime，又来了新的任务时，会直接启动该线程。</p>
-<p>当线程空闲时间达到keepAliveTime，该线程会退出，直到线程数量等于corePoolSize。</p>
-<p>如果allowCoreThreadTimeout设置为true，则所有线程均会退出直到线程数量为0。</p>
-<ul>
-<li>allowCoreThreadTimeout</li>
-</ul>
-<p>是否允许核心线程空闲退出，默认值为false。</p>
-<ul>
-<li>queueCapacity</li>
-</ul>
-<p>任务队列容量，由它设定一个有界的队列。从maxPoolSize的描述上可以看出，任务队列的容量会影响到线程的变化，因此任务队列的长度也需要恰当的设置。</p>
-<ul>
-<li><p>RejectedExecutionHandler</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor executor)</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>任务拒绝处理策略。在源码中定义了如下几种策略：</p>
-<ul>
-<li><p>AbortPolicy (默认策略)</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">AbortPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="title">AbortPolicy</span><span class="params">()</span> </span>&#123; &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</div><div class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RejectedExecutionException(<span class="string">"Task "</span> + r.toString() +</div><div class="line">                                                 <span class="string">" rejected from "</span> +</div><div class="line">                                                 e.toString());</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>该策略 直接抛出了异常。异常中止</p>
-</li>
-<li><p>CallerRunsPolicy</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">CallerRunsPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CallerRunsPolicy</span><span class="params">()</span> </span>&#123; &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (!e.isShutdown()) &#123;</div><div class="line">            r.run();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>在线程池未关闭时，直接在当前线程执行任务。所谓当前线程，即提交任务时的线程</p>
-</li>
-<li><p>DiscardPolicy</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">DiscardPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DiscardPolicy</span><span class="params">()</span> </span>&#123; &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>不做任何处理，即跳过任务r</p>
-</li>
-<li><p>DiscardOldestPolicy</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">DiscardOldestPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DiscardOldestPolicy</span><span class="params">()</span> </span>&#123; &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (!e.isShutdown()) &#123;</div><div class="line">            e.getQueue().poll();</div><div class="line">            e.execute(r);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>在线程池未关闭时，移除处于队头的任务，再执行任务r。相当于把之前队头的任务跳过了，把r又加入了队列</p>
-<p>​</p>
-<p>​</p>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="参数对线程池任务调度的影响"><a href="#参数对线程池任务调度的影响" class="headerlink" title="参数对线程池任务调度的影响"></a>参数对线程池任务调度的影响</h1><p>当任务数大于等于corePoolSize，这时，除核心线程执行了一定数量的任务后，</p>
-<p>余下的需要执行的任务数为<code>int count = tasksCount - corePoolSize</code>，设队列最大容量为capacity：</p>
-<ul>
-<li><p>若<code>capacity &gt;= count</code>，则只会创建corePoolSize个线程来执行任务。多的任务放在队列中。</p>
-<p>这时maxPoolSize，就无效了</p>
-</li>
-<li><p>若<code>capacity &lt; count</code>，这时有<code>int remain = tasksCount - capacity</code>：</p>
-<ul>
-<li>若 <code>remain &lt;= maxPoolSize</code>，创建remain个线程来执行任务。多的任务放在队列中</li>
-<li>若<code>remain &gt; maxPoolSize</code>，创建maxPoolSize个线程来执行任务；这时将有<code>remain-maxPoolSize</code>个任务无法加入队列，被RejectedExecutionHandler处理。</li>
-</ul>
-<p>​</p>
-</li>
-</ul>
-<h1 id="Executors生成ThreadPoolExecutor"><a href="#Executors生成ThreadPoolExecutor" class="headerlink" title="Executors生成ThreadPoolExecutor"></a>Executors生成ThreadPoolExecutor</h1><p><a href="http://dongxuan.iteye.com/blog/901689" target="_blank" rel="external">(most from http://dongxuan.iteye.com/blog/901689)</a></p>
-<p>在构建时，corePoolSize、maximumPoolSizes 和BlockingQueue的选择，直接影响线程调度的策略</p>
-<p>Executors 有三个方法可以生成 ThreadPoolExecutor</p>
-<h2 id="生成一个固定线程数的-ThreadPoolExecutor"><a href="#生成一个固定线程数的-ThreadPoolExecutor" class="headerlink" title="生成一个固定线程数的 ThreadPoolExecutor"></a>生成一个固定线程数的 ThreadPoolExecutor</h2><p>public static ExecutorService newFixedThreadPool(int nThreads) {</p>
-<p>​    return new ThreadPoolExecutor(nThreads, nThreads,</p>
-<p>​                                  0L, TimeUnit.MILLISECONDS,</p>
-<p>​                                  new LinkedBlockingQueue<runnable>());</runnable></p>
-<p>}</p>
-<p>LinkedBlockingQueue实现是线程安全的，实现了先进先出等特性，是作为生产者消费者的首选，LinkedBlockingQueue 可以指定容量，也可以不指定，不指定的话，默认最大是Integer.MAX_VALUE，其中主要用到put和take方法，put方法在队列满的时候会阻塞直到有队列成员被消费，take方法在队列空的时候会阻塞，直到有队列成员被放进来。在ThreadPoolExecutor中主要使用的是BlockingQueue的offer()和 poll()、take()</p>
-<p>LinkedBlockingQueue 无界队列</p>
-<h2 id="生成一个只含一个线程的ThreadPoolExecutor"><a href="#生成一个只含一个线程的ThreadPoolExecutor" class="headerlink" title="生成一个只含一个线程的ThreadPoolExecutor"></a>生成一个只含一个线程的ThreadPoolExecutor</h2><p>public static ExecutorService newSingleThreadExecutor() {  </p>
-<p>​    return new FinalizableDelegatedExecutorService  </p>
-<p>​        (new ThreadPoolExecutor(1, 1,  </p>
-<p>​                                0L, TimeUnit.MILLISECONDS,  </p>
-<p>​                                new LinkedBlockingQueue<runnable>()));  </runnable></p>
-<p>} </p>
-<p>LinkedBlockingQueue 无界队列 </p>
-<h2 id="生成一个无界的并直接提交的ThreadPoolExecutor"><a href="#生成一个无界的并直接提交的ThreadPoolExecutor" class="headerlink" title="生成一个无界的并直接提交的ThreadPoolExecutor"></a>生成一个无界的并直接提交的ThreadPoolExecutor</h2><p>public static ExecutorService newCachedThreadPool() {  </p>
-<p>​    return new ThreadPoolExecutor(0, Integer.MAX_VALUE,  </p>
-<p>​                                  60L, TimeUnit.SECONDS,  </p>
-<p>​                                  new SynchronousQueue<runnable>());  </runnable></p>
-<p>}  </p>
-<p>这个线程池根据需要（新任务到来时）创建新的线程，如果有空闲线程则会重复使用，线程空闲了60秒后会被回收</p>
-<p>SynchronousQueue 的特点是，每个插入操作必须等待另一个线程的对应移除操作。比如，要添加一个元素，接下来如果继续想尝试添加则会阻塞，直到另一个线程取走一个元素，反之亦然</p>
-<p>SynchronousQueue 不会保留任务进队列，会直接提交到工作线程。</p>
-<p>如果当前没有可工作线程，那么在 corePoolSize&lt;maxPoolSize时，会直接创建出新的线程以执行任务</p>
-<p>SynchronousQueue 直接提交策略</p>
-<h1 id="关于工作队列-workQueue-："><a href="#关于工作队列-workQueue-：" class="headerlink" title="关于工作队列(workQueue)："></a>关于工作队列(workQueue)：</h1><p>所有 BlockingQueue 都可用于传输和保持提交的任务。可以使用此队列与池大小进行交互： </p>
-<ul>
-<li>如果运行的线程少于 corePoolSize，则 Executor 始终首选添加新的线程，而不进行排队。（什么意思？如果当前运行的线程小于corePoolSize，则任务根本不会存放，添加到queue中，而是直接开始运行thread。</li>
-<li>如果运行的线程等于或多于 corePoolSize，则 Executor 始终首选将请求加入队列，而不添加新的线程。 </li>
-<li>如果无法将请求加入队列，则创建新的线程，除非创建此线程超出 maximumPoolSize，在这种情况下，任务将被拒绝。</li>
-</ul>
-<h2 id="排队有三种通用策略："><a href="#排队有三种通用策略：" class="headerlink" title="排队有三种通用策略："></a>排队有三种通用策略：</h2><ol>
-<li><p>直接提交。工作队列的默认选项是 SynchronousQueue，它将任务直接提交给线程而不保持它们。在此，如果不存在可用于立即运行任务的线程，则试图把任务加入队列将失败，因此会构造一个新的线程。此策略可以避免在处理可能具有内部依赖性的请求集时出现锁。直接提交通常要求无界 maximumPoolSizes 以避免拒绝新提交的任务。当命令以超过队列所能处理的平均数连续到达时，此策略允许无界线程具有增长的可能性。 </p>
-</li>
-<li><p>无界队列，即队列容量超出余下任务量。使用无界队列（例如，不具有预定义容量的 LinkedBlockingQueue）将导致在所有 corePoolSize 线程都忙时新任务在队列中等待。这样，创建的线程就不会超过 corePoolSize。（因此，maximumPoolSize 的值也就无效了。）当每个任务完全独立于其他任务，即任务执行互不影响时，适合于使用无界队列；例如，在 Web 页服务器中。这种排队可用于处理瞬态突发请求，当命令以超过队列所能处理的平均数连续到达时，此策略允许无界线程具有增长的可能性。</p>
-</li>
-<li><p>有界队列，即队列容量小于余下任务量。当使用有限的 maximumPoolSizes 时，有界队列（如 ArrayBlockingQueue或具有预定义容量的 LinkedBlockingQueue）有助于防止资源耗尽，但是可能较难调整和控制。队列大小和最大池大小可能需要相互折衷：使用大型队列和小型池可以最大限度地降低 CPU 使用率、操作系统资源和上下文切换开销，但是可能导致人工降低吞吐量。如果任务频繁阻塞（例如，如果它们是 I/O 边界），则系统可能为超过您许可的更多线程安排时间。使用小型队列通常要求较大的池大小，CPU 使用率较高，但是可能遇到不可接受的调度开销，这样也会降低吞吐量。</p>
-<p>​</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://aa86799.github.io/2017/05/06/ThreadPoolExecutor分析/" data-id="cj7u5ugu50000649w70hx1sur" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-rxjava 1.x" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/02/rxjava 1.x/" class="article-date">
-  <time datetime="2017-05-02T12:51:43.000Z" itemprop="datePublished">2017-05-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/02/rxjava 1.x/">RxJava1.x 你需要了解的</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-         
-        <!-- toc end -->
-        <h1 id="RxJava-1-x"><a href="#RxJava-1-x" class="headerlink" title="RxJava 1.x"></a>RxJava 1.x</h1><p><img src="images/whyuseobserver.png"></p>
-<p>RxJava扩展了观察者模式的语义，添加了两个新的操作接口：  </p>
-<ul>
-<li>onCompleted() 通知观察者，Observable没有更多的数据了</li>
-</ul>
-<ul>
-<li>onError() 观察到有错误出现了</li>
-</ul>
-<p>而<strong>onNext()</strong> 将被观察者生产的事件通知到观察者</p>
-<h2 id="RxJava-1-x的四种基本角色"><a href="#RxJava-1-x的四种基本角色" class="headerlink" title="RxJava 1.x的四种基本角色"></a>RxJava 1.x的四种基本角色</h2><ul>
-<li>Observable</li>
-<li>Observer</li>
-<li>Subscriber</li>
-<li>Subject  </li>
-</ul>
-<p>其中，Observable和Subject是两个”生产”(被观察者)的实体，Observer和Subscriber是两个”消费”(观察者)的实体。其中Observable、Observer是两个基础角色。</p>
-<p>Subscriber实现了Observer，并且还添加了一个<strong>onStart()</strong>，它会在 subscribe 刚开始，而事件还未发送之前被调用，可以用于做一些准备工作。</p>
-<p>Subject = Observable + Observer</p>
-<p>下图描述Subject与Observer的一对多关系：<br><img src="images/observer_subject.png"> </p>
-<h2 id="Obsrvable的变种-——-Single"><a href="#Obsrvable的变种-——-Single" class="headerlink" title="Obsrvable的变种 —— Single"></a>Obsrvable的变种 —— Single</h2><p>Observable还有一个变种，就是<strong>Single</strong>，它总是只发射一个事件，或者一个错误通知</p>
-<p>订阅<strong>Single</strong>只需要两个方法：</p>
-<ul>
-<li>onSuccess - <strong>Single</strong>发射单个的值到这个方法</li>
-<li>onError - 如果无法发射需要的值，<strong>Single</strong>发射一个Throwable对象到这个方法</li>
-</ul>
-<blockquote>
-<p>了解就行了，用法与Observable差不多</p>
-</blockquote>
-<h2 id="热的、冷的-Observables"><a href="#热的、冷的-Observables" class="headerlink" title="热的、冷的 Observables"></a>热的、冷的 Observables</h2><p><strong>热的</strong>：Observable只要一创建，就会立即开始emit(发射)数据。后续的订阅它的观察者，可能从序列中间的某个位置开始接受数据(有一些数据错过了)<br><strong>冷的</strong>：Observable创建后，一直在等待，直到有观察者订阅它才开始emit数据</p>
-<h2 id="Subject-Observable-Observer"><a href="#Subject-Observable-Observer" class="headerlink" title="Subject = Observable + Observer"></a>Subject = Observable + Observer</h2><p>Subject，既是一个Observable，也是一个Observer。  可以emit数据，可以subscribe 一个Observable或其它Subject。  </p>
-<p>RxJava 提供四种不同的 Subject:  </p>
-<ul>
-<li>PublishSubject</li>
-<li>BehaviorSubject</li>
-<li>ReplaySubject</li>
-<li>AsyncSubject</li>
-<li>UnicastSubject</li>
-<li>SerializedSubject</li>
-</ul>
-<p>###PublishSubject<br>是Subject的一个子类，它通过<strong><em>create()</em></strong>创建实例。它是一个”冷的”Observable。直到触发它的onNext(T t)，才开始emit数据，并完成订阅。<br>可用于实现类似EventBus的RxBus。</p>
-<p>###BehaviorSubject<br>是Subject的一个子类，它通过<strong><em>create()</em></strong>创建实例。首先会向它的订阅者发送截止订阅前的最后一条数据流，然后才正常发送订阅后的数据流。  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="comment">// observer will receive all 4 events (including "default").</span></div><div class="line">  BehaviorSubject&lt;Object&gt; subject = BehaviorSubject.create(<span class="string">"default"</span>);</div><div class="line">  subject.subscribe(observer);</div><div class="line">  subject.onNext(<span class="string">"one"</span>);</div><div class="line">  subject.onNext(<span class="string">"two"</span>);</div><div class="line">  subject.onNext(<span class="string">"three"</span>);</div><div class="line"></div><div class="line">  <span class="comment">// observer will receive the "one", "two" and "three" events, but not "default" and "zero"</span></div><div class="line">  BehaviorSubject&lt;Object&gt; subject = BehaviorSubject.create(<span class="string">"default"</span>);</div><div class="line">  subject.onNext(<span class="string">"zero"</span>);</div><div class="line">  subject.onNext(<span class="string">"one"</span>);</div><div class="line">  subject.subscribe(observer);</div><div class="line">  subject.onNext(<span class="string">"two"</span>);</div><div class="line">  subject.onNext(<span class="string">"three"</span>);</div><div class="line"></div><div class="line">  <span class="comment">// observer will receive only onCompleted</span></div><div class="line">  BehaviorSubject&lt;Object&gt; subject = BehaviorSubject.create(<span class="string">"default"</span>);</div><div class="line">  subject.onNext(<span class="string">"zero"</span>);</div><div class="line">  subject.onNext(<span class="string">"one"</span>);</div><div class="line">  subject.onCompleted();</div><div class="line">  subject.subscribe(observer);</div><div class="line"></div><div class="line">  <span class="comment">// observer will receive only onError</span></div><div class="line">  BehaviorSubject&lt;Object&gt; subject = BehaviorSubject.create(<span class="string">"default"</span>);</div><div class="line">  subject.onNext(<span class="string">"zero"</span>);</div><div class="line">  subject.onNext(<span class="string">"one"</span>);</div><div class="line">  subject.onError(<span class="keyword">new</span> RuntimeException(<span class="string">"error"</span>));</div><div class="line">  subject.subscribe(observer);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="ReplaySubject"><a href="#ReplaySubject" class="headerlink" title="ReplaySubject"></a>ReplaySubject</h3><p>缓存订阅的数据，重发给订阅它的观察者</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ReplaySubject&lt;String&gt; subject = ReplaySubject.create();</div><div class="line">subject.onNext(<span class="string">"haha1"</span>);</div><div class="line">subject.onNext(<span class="string">"haha2"</span>);</div><div class="line">subject.onNext(<span class="string">"haha3"</span>);</div><div class="line">subject.subscribe(s -&gt; System.out.println(<span class="string">"rss1"</span> + s));</div></pre></td></tr></table></figure>
-<h3 id="AsyncSubject"><a href="#AsyncSubject" class="headerlink" title="AsyncSubject"></a>AsyncSubject</h3><p>仅在Observable完成之后，发送最后一条数据给观察者。</p>
-<p>然而如果当Observable因为异常而终止，AsyncSubject将不会释放任何数据，但是会向Observer传递一个异常通知。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">AsyncSubject&lt;String&gt; subject = AsyncSubject.create();</div><div class="line">subject.onNext(<span class="string">"haha1"</span>);</div><div class="line">subject.onNext(<span class="string">"haha2"</span>);</div><div class="line">subject.onNext(<span class="string">"haha3"</span>);</div><div class="line">subject.onCompleted();</div><div class="line">subject.subscribe(s -&gt; System.out.println(<span class="string">"ass1"</span> + s));</div></pre></td></tr></table></figure>
-<h3 id="UnicastSubject"><a href="#UnicastSubject" class="headerlink" title="UnicastSubject"></a>UnicastSubject</h3><p>只允许有一个 Subscriber 订阅(内部subscribeActual()，用到了AtomicBoolean 判断，第二次无就抛出异常)</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">UnicastSubject subject = UnicastSubject.create();</div><div class="line">subject.onNext(<span class="string">"haha1"</span>);</div><div class="line">subject.onNext(<span class="string">"haha2"</span>);</div><div class="line">subject.onNext(<span class="string">"haha3"</span>);</div><div class="line">subject.onCompleted();</div><div class="line">subject.subscribe(s -&gt; System.out.println(<span class="string">"uss1"</span> + s));</div></pre></td></tr></table></figure>
-<h3 id="SerializedSubject"><a href="#SerializedSubject" class="headerlink" title="SerializedSubject"></a>SerializedSubject</h3><p>当我们使用普通的Subject，必须要注意不要在多线程情况下调用onNext方法，<br>而使用SerializedSubject封装原来的 Subject即可！！<br>内部使用了SerializedObserver。查看其doc，如果是多线程环境，即有多个线程发射通知时，它们将被按序列执行：<br>1.允许仅有一个线程，执行一个emit<br>2.如果另一线程，已经emit，将下一个添加到通知队列<br>3.在循环emitting时，不持有任何锁或阻塞任何线程</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">ReplaySubject&lt;String&gt; subject = ReplaySubject.create();</div><div class="line">SerializedSubject&lt;String, String&gt; serializedSubject = <span class="keyword">new</span> SerializedSubject&lt;&gt;(subject);</div><div class="line">serializedSubject.subscribe(s -&gt;</div><div class="line">  	System.out.println(<span class="string">"thread-"</span> + Thread.currentThread().getName() + <span class="string">"--"</span> + s));</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">  	<span class="keyword">int</span> finalIndex = i;</div><div class="line">  	<span class="keyword">new</span> Thread(() -&gt; serializedSubject.onNext(<span class="string">"haha"</span> + finalIndex)).start();</div><div class="line">&#125;</div><div class="line">serializedSubject.onNext(<span class="string">"haha20"</span>);</div><div class="line">serializedSubject.onNext(<span class="string">"haha21"</span>);</div><div class="line">serializedSubject.onNext(<span class="string">"haha22"</span>);</div></pre></td></tr></table></figure>
-<h1 id="RxJava操作符"><a href="#RxJava操作符" class="headerlink" title="RxJava操作符"></a>RxJava操作符</h1><p>(most from <a href="http://frodoking.github.io/2015/09/08/reactivex/" target="_blank" rel="external">http://frodoking.github.io/2015/09/08/reactivex/</a>)</p>
-<p>大多数操作符：操作一个Observable并且返回一个Observable。</p>
-<p>这样允许开发人员以一个链式的方式一个接一个的执行操作符。</p>
-<p>在可修改的链式中，每一个操作结果Observable都是来之于上一个操作。</p>
-<p>这里有一些类似于构造器Builder模式，该模式描述了一个含有一系方法的特定类通过操作方法来操作具有相同功能的类的每一项。</p>
-<p>这个模式也允许你以类似的方式去链式操作方法。在Builder模式中，操作方法出现的顺序在链式中可能不是那么重要， 但是在Observable中的操作符顺序就很重要。</p>
-<p>Observable操作符链不会依赖于原来的Observable去操作原始的链，每一个在Observable上的正在操作的operator都是上一个操作立即产生的。</p>
-<h2 id="创建Observable-–-创建新的Observable的操作符"><a href="#创建Observable-–-创建新的Observable的操作符" class="headerlink" title="创建Observable – 创建新的Observable的操作符"></a>创建Observable – 创建新的Observable的操作符</h2><ul>
-<li><p><strong><em>create</em></strong>——从头创建一个Observable，当观察者订阅Observable时，它作为一个参数传入，并执行call()</p>
-</li>
-<li><p><strong><em>defer</em></strong>——不立即创建Observable，直到observer触发订阅动作。此方法为每一个observer创建一个新的Observable</p>
-</li>
-<li><p><strong><em>empty/never/error</em></strong>——为非常精确和有限的行为而创建Observable：空的，不emit数据/不emit数据，且永远不会结束/不emit数据，以onError()结束</p>
-</li>
-<li><p><strong><em>from</em></strong>——迭代一个序列(集合或数组)，一个一个的发射数据</p>
-</li>
-<li><p><strong><em>interval</em></strong>——创建一个具有发出一个整数序列间隔为一个特定的时间间隔的Observable</p>
-</li>
-<li><p><strong><em>just</em></strong>——按顺序emit后面跟的”1到9个”数据</p>
-</li>
-<li><p><strong><em>range</em></strong>——创建一个Observable,发送一系列连续的整数</p>
-</li>
-<li><p><strong><em>repeat</em></strong>——创建一个Observable,发送一个特定的项目或项目重复序列</p>
-</li>
-<li><p><strong><em>timer</em></strong>——创建一个Observable,在一个给定的一段时间延迟后发送一个对象或者项目</p>
-<p>​</p>
-</li>
-</ul>
-<h2 id="转换Observables-–-转换成另一个Observable的操作符"><a href="#转换Observables-–-转换成另一个Observable的操作符" class="headerlink" title="转换Observables – 转换成另一个Observable的操作符"></a>转换Observables – 转换成另一个Observable的操作符</h2><ul>
-<li><strong>buffer</strong>——定期收集从Observable中发出的数据到集合中，每次发射一组，而不是发送一个</li>
-<li><strong>concatMap</strong>——与flatMap非常相似。但它会将展开的元素，一个个有序的连接起来</li>
-<li><strong>flatMap</strong>——将一个Observable发送的数据或者项目转换到Observables中，适用于将 T 变换为 Observable<r>，Observable<r>表示一个序列集。发送的次序可能是交错的</r></r></li>
-<li><strong>flatMapIterable</strong>——与flatMap类似，只是它会将数据转换成一个Iterable</li>
-<li><strong>groupBy</strong>——拆分一个Observable成多个Observable组，并且每个组发送的数据会组成一个不同的发送数据组当然这些发送数据时来自于原始的Observable。这些分组都是通过划分key来实现</li>
-<li><strong>map</strong>——转换一个Observable发送的每个数据或者项目映射到一个函数上</li>
-<li><strong>scan</strong>——应用一个函数给一个Observable发送出来的每一条数据, 并且是按照顺序发送每个连续值(t1,t2, return R)</li>
-<li><strong>switchMap</strong>——与flatMap类似，除了一点: 当源Observable发射一个新的数据项时，</li>
-</ul>
-<p>如果旧数据项订阅还未完成，就取消旧订阅数据和停止监视那个数据项产生的Observable,开始监视新的数据项</p>
-<ul>
-<li><strong>window</strong>——类似buffer，但发射的是一个Observable，而不是列表</li>
-<li><strong>lift</strong>——针对事件项和事件序列的操作符。对于事件项的类型转换，主要在一个新的Subscriber中完成。</li>
-<li><strong>compose</strong>——需要一个Observable.Transformer型的入参。该类型的call()，操作的是一个Observable，并返回另一个Observable。所以compose用于在内部组合一组变换的场景。</li>
-</ul>
-<h2 id="过滤Observables-–-过滤被Observable发送的数据的操作符"><a href="#过滤Observables-–-过滤被Observable发送的数据的操作符" class="headerlink" title="过滤Observables – 过滤被Observable发送的数据的操作符"></a>过滤Observables – 过滤被Observable发送的数据的操作符</h2><ul>
-<li><strong>debounce</strong>——如果Observable在一个特定时间间隔过去后没有发送其他数据或者项目,那么它只发送最后那个</li>
-<li><strong>distinct</strong>——该Observable不可以发送重复的数据</li>
-<li><strong>distinctUntilChanged</strong>——发送”跟上一个数据不重复”的新值</li>
-<li><strong>elementAt</strong>——只发送可观测序列中的某一项。index从0开始</li>
-<li><strong>filter</strong>——一个Observable只发送通过来特定测试描述语的匹配项</li>
-<li><strong>first</strong>——只发出第一项,或第一项符合条件的项</li>
-<li><strong>ignoreElements</strong>——不发送任何数据，但是必须反馈它的中断通知: Observable的onCompleted和onError事件</li>
-<li><strong>last</strong>——只发送最后一项</li>
-<li><strong>sample</strong>——发出Observables周期时间间隔内最新的项</li>
-<li><strong>throttleFirst</strong>——发出Observables周期时间间隔内的第一项</li>
-<li><strong>throttleLast</strong>——发出Observables周期时间间隔内的最后一项</li>
-<li><strong>skip</strong>——跳过发送前几项</li>
-<li><strong>skipLast</strong>——跳过发送后几项</li>
-<li><strong>take</strong>——仅仅发送前几项</li>
-<li><strong>takeLast</strong>——仅仅发送后几项</li>
-</ul>
-<h2 id="合并Observables-–-将多个Observables合并成单个的Observable的操作符"><a href="#合并Observables-–-将多个Observables合并成单个的Observable的操作符" class="headerlink" title="合并Observables – 将多个Observables合并成单个的Observable的操作符"></a>合并Observables – 将多个Observables合并成单个的Observable的操作符</h2><ul>
-<li><strong><em>combineLatest</em></strong>——当某一项数据由两个Observables发送时，通过一个特殊的函数来合并每一个Observable发送的项，并且最终发送数据是该函数的结果</li>
-</ul>
-<ul>
-<li><strong>join</strong>——合并两个Observables发送的结果数据。其中两个Observable的结果遵循如下规则：</li>
-</ul>
-<p>每当一个Observable在定义的数据窗口中发送一个数据都是依据另外一个Observable发送的数据。</p>
-<ul>
-<li><strong><em>merge</em></strong>——通过合并多个Observables发送的结果数据将多个Observables合并成一个</li>
-<li><strong><em>mergeDelayError</em></strong>——即使发生了error也不打断merge操作，当所有merge结束后，才发射onError()</li>
-<li><strong>startWith</strong>——在Observable源开始发送数据项目之前，先发送一个指定的项目序列</li>
-<li><strong><em>zip</em></strong>——它使用这个函数按顺序结合两个或多个Observables发射的数据项，然后它发射这个函数返回的结果。它按照严格的顺序应用这个函数。它只发射与发射数据项最少的那个Observable一样多的数据。</li>
-<li><strong>zipWith</strong>——与<strong><em>zip</em></strong>类似，只是一个成员方法，必须由一个Observable来发起。</li>
-</ul>
-<h2 id="错误处理操作符"><a href="#错误处理操作符" class="headerlink" title="错误处理操作符"></a>错误处理操作符</h2><p>（most from <a href="http://www.jianshu.com/p/5bb3e55a14c4）" target="_blank" rel="external">http://www.jianshu.com/p/5bb3e55a14c4）</a></p>
-<ul>
-<li><p><strong>retry</strong>——如果一个源Observable发送一个onError通知，需要重新发射，以期望不发生错误。</p>
-<p>有三个变体方法：retry()  若有错，一直重新发射，直到无错误； retry(count)  若有错，只重新发射count次，直到无错误；retry(new Func2<integer, throwable,="" boolean="">(){…}) ，三个参数的意思是，正常接收到的值, 发生的异常, 在发生错误时是否要重新发射，重写函数返回值 false 不重新发射。</integer,></p>
-</li>
-</ul>
-<ul>
-<li><strong>retryWhen</strong>——retryWhen类似retry。如果发射一个error，会传递给其观察者，并交由retryWhen中的Func1来操作，Func1又由Func2组成。Func2的call函数的返回值决定订阅过程是否重复发生：如果发射的error，订阅会终止，如果发射的是数据项，则会重新订阅</li>
-<li><strong>onErrorReturn</strong>——若源Observable发生了错误或异常，替代源Observable调用Observer的onError方法。onErrorReturn中那个Func1实现被调用并接受这个错误或异常作为参数，这个Func1实现的返回值将作为onErrorReturn返回的值</li>
-<li><strong>onErrorResumeNext</strong>——源Observable遇到错误，这个onErrorResumeNext会把源Observable用一个新的Observable替掉，然后这个新的Observable如果没遇到什么问题就会释放item给Observer。你可以直接将一个Observable实例传入onErrorResumeNext作为这个新的Observable，也可以传给onErrorResumeNext一个Func1实现，这个Func1实现接受源Observable的错误作为参数，返回新的Observable</li>
-<li><strong>onExceptionResumeNext</strong>——与onErrorResumeNext类似。只是onExceptionResumeNext是在发生了Exception时，才触发。如果发生的不是一个Exception，仍会触发Observer的onError方法</li>
-</ul>
-<h2 id="实用工具操作符"><a href="#实用工具操作符" class="headerlink" title="实用工具操作符"></a>实用工具操作符</h2><ul>
-<li><p><strong>delay</strong>——按照一个特定量及时的将Observable发送的结果数据向前推移</p>
-</li>
-<li><p><strong>do</strong>——注册一个事件去监听Observable生命周期</p>
-<p><strong>doOnSubscribe</strong>在<strong>Subscriber#onStart()</strong>时回调</p>
-<p><strong>doOnNext</strong>在<strong>Observer#onNext()</strong>时回调</p>
-<p><strong>doOnError</strong>在<strong>Observer#onError()</strong>时回调</p>
-<p><strong>doOnCompleted</strong>在<strong>Observer#onCompleted()</strong>时回调</p>
-<p><strong>doOnEach</strong>在<strong>Observer#onNext()</strong>、<strong>onError()</strong>、<strong>onCompleted()</strong>时都会回调</p>
-</li>
-<li><p><strong>materialize/Dematerialize</strong>——代表发送出来的项目数据或者通知，或相反过程</p>
-</li>
-<li><p><strong>observeOn</strong>——指定一个observer将会观察这个Observable的调度</p>
-</li>
-<li><p><strong>serialize</strong>——强制Observable按次序发射数据并且要求功能是完好的</p>
-</li>
-<li><p><strong>subscribe</strong>——操作可观测的排放和通知</p>
-</li>
-<li><p><strong>subscribeOn</strong>——指定一个Observable在被订阅的时候应该使用的调度</p>
-</li>
-<li><p><strong>timeInterval</strong>——转换一个Observable的发送项目到另一个项目，在这些发送项之间，此项目具有指示这些发送的时间开销功能</p>
-</li>
-<li><p><strong>timeout</strong>——镜像源Observable,但如果某段时间过后没有任何通知发出将会发出一个错误通知</p>
-</li>
-<li><p><strong>timestamp</strong>——给一个Observable发送的每一个项目附加一个时间戳</p>
-</li>
-<li><p><strong>using</strong>——创建一个一次性的资源，这个资源就像Observable一样有相同的寿命</p>
-</li>
-</ul>
-<h2 id="条件和布尔运算操作符-–-评估一个或者多个Observables或者被Observables发送的项目的操作符"><a href="#条件和布尔运算操作符-–-评估一个或者多个Observables或者被Observables发送的项目的操作符" class="headerlink" title="条件和布尔运算操作符 – 评估一个或者多个Observables或者被Observables发送的项目的操作符"></a>条件和布尔运算操作符 – 评估一个或者多个Observables或者被Observables发送的项目的操作符</h2><ul>
-<li><strong>all</strong>——确定发出的所有项目满足某些标准</li>
-<li><strong><em>amb</em></strong>——给定一组Iterable<observable>来源，只发射第一个Observable的数据</observable></li>
-<li><strong>contains</strong>——判断Observable是否包含一个特定的项</li>
-<li><strong>defaultIfEmpty</strong>——发送项从Observable源，或者如果Observable源没有任何发送内容，那么将会发送一个默认的项</li>
-<li><strong><em>sequenceEqual</em></strong>——确定两个Observables发出相同的序列条目</li>
-<li><strong>skipUntil</strong>——丢弃Observable发出的项,直到第二个Observable发出一项</li>
-<li><strong>skipWhile</strong>——丢弃Observable发出的项,直到指定的条件变成了false</li>
-<li><strong>takeUntil</strong>——在第二个Observable发送一项或者终止之后，丢弃Observable发出的项</li>
-<li><strong>takeWhile</strong>——在指定的条件变成了false之后，丢弃Observable发出的项</li>
-</ul>
-<h2 id="类型转换操作符"><a href="#类型转换操作符" class="headerlink" title="类型转换操作符"></a>类型转换操作符</h2><ul>
-<li><strong>to</strong>——将一个Observable转换到另一个对象或数据结构。 toXxx</li>
-<li><strong>cast</strong>——传入其它类型Class，进行自动转换</li>
-</ul>
-<h2 id="可连接到Observable的操作符-–-指定Observables有更多精确控制订阅动态的操作符"><a href="#可连接到Observable的操作符-–-指定Observables有更多精确控制订阅动态的操作符" class="headerlink" title="可连接到Observable的操作符 – 指定Observables有更多精确控制订阅动态的操作符"></a>可连接到Observable的操作符 – 指定Observables有更多精确控制订阅动态的操作符</h2><ul>
-<li><strong>connect</strong>——定义一个可连接的Observable发送项目数据给它的订阅者</li>
-<li><strong>publish</strong>——把一个普通的Observable转化为一个可连接的Observable（向下转换）</li>
-<li><strong>replay</strong>——返回一个Connectable Observable 对象并且可以缓存其发射过的数据，这样即使有订阅者在其发射数据之后进行订阅也能收到其之前发射过的数据。不过使用Replay操作符我们最好还是限定其缓存的大小，否则缓存的数据太多了可会占用很大的一块内存。对缓存的控制可以从空间和时间两个方面来实现，比如它的其它变体实现：replay(int bufferSize)、replay(int bufferSize, long time, TimeUnit unit) …</li>
-</ul>
-<h2 id="数学操作符"><a href="#数学操作符" class="headerlink" title="数学操作符"></a>数学操作符</h2><p>(For details, please see <a href="https://github.com/ReactiveX/RxJavaMath" target="_blank" rel="external">RxJavaMath</a> and <a href="https://github.com/ReactiveX/RxJava/wiki/Mathematical-and-Aggregate-Operators" target="_blank" rel="external">Mathematical-and-Aggregate-Operators</a>)</p>
-<p>主要使用<strong>MathObservable</strong>来操作数据</p>
-<ul>
-<li><p><strong>average</strong>——计算一个Observable发送所有结果的平均值，并且发射这个值</p>
-<p>对应的变体有averageDouble、 averageFloat、 averageInteger、 averageLong</p>
-</li>
-<li><p><strong>max</strong>——确定,发射最大值项</p>
-</li>
-<li><p><strong>min</strong>——确定,发射最小值项</p>
-</li>
-<li><p><strong>sum</strong>——计算Observable发射的所有数据的求和，并且发射这个求和结果</p>
-<p>对应的变体有sumDouble、sumFloat、sumInteger、sumLong</p>
-</li>
-</ul>
-<blockquote>
-<p>以上方法，都有静态与非静态方法。静态方法要求传入一个Observable<t>；非静态方法可通过<strong><em>from(Observable<t> observable)</t></em></strong>返回一个<strong>MathObservable</strong>，来进行操作。</t></p>
-</blockquote>
-<h2 id="聚集操作符"><a href="#聚集操作符" class="headerlink" title="聚集操作符"></a>聚集操作符</h2><p>(most from <a href="http://blog.csdn.net/jdsjlzx/article/details/51489793" target="_blank" rel="external">http://blog.csdn.net/jdsjlzx/article/details/51489793</a>)</p>
-<ul>
-<li><strong><em>concat</em></strong>——顺序连接多个Observables,并且严格按照发射顺序，前一个没有发射完，是不能发射后面的</li>
-<li><strong>count/countLong</strong>——计算Observable源发出的项目数据数量，并发出这个值</li>
-<li><strong>reduce</strong>——应用一个函数接收Observable发射的数据和函数的计算结果作为下次计算的参数，输出最后的结果。  跟scan操作符很类似，只是scan会输出每次计算的结果，而reduce只会输出最后的结果。</li>
-<li><strong>collect</strong>——将原始Observable发射的数据放到一个单一的可变的数据结构中，然后返回一个发射这个数据结构的Observable </li>
-<li><strong>toList</strong>——收集原始Observable发射的所有数据到一个列表，然后返回这个列表</li>
-<li><strong>toSortedList</strong>——收集原始Observable发射的所有数据到一个有序列表，然后返回这个列表</li>
-<li><strong>toMap</strong>——将序列数据转换为一个Map，Map的key是根据一个函数计算的</li>
-<li><strong>toMultiMap</strong>——将序列数据转换为一个列表，同时也是一个Map，Map的key是根据一个函数计算的</li>
-<li><strong>toBlocking——</strong>转换成一个BlockingObservable。当满足条件的数据发射出来的时候才会返回一个BlockingObservable对象</li>
-</ul>
-<p>#Schedulers 线程调度</p>
-<p>在没有给定调度器（Scheduler）的情况下，Subscription将默认(产生事件与订阅)运行于调用线程上。</p>
-<p>线程调度器（Scheduler）是将RxJava从同步观察者模式转到异步观察者模式的一个重要工具。</p>
-<p>RxJava提供了5种主要的调度器:</p>
-<ul>
-<li>Scheduler Schedulers.io()</li>
-<li>Scheduler Schedulers.computation()</li>
-<li>Scheduler Schedulers.immediate()</li>
-<li>Scheduler Schedulers.newThread()</li>
-<li>Scheduler Schedulers.trampoline()</li>
-</ul>
-<p>还有可用于测试的调度器Schedulers.<em>test()</em> 及 可自定义Scheduler—-Schedulers.<em>form()</em></p>
-<h2 id="Schedulers-io"><a href="#Schedulers-io" class="headerlink" title="Schedulers.io()"></a>Schedulers.<em>io()</em></h2><p>内部创建一个rx.internal.schedulers.CachedThreadScheduler。底层实现是一个java中的ScheduledThreadPoolExecutor (extends ThreadPoolExecutorimplements ScheduledExecutorService)</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="title">ScheduledThreadPoolExecutor</span><span class="params">(<span class="keyword">int</span> corePoolSize, ThreadFactory threadFactory)</span> </span>&#123;</div><div class="line">  <span class="keyword">super</span>(corePoolSize, Integer.MAX_VALUE,</div><div class="line">        DEFAULT_KEEPALIVE_MILLIS, MILLISECONDS,</div><div class="line">        <span class="keyword">new</span> DelayedWorkQueue(), threadFactory);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>corePoolSize=1, DEFAULT_KEEPALIVE_MILLIS=10L, DelayedWorkQueue是一个二叉树结构实现的BlockingQueue</p>
-<p>整体还是一个无界(即容量特别大)的队列实现</p>
-<p>例如，存储Bitmap到本地时，可以直接在Schedulers的io线程中执行任务：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">storeBitmap</span><span class="params">(Context context, Bitmap bitmap, String filename)</span> </span>&#123;</div><div class="line">    Schedulers.io().createWorker().schedule(() -&gt; &#123;</div><div class="line">        blockingStoreBitmap(context, bitmap, filename);</div><div class="line">	&#125;); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="Schedulers-computation"><a href="#Schedulers-computation" class="headerlink" title="Schedulers.computation()"></a>Schedulers.<em>computation()</em></h2><p>内部是由 rx.internal.schedulers.EventLoopsScheduler 实现的。</p>
-<p>这个是计算工作默认的调度器，它与I/O操作无关。它也是许多RxJava方法的默认<br>调度器: <strong>buffer()</strong>、<strong>debounce()</strong>、<strong>delay()</strong>、<strong><em>interval()</em></strong>、<strong>sample()</strong>、<strong>skip()</strong>        </p>
-<h2 id="Schedulers-immediate"><a href="#Schedulers-immediate" class="headerlink" title="Schedulers.immediate()"></a>Schedulers.<em>immediate()</em></h2><p>内部创建一个rx.internal.schedulers.ImmediateScheduler。 这个调度器允许你立即在当前线程执行指定的工作。</p>
-<p>它是  <strong>timeout()</strong>、<strong>timeInterval()</strong> 及 <strong>timestamp()</strong> 方法默认的调度器</p>
-<h2 id="Schedulers-newThread"><a href="#Schedulers-newThread" class="headerlink" title="Schedulers.newThread()"></a>Schedulers.<em>newThread()</em></h2><p>内部创建一个rx.internal.schedulers.NewThreadScheduler。一底层跟<strong><em>Schedulers.io()</em></strong>一样是由java的ScheduledThreadPoolExecutor实现。</p>
-<p>它为指定任务启动一个新的线程</p>
-<h2 id="Schedulers-trampoline"><a href="#Schedulers-trampoline" class="headerlink" title="Schedulers.trampoline()"></a>Schedulers.<em>trampoline()</em></h2><p>内部创建一个rx.internal.schedulers.TrampolineScheduler。运行在当前线程。当有新任务时，并不会立即执行，而是将它加入队列PriorityBlockingQueue中，直到运行任务执行完成后，才从队列中按序取出一个继续执行。</p>
-<p>它是<strong><em>repeat()</em></strong>和<strong>retry()</strong>默认的调度器</p>
-<h2 id="用于测试的调度器Schedulers-test"><a href="#用于测试的调度器Schedulers-test" class="headerlink" title="用于测试的调度器Schedulers.test()"></a>用于测试的调度器Schedulers.<em>test()</em></h2><p>(some from <a href="http://blog.csdn.net/siguoyi/article/details/51849964" target="_blank" rel="external">http://blog.csdn.net/siguoyi/article/details/51849964</a>)</p>
-<p>创建一个rx.schedulers.TestScheduler。这是一个公开的可访问的类。也可以直接使用无参构造方法，new出一个实例。</p>
-<p>主要提供如下三个方法，来对调度器的时钟表现进行手动微调，这对依赖精确时间安排的任务的测试很有用处。</p>
-<ul>
-<li><strong>advanceTimeBy(time,unit)</strong> 将调度器时时钟，前进一个指定时间。这是相对操作</li>
-<li><strong>advanceTimeTo(time,unit)</strong> 将调度器时钟拨动到一个指定的时间。 这个是绝对操作</li>
-<li><strong>triggerActions( )</strong> 开始执行任何计划中的但是未启动的任务，如果它们的计划时间等于或者早于调度器时钟的当前时间</li>
-</ul>
-<blockquote>
-<p>假定当前时间为0， 先advanceTimeBy(2, TimeUnit.SECONDS)再advanceTimeTo(2, TimeUnit.SECONDS)，那么现在时间还是2。若反过来调用，那么现在时间就是4b了</p>
-</blockquote>
-<h2 id="自定义Scheduler—-Schedulers-form"><a href="#自定义Scheduler—-Schedulers-form" class="headerlink" title="自定义Scheduler—-Schedulers.form()"></a>自定义Scheduler—-Schedulers.<em>form()</em></h2><p>使用Schedulers.<em>form(java.util.concurrent.Executor executor)</em> ，来自定义Scheduler</p>
-<h2 id="subscribeOn-和observeOn"><a href="#subscribeOn-和observeOn" class="headerlink" title="subscribeOn()和observeOn()"></a>subscribeOn()和observeOn()</h2><p><strong>subscribeOn()</strong>和<strong>observeOn()</strong> 是用来指定事件生产与订阅在哪个线程执行的。</p>
-<ul>
-<li>默认没有定义observeOn、subscribeOn，即运行于当前线程</li>
-<li>subscribeOn 指定 订阅事件发生(OnSubscribe)的线程。若仅出现它，不出现observeOn, 还会影响其它所有事件</li>
-<li>observeOn 指定 在其之后的所有事件发生的线程，即使后面出现了 subscribeOn</li>
-<li>若两者同时出现，subscribeOn 影响 observeOn 出现前的所有事件 及 OnSubscribe 事件</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Action1 action = (Action1&lt;String&gt;) s -&gt; </div><div class="line">  	System.out.println(<span class="string">"test-Observer: "</span> + Thread.currentThread().getName() + <span class="string">", "</span> + s);</div><div class="line"></div><div class="line">Observable.Transformer&lt;Integer, String&gt; transformer = integerObservable -&gt;</div><div class="line">                integerObservable.map((Func1&lt;Integer, String&gt;) integer -&gt;</div><div class="line">                        <span class="string">"test-tran.call: "</span> + Thread.currentThread().getName() + <span class="string">", "</span> + integer);</div><div class="line"></div><div class="line">Observable.create((Observable.OnSubscribe&lt;Integer&gt;) subscriber -&gt; &#123;</div><div class="line">  	System.out.println( <span class="string">"test-OnSubscribe.call: "</span> + Thread.currentThread().getName());</div><div class="line">  	subscriber.onNext(<span class="number">9</span>);      &#125;).subscribeOn(io()).observeOn(AndroidSchedulers.mainThread()).compose(transformer).subscribe(action);</div></pre></td></tr></table></figure>
-<h1 id="背压-Backpressure"><a href="#背压-Backpressure" class="headerlink" title="背压(Backpressure)"></a>背压(Backpressure)</h1><p>(most from <a href="https://zhuanlan.zhihu.com/p/24473022?refer=dreawer" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/24473022?refer=dreawer</a>)</p>
-<p>背压是指在异步场景中，被观察者发送事件速度远快于观察者的处理速度的情况下，一种告诉上游的被观察者降低发送速度的策略。简而言之，背压是流速控制的一种策略。</p>
-<p>若被观察者发送事件的速度太快，而观察者处理太慢，而且还没有做相应背压措施，可能抛出MissingBackpressureException</p>
-<h2 id="压力异常示例"><a href="#压力异常示例" class="headerlink" title="压力异常示例"></a>压力异常示例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Observable.interval(<span class="number">1</span>, TimeUnit.MILLISECONDS)</div><div class="line">                .observeOn(Schedulers.newThread())</div><div class="line">                .subscribe(aLong -&gt; &#123;</div><div class="line">                    Log.w(<span class="string">"TAG"</span>,<span class="string">"----&gt;"</span>+aLong);</div><div class="line">                &#125;);</div></pre></td></tr></table></figure>
-<p>上面的interval操作符，在1毫秒产生一个事件，速率过快，订阅者”消费”事件来不及处理，就会出现异常。</p>
-<h2 id="自带背压处理的操作符"><a href="#自带背压处理的操作符" class="headerlink" title="自带背压处理的操作符"></a>自带背压处理的操作符</h2><p>用自带背压处理的操作符来处理压力。</p>
-<h3 id="过滤策略"><a href="#过滤策略" class="headerlink" title="过滤策略"></a>过滤策略</h3><p>使用之前讲的”过滤操作符”，就可以有效缓解压力。</p>
-<p>比如，使用<strong>throttleFirst</strong>来获取一段周期时间内的首个事件。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Observable.interval(<span class="number">1</span>, TimeUnit.MILLISECONDS)</div><div class="line">                .observeOn(Schedulers.newThread())</div><div class="line">  			   .throttleFirst(<span class="number">200</span>, TimeUnit.MILLISECONDS)</div><div class="line">                .subscribe(aLong -&gt; &#123;</div><div class="line">                    Log.w(<span class="string">"TAG"</span>,<span class="string">"----&gt;"</span>+aLong);</div><div class="line">                &#125;);</div></pre></td></tr></table></figure>
-<h3 id="缓存策略"><a href="#缓存策略" class="headerlink" title="缓存策略"></a>缓存策略</h3><p>缓存就是虽然被观察者发送事件速度很快，观察者处理不过来，但是可以选择先缓存一部分，然后慢慢读。</p>
-<p>主要用到的是<strong>buffer</strong>操作符</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Observable.interval(<span class="number">1</span>, TimeUnit.MILLISECONDS)</div><div class="line">                .observeOn(Schedulers.newThread())</div><div class="line">  			   <span class="comment">//这个操作符简单理解就是把100毫秒内的事件打包成list发送</span></div><div class="line">                .buffer(<span class="number">100</span>,TimeUnit.MILLISECONDS)</div><div class="line">                .subscribe(aLong -&gt; &#123;</div><div class="line">                    Log.w(<span class="string">"TAG"</span>,<span class="string">"----&gt;"</span>+aLong);</div><div class="line">                &#125;);</div></pre></td></tr></table></figure>
-<h3 id="按需拉取策略"><a href="#按需拉取策略" class="headerlink" title="按需拉取策略"></a>按需拉取策略</h3><p>就是需要”消费”多少个事件，自己告诉被观察者，最终实现了上游被观察者发送事件的速度的控制</p>
-<p>主要使用<strong>request(long n)</strong>。这是一个protected方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">Observable.range(<span class="number">100</span>, <span class="number">10000</span>)<span class="comment">//从100开始，发送10000个数，即最后发送10100</span></div><div class="line">  .observeOn(Schedulers.newThread())</div><div class="line">  .subscribe(<span class="keyword">new</span> Subscriber&lt;Integer&gt;() &#123;</div><div class="line"></div><div class="line">      <span class="meta">@Override</span></div><div class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onStart</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onStart();</div><div class="line">        <span class="comment">//在onStart中通知被观察者先发送一个事件</span></div><div class="line">        request(<span class="number">1</span>);</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      <span class="meta">@Override</span></div><div class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCompleted</span><span class="params">()</span> </span>&#123;</div><div class="line"></div><div class="line">      &#125;</div><div class="line"></div><div class="line">      <span class="meta">@Override</span></div><div class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onError</span><span class="params">(Throwable e)</span> </span>&#123;</div><div class="line"></div><div class="line">      &#125;</div><div class="line"></div><div class="line">      <span class="meta">@Override</span></div><div class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onNext</span><span class="params">(Integer integer)</span> </span>&#123;</div><div class="line">        Log.w(<span class="string">"TAG"</span>,<span class="string">"----&gt;"</span>+ integer);</div><div class="line">        request(<span class="number">1</span>); <span class="comment">//处理完毕之后，再通知被观察者发送下一个事件</span></div><div class="line">      &#125;</div><div class="line">  &#125;);</div></pre></td></tr></table></figure>
-<p>上面的代码中，其实可以去掉request相关代码，因 range –&gt; observeOn，这一段过程本身就是响应式拉取数据。</p>
-<p>observeOn这个操作符内部有一个缓冲区RxRingBuffer，其在Android环境下长度是16，它会告诉range最多发送16个事件，充满缓冲区即可</p>
-<h2 id="让不支持背压的Observable“支持”背压"><a href="#让不支持背压的Observable“支持”背压" class="headerlink" title="让不支持背压的Observable“支持”背压"></a>让不支持背压的Observable“支持”背压</h2><p>对于不支持背压的Observable除了使用上述两类生硬的操作符之外，还有更好的选择：onBackpressureBuffer、onBackpressureDrop。</p>
-<p>onBackpressurebuffer：把Observable发送出来的事件做缓存，当request方法被调用的时候，<br>给下层流发送一个item(如果给这个缓存区设置了大小，那么超过了这个大小就会抛出异常)。</p>
-<p>onBackpressureDrop：将Observable发送的事件抛弃掉，直到Subscriber再次调用request（n）方法的时候，<br>就发送给它这之后的n个事件。</p>
-<p>使用了这两种操作符，可以让原本不支持背压的Observable“支持”背压了。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Observable.interval(<span class="number">1</span>, TimeUnit.MILLISECONDS)</div><div class="line">  	.onBackpressureBuffer()</div><div class="line">  	.observeOn(Schedulers.newThread())</div><div class="line">  	.subscribe(aLong -&gt; &#123;</div><div class="line">		Log.w(<span class="string">"TAG--"</span>,<span class="string">"----&gt;"</span>+aLong);</div><div class="line">	&#125;);</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://aa86799.github.io/2017/05/02/rxjava 1.x/" data-id="cj7u5uguh0003649wuy5voqb3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a></li></ul>
-    </div>
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
+    <ul id="menu" class="menu">
+      
         
-          <li>
-            <a href="/2017/09/21/安卓api24以上的ApiDemos/">安卓api24以上的ApiDemos</a>
-          </li>
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
         
-          <li>
-            <a href="/2017/09/20/git操作指南/">git 操作指南</a>
-          </li>
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
         
-          <li>
-            <a href="/2017/05/06/ThreadPoolExecutor分析/">ThreadPoolExecutor 线程池调度器</a>
-          </li>
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
         
-          <li>
-            <a href="/2017/05/02/rxjava 1.x/">RxJava1.x 你需要了解的</a>
-          </li>
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
         
-      </ul>
-    </div>
-  </div>
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
+      
+    </ul>
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 stone<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/21/安卓api24以上的ApiDemos/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stone">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://avatar.csdn.net/B/C/5/1_jjwwmlp456.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone的安卓世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/21/安卓api24以上的ApiDemos/" itemprop="url">安卓api24以上的ApiDemos</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T15:46:49+08:00">
+                2017-09-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          源码下载地址：https://android.googlesource.com/platform/development.git
+该项目以git管理，不同的tag标签上，就有不同的版本号。项目下samples目录就是代码示例，samples目录内，就有ApiDemos工程.
+
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/21/安卓api24以上的ApiDemos/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/20/git操作指南/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stone">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://avatar.csdn.net/B/C/5/1_jjwwmlp456.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone的安卓世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/20/git操作指南/" itemprop="url">git 操作指南</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-20T16:19:48+08:00">
+                2017-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          前言
+git这个版本控制工具，早在两三年前我就开始使用了。不过后来换了新东家后，又开始变成了svn，最近又切成git了。通过近期的使用，遇到了一些坑，遂引发此文，以作记录
+issue：某个commit整体不要了，想重置？add多了，想撤销？某个文件有问题，想还原到某次commit时的状态？想push
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/20/git操作指南/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-<script src="/js/script.js"></script>
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/05/06/ThreadPoolExecutor分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stone">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://avatar.csdn.net/B/C/5/1_jjwwmlp456.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone的安卓世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/06/ThreadPoolExecutor分析/" itemprop="url">ThreadPoolExecutor 线程池调度器</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-06T17:40:33+08:00">
+                2017-05-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          可设置的主要参数
+corePoolSize
+
+核心线程数，核心线程会一直存活，即使没有任务需要处理。当线程数小于核心线程数时，即使现有的线程空闲，线程池也会优先创建新线程来处理任务，而不是直接交给现有的线程处理。
+核心线程在allowCoreThreadTimeout被设置为true时会超时退出，默
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/06/ThreadPoolExecutor分析/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/05/02/rxjava 1.x/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stone">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://avatar.csdn.net/B/C/5/1_jjwwmlp456.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone的安卓世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/02/rxjava 1.x/" itemprop="url">RxJava1.x 你需要了解的</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-02T20:51:43+08:00">
+                2017-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          RxJava 1.x
+RxJava扩展了观察者模式的语义，添加了两个新的操作接口：  
+
+onCompleted() 通知观察者，Observable没有更多的数据了
+
+
+onError() 观察到有错误出现了
+
+而onNext() 将被观察者生产的事件通知到观察者
+RxJava 1.x的四种基本角
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/02/rxjava 1.x/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://avatar.csdn.net/B/C/5/1_jjwwmlp456.jpg"
+              alt="stone" />
+          
+            <p class="site-author-name" itemprop="name">stone</p>
+            <p class="site-description motion-element" itemprop="description">人生不是简单的if和else，很多时候都是在出现问题时才when and then</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stone</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
