@@ -724,7 +724,7 @@
 
       query.containedIn('url', entries);
       query.find()
-        .done(function (results) {
+        .then(function (results) {
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
           if (results.length === 0) {
