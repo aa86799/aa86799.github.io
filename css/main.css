@@ -1083,7 +1083,7 @@ pre .javascript .function {
   background: transparent;
 }
 header {
-  background: url("../images/article-header.jpeg");
+  background: url("../images/article-header.png");
 }
 #文章header图,
 .header-inner {
@@ -1822,7 +1822,7 @@ header {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #df9a8f;
+  background: #fe60ff;
 }
 .links-of-blogroll {
   font-size: 13px;
