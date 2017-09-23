@@ -822,21 +822,21 @@
   <script>AV.initialize("DQCUOt6yO2hucDsMcCx0gyO6-gzGzoHsz", "62Oz2hMUxtoTXRnOETmCwyvR");</script>
   <script>
     function showTime(Counter) {
-      var query = new av.Query(Counter);
+      var query = new AV.Query('Counter');
       var entries = [];
       var $visitors = $(".leancloud_visitors");
 
       $visitors.each(function () {
         entries.push( $(this).attr("id").trim() );
       });
-
       query.containedIn('url', entries);
       query.find()
-        .done(function (results) {
+        .then(function (results) {
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
           if (results.length === 0) {
             $visitors.find(COUNT_CONTAINER_REF).text(0);
+            console.log("no infos");
             return;
           }
 
@@ -845,8 +845,9 @@
             var url = item.get('url');
             var time = item.get('time');
             var element = document.getElementById(url);
-
+            console.log("item=" + item + ", url=" + url + ", time=" + time);
             $(element).find(COUNT_CONTAINER_REF).text(time);
+
           }
           for(var i = 0; i < entries.length; i++) {
             var url = entries[i];
