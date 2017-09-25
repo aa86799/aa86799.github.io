@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C语言注意点]]></title>
+    <url>%2F2017%2F09%2F25%2Fc%E8%AF%AD%E8%A8%80%E6%B3%A8%E6%84%8F%E7%82%B9%2F</url>
+    <content type="text"><![CDATA[字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束： 1234567char a[] = "admin"; //自动在尾部追加空字符char b[2]= &#123;'a', '\0'&#125;; //空字符也占有一个元素位置char c[2]=&#123;'a', 'b'&#125;; //这并不是一个字符串 以printf("%s", c); 来输出 结果与预期不符char names[2][10] = &#123; &#123;'J','a','y','\0'&#125;, &#123;'J','i','m','\0'&#125; &#125;; //这样的二维数组，其中每个一维数组，都浪费了6个空间 指针指针用来指向一块内存地址。如：int a = 10; int p = &a; int c = p; 字符串指针：char p = “admin”， char q = p; char q = p; 与 char q = &amp;p[0]; 效果一样的(数组的首元素地址就是该数组的地址) 。 而 char *q=&amp;p[1]; 打印q, 输出：”dmin” 遍历： 123for (; *p != '\0'; p++) &#123; printf("=%c ", *p);&#125; ​ 当使用指针遍历后，这时地址位已经移到结束符的位置了。所以想重置时，需要 p -= 5; 交换字符： 12345void swap(char *p,char *q) &#123; char temp = *p; *p = *q; *q = temp;&#125; 交换字符串： 12345void swapstr(char p,char q) &#123; char *temp = *p; *p = *q; *q = temp;&#125;]]></content>
+      <categories>
+        <category>C 语言</category>
+      </categories>
+      <tags>
+        <tag>C Feature</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[C语言函数]]></title>
     <url>%2F2017%2F09%2F25%2Fc%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[stdio.h include &lt;stdio.h&gt;; printf(“可以在这写要输出的字符串格式，以 x% 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 getchar(); 读取输入一个字符。可以读入空格、TAB、回车(读回车时连击两次)，直到遇到回车为止。 scanf(..); 可以接收多个输入 ——接收一个字符串：char a[10]; scanf(“%s”, a); ——接收多个数据：char a[10]; int x; scanf(“%d, %s”, &amp;x, a); ————多个数据间的分隔符可以是任意符号， 这里是 逗号 ————后面的参数为，指定接收的变量的 内存地址 string.h include &lt;string.h&gt; strlen(char*); 返回字符串长度， 不包括 ‘\0’ 结束符 strcpy(char dest, char src); 将src复制到dest中，原dest覆盖。 要注意size: dest是否能容纳src strcat(char dest, char src); 将src追加到dest的尾部。 要注意size: dest是否能容纳 dest+src strcmp(char s1, char s2); 个字符串从左至右逐个字符比较（按照字符的ASCII码值的大小）， ——直到字符不相同或者遇见’\0’为止。如果全部字符都相同，则返回值为0。 ——如果不相同，则返回两个字符串中第一个不相同的字符ASCII码值的差。 ——即字符串1大于字符串2时函数返回值为正，否则为负。 puts(char*); 输出一个字段串。输出时直到遇见’\0’为止。 gets(char); 读取一个字符串。 char buffer[20];char r = gets(buffer);]]></content>
