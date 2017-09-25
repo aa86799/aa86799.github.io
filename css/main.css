@@ -1746,7 +1746,7 @@ pre .javascript .function {
   border: 2px solid #333;
 /* http://www.cduyzh.com/hexo-settings-2/   把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果
 start    raidus: 值越大越圆*/
-  border-radius: 30%;
+  border-radius: 80%;
   webkit-transition: 1.8s all;
   moz-transition: 1.8s all;
   ms-transition: 1.8s all;
@@ -1844,7 +1844,7 @@ start    raidus: 值越大越圆*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ecc398;
+  background: #16ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
