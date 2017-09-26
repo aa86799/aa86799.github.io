@@ -77,7 +77,7 @@
 <meta property="og:site_name" content="stone的安卓世界">
 <meta property="og:description" content="字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束：  1234567char a[] = &quot;stone&quot;;  //自动在尾部追加空字符char b[2]= &amp;#123;&apos;a&apos;, &apos;\0&apos;&amp;#125;; //空字符也占有一个元素位置char c[2]=&amp;#123;&apos;a&apos;, &apos;b&apos;&amp;#125;; //这并不是一个字符串  以pri">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-25T14:11:10.000Z">
+<meta property="og:updated_time" content="2017-09-26T04:34:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言注意点">
 <meta name="twitter:description" content="字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束：  1234567char a[] = &quot;stone&quot;;  //自动在尾部追加空字符char b[2]= &amp;#123;&apos;a&apos;, &apos;\0&apos;&amp;#125;; //空字符也占有一个元素位置char c[2]=&amp;#123;&apos;a&apos;, &apos;b&apos;&amp;#125;; //这并不是一个字符串  以pri">
@@ -393,7 +393,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,657
+                  1,695
                 </span>
               
 
@@ -504,11 +504,15 @@
 <h3 id="第2种形式-include-quot-文件名-quot"><a href="#第2种形式-include-quot-文件名-quot" class="headerlink" title="第2种形式#include&quot;文件名&quot;"></a><strong>第2种形式#include&quot;文件名&quot;</strong></h3><p>这种形式下，系统会先在源程序当前目录下寻找，若找不到，再到操作系统的path路径中查找，最后才到C语言库函数头文件所在目录中查找</p>
 <blockquote>
 <p> 注意：#include指令允许嵌套包含，比如a.h包含b.h，b.h包含c.h，</p>
-<p>但是不允许递归包含，比如 a.h 包含 b.h，b.h包含 a.h</p>
+<p> 但是不允许递归包含，比如 a.h 包含 b.h，b.h包含 a.h</p>
 </blockquote>
 <p>使用#include指令可能导致多次包含同一个头文件，降低编译效率</p>
 <p>解决方法：在包含的文件里，加上条件编译指令，防止函数被重复定义, 如：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> c_program_cc_h</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> c_program_cc_h</span></div><div class="line">method <span class="number">1</span>();</div><div class="line">method <span class="number">2</span>();</div><div class="line">………….</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>C中没有类似java的package的概念，它只有文件系统。</p>
+<p>如果要引入当前目录下的文件夹util中的calcUtil.h : <code>#include &quot;calcUtil.h&quot;</code> </p>
+</blockquote>
 
       
     </div>
@@ -539,8 +543,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/25/c语言函数/" rel="next" title="C语言函数">
-                <i class="fa fa-chevron-left"></i> 上一篇： C语言函数
+              <a href="/2017/09/25/c语言库函数/" rel="next" title="C语言库函数">
+                <i class="fa fa-chevron-left"></i> 上一篇： C语言库函数
               </a>
             
           </div>
@@ -548,6 +552,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/26/c语言中的变量与函数/" rel="prev" title="C语言中的变量与函数">
+                下一篇： C语言中的变量与函数 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -631,7 +639,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -653,7 +661,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -746,7 +754,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      19.9k
+      21.1k
     </span>
   
 </div>
