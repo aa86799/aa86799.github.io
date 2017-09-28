@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C语言中的结构体与联合体]]></title>
+    <url>%2F2017%2F09%2F28%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%8E%E8%81%94%E5%90%88%E4%BD%93%2F</url>
+    <content type="text"><![CDATA[结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 123456struct Person&#123; char name[20]; //char *name; int age; float weight;&#125;; 联合体(union)]]></content>
+      <categories>
+        <category>C 语言</category>
+      </categories>
+      <tags>
+        <tag>C-key:struct</tag>
+        <tag>C-key:union</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[C语言中的变量与函数]]></title>
     <url>%2F2017%2F09%2F26%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[变量 局部变量在函数内部定义的变量，称为局部变量。 函数的形参也是局部变量 全局变量所有在函数外部定义的变量，称为全局变量 全局变量的作用范围是从定义变量的位置开始到源程序结束，即全局变量可以被在其定义位置之后的其它函数所共享。 变量的存储类型C语言根据变量的存储类型(变量存储的位置：1. 运行时堆栈 2.普通内存 3.寄存器)的不同，可以把变量分为：自动变量、静态变量、寄存器变量 哪些是自动变量：被关键字auto修饰的局部变量都是自动变量，但是极少使用这个关键字， 基本上是废的，因为所有的局部变量在默认情况下都是自动变量。存于堆栈 哪些是静态变量： 存于内存，程序结束才销毁 所有的全局变量都是静态变量 被关键字static修饰的局部变量也是静态变量 哪些变量是寄存器变量： 被关键字register修饰的局部(自动)变量都是寄存器变量 只有局部变量才可以是寄存器变量，全局变量和静态局部变量不行 寄存器变量只限于int、char和指针类型变量使用 static与全局变量、局部变量static修饰的变量，其生命周期是存活于整个程序的运行期间的。 静态局部变量 因其生命周期原因，所以值的变化，会影响之后的操作。 123456789void test_static_params() &#123; static int pp = 8; pp++; printf("%d\n", pp); &#125; for (int i=0; i&lt;5; i++) &#123; test_static_params();&#125; 上例，会输出；9 10 11 12 13 静态全局变量 定义在函数外，如：static int MAX = 10; 这样的变量，即为静态的全局变量，通常定义在”头文件”中。 static 修饰时，不能再有 extern 同时修饰。 extern与全局变量、局部变量 默认情况下 一个函数不可以访问在它后面定义的全局变量，若要使它可以访问，则需要在函数外声明并加上extern，如： 12345extern int xx;void test1() &#123; printf("x===%d\n", xx);&#125;int xx = 99; 声明在函数外的变量，默认就是全局的，extern可以省略。 多次声明同一个全局变量 这种情况下，不会报错，只表示一个变量。 即使在多个源文件中声明的同名的全局变量，也都代表着同一个变量。 前面说过，extern可以省略，都是表示全局变量。 但，如下情况是会报错的： 123456789//file: test.hextern int MAX;//file: main.c#include "test.h"extern int MAX;main &#123; MAX = 10;&#125; 如下这样使用，也是有问题的： 123456789//file: test.hint MAX;//file: main.c#include "test.h"extern int MAX;main &#123; MAX = 10;&#125; 还有，两个文件中都定义成 int MAX， 也不行。 那么除去上面三种情况，只有一种是正确的：test.h 定义成 extern int MAX； 在main.c中 int MAX extern 修饰的全局变量，不建议直接声明时初始化 使用extern 声明后，需要再 『定义』一次，即不使用extern 进行定义。这时会分配内存空间，且可以进行初始化 多个文件中都存在同一个全局变量时：在要使用的地方，需要使用 『定义』式，以分配空间。 在局部变量前 加extern 12345int y = 10; //这样声明并初始化是可以的， 但加上extern后，xcode报了警告，不影响运行void test() &#123; // int y = 11; //这是局部变量 extern int y = 12; //这是全局变量&#125; 同名的局部变量和全局变量，是不能在同一个函数内，同时出现的。 函数 内部函数static 修饰的函数为内部函数，该函数就只能在其定义所在的文件中使用。 1static void inner(void);//无参时，写上一个void， xcode编译器推荐，一般仅定义在头文件上 定义在前面的函数，可以访问定义在后面的所有函数 外部函数extern 修饰的函数为外部函数。一般省略该关键字，即默认就是外部函数 1extern void outer(void); 通常在头文件中，定义好外部函数；在源文件中进行实现。 要引用其它外部函数时，只需要引入其所在的头文件： #include &quot;inner.h&quot; 若，当前源文件中的函数 与 引用的外部函数 同名，且参数个数与类型一致，会报错。]]></content>
@@ -15,14 +27,17 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C语言注意点]]></title>
-    <url>%2F2017%2F09%2F25%2Fc%E8%AF%AD%E8%A8%80%E6%B3%A8%E6%84%8F%E7%82%B9%2F</url>
+    <title><![CDATA[C语言 字符串、指针、预处理指令]]></title>
+    <url>%2F2017%2F09%2F25%2FC%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8C%87%E9%92%88%E9%A2%84%E5%A4%84%E7%90%86%E6%8C%87%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束： 1234567char a[] = "stone"; //自动在尾部追加空字符char b[2]= &#123;'a', '\0'&#125;; //空字符也占有一个元素位置char c[2]=&#123;'a', 'b'&#125;; //这并不是一个字符串 以printf("%s", c); 来输出 结果与预期不符char names[2][10] = &#123; &#123;'J','a','y','\0'&#125;, &#123;'J','i','m','\0'&#125; &#125;; //这样的二维数组，其中每个一维数组，都浪费了6个空间 指针指针用来指向一块内存地址。如：int a = 10; int p = &a; int c = p; 字符串指针：char p = “admin”， char q = p; char q = p; 与 char q = &amp;p[0]; 效果一样的(数组的首元素地址就是该数组的地址) 。 而 char *q=&amp;p[1]; 打印q, 输出：”dmin” 遍历： 123for (; *p != '\0'; p++) &#123; printf("=%c ", *p);&#125; ​ 当使用指针遍历后，这时地址位已经移到结束符的位置了。所以想重置时，需要 p -= 5; 交换字符： 12345void swap(char *p,char *q) &#123; char temp = *p; *p = *q; *q = temp;&#125; 交换字符串： 12345void swapstr(char **p, char **q) &#123; char *temp = *p; *p = *q; *q = temp;&#125; 指针和数组的互换形参数组，实参指针123456789101112131415void change(int b[]) &#123; b[0] = 10;&#125;int main() &#123; // 定义一个int类型的数组 int a[4] = &#123;1, 2, 3, 4&#125;; int *p = a; // 将数组名a传入change函数中 //change(a); change(p); //直接传入指针变量 // 查看a[0] printf("a[0]=%d", a[0]); return 0;&#125; 形参指针，实参数组12345678910111213141516171819void change(int *b) &#123; b[0] = 10; // 或者*b = 10; b[1] = 11; // 或 *(b+1) = 11;&#125;int main(int argc, char *argv[]) &#123; // 定义一个int类型的数组 int a[4] = &#123;1, 2, 3, 4&#125;; // 将数组名a传入change函数中 change(a); //遍历 int len = sizeof(a) / sizeof(int); for (int i=0; i&lt;len; i++) &#123; printf("%d\n", a[i]); &#125; return 0;&#125; 错误使用举例首先要牢记一点，指针表示一个内存地址。 12char *a = "stone";*a = "aaa"; //error a 表示 a指向的值，而字符串就是一组字符序列，所以实际 a指代的是字符数组a 的首位的值 简单的说： 不能将一个常量值，赋给另一个常量 正确的写法：a = &quot;aaa&quot;; //将常量赋给变量 12char b[] = "stone";b = "aaaa"; //error 这里 b 还是指代的字符数组的首地址。 参照上面的遍历 来理解。 正确代码，需要用一个临时的指针变量： 12char *p = b;p = "aaaa"; //fine 计算数组的长度。 12int a[4] = &#123;1, 2, 3, 4&#125;;int len = sizeof(a) / sizeof(int); 如上，能得出一个正确的值。 但，若是将该数组传递到一个函数里，再进行计算可能就有问题了 123void calc_len(int *p) &#123; int len = sizeof(p) / sizeof(int); //p表示地址 len=2&#125; 解决方法：在外部计算好数组长度，再传递给函数。 ​ 返回指针的函数返回指针的函数的一般形式为：类型名 *函数名(参数列表) 1char * getstr() &#123;...&#125; 指向函数的指针 定义的一般形式：函数的返回值类型(*指针变量名)(形参1, 形参2,...) = 函数名; 123456789int sum(int a, int b) &#123; return a + b;&#125;int main() &#123; int (*q) (int a, int b) = sum;// (int a, int b) 可以写成(int a, int)或(int,int)或() int result = (*q)(2,5);//调用函数 printf("\n%d", result); return 0;&#125; 将函数指针作为形参123456789void get(int (*p)(), int a, int b) &#123;//第一个参数即为函数形参//void get(int (*p)(int, int), int a, int b) &#123; //与上一句 等价 int result = (*p)(a, b); printf("sum = %d\n", result);&#125;int main() &#123; int (*q)() = sum; get(*q, 10, 20);&#125; 预处理指令C语言在对源程序进行编译之前，会先对一些特殊的预处理指令作解释(比如#include文件包含指令)，产生一个新的源程序(这个过程称为编译预处理),之后再进行通常的编译 预处理指令可以出现在程序的任何位置，它的作用范围是从它出现的位置到文件尾。 宏#define 用来定义一个宏 不带参数的宏定义格式：define 宏名 字符串, 如define ABC 10 右边的字符串也可以省略，比如#define ABC 它的作用是在编译预处理时，将源程序中所有”宏名”替换成右边的”字符串”，常用来定义常量 宏名的有效范围是从定义位置到文件结束。如果需要终止宏定义的作用域，可以用#undef ABC命令 省略右边字符串的宏， 主要用于 『条件编译』指令中 带参数的宏定义格式：define 宏名(参数列表) 字符串 注意：宏名和参数列表间不能有空格 在编译预处理时，将源程序中所有宏名替换成字符串，并且将 字符串中的参数用 宏名右边参数列表中的参数替换 123456789#include &lt;stdio.h&gt;#define average(a, b) (a+b)/2int main ()&#123; int a = average(10, 4); // 替换成 (10+4)/2 printf("平均值：%d", a); return 0;&#125; 引用已经定义的宏名123#define R 3.0#define PI 3.14#define L 2*PI*R 条件编译程序的其中一部分代码只有在满足一定条件时才进行编译， 否则不参与编译(只有参与编译的代码最终才能被执行)，这就是条件编译 语法格式： 12345678910111213#if 条件1 ...code1...#elif 条件2 ...code2...#else ...code3...#endif //条件编译结束标记 必须有 一般用来判断宏或常量， 不能判断 非预编译 的 运行时 变量。 例：123456789#define MAX 5#if MAX == 0 printf("MAX是0");#elif MAX &gt; 0 printf("MAX大于0");#else printf("MAX小于0");#endif 判断是否定义过宏：1234#if defined(MAX)// &lt;==&gt; #ifdef MAX ...code...#elif !defined(MAX)// &lt;==&gt; #ifndef MAX#endif 文件包含指令第1种形式#include&lt;文件名&gt;直接到C语言库函数头文件所在的目录中寻找文件 12#include &lt;stdio.h&gt;#include &lt;string.h&gt; 第2种形式#include&quot;文件名&quot;这种形式下，系统会先在源程序当前目录下寻找，若找不到，再到操作系统的path路径中查找，最后才到C语言库函数头文件所在目录中查找 注意：#include指令允许嵌套包含，比如a.h包含b.h，b.h包含c.h， 但是不允许递归包含，比如 a.h 包含 b.h，b.h包含 a.h 使用#include指令可能导致多次包含同一个头文件，降低编译效率 解决方法：在包含的文件里，加上条件编译指令，防止函数被重复定义, 如： 123456#ifndef c_program_cc_h#define c_program_cc_hmethod 1();method 2();………….#endif C中没有类似java的package的概念，它只有文件系统。 如果要引入当前目录下的文件夹util中的calcUtil.h : #include &quot;calcUtil.h&quot;]]></content>
       <categories>
         <category>C 语言</category>
       </categories>
       <tags>
         <tag>C Feature</tag>
+        <tag>C字符串</tag>
+        <tag>C指针</tag>
+        <tag>C-key:include</tag>
       </tags>
   </entry>
   <entry>

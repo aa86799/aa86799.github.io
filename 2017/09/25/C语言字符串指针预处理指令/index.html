@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C Feature," />
+  <meta name="keywords" content="C Feature,C字符串,C指针,C-key:include," />
 
 
 
@@ -70,16 +70,16 @@
 
 
 <meta name="description" content="字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束：  1234567char a[] = &quot;stone&quot;;  //自动在尾部追加空字符char b[2]= &amp;#123;&apos;a&apos;, &apos;\0&apos;&amp;#125;; //空字符也占有一个元素位置char c[2]=&amp;#123;&apos;a&apos;, &apos;b&apos;&amp;#125;; //这并不是一个字符串  以pri">
-<meta name="keywords" content="C Feature">
+<meta name="keywords" content="C Feature,C字符串,C指针,C-key:include">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言注意点">
-<meta property="og:url" content="http://aa86799.github.io/2017/09/25/c语言注意点/index.html">
+<meta property="og:title" content="C语言 字符串、指针、预处理指令">
+<meta property="og:url" content="http://aa86799.github.io/2017/09/25/C语言字符串指针预处理指令/index.html">
 <meta property="og:site_name" content="stone的安卓世界">
 <meta property="og:description" content="字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束：  1234567char a[] = &quot;stone&quot;;  //自动在尾部追加空字符char b[2]= &amp;#123;&apos;a&apos;, &apos;\0&apos;&amp;#125;; //空字符也占有一个元素位置char c[2]=&amp;#123;&apos;a&apos;, &apos;b&apos;&amp;#125;; //这并不是一个字符串  以pri">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-26T04:34:30.000Z">
+<meta property="og:updated_time" content="2017-09-28T08:38:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C语言注意点">
+<meta name="twitter:title" content="C语言 字符串、指针、预处理指令">
 <meta name="twitter:description" content="字符串c中没有类似java的字符串类型 用一个一维的char数组来存字符串, 尾部必须有一个空字符(‘\0’)来作为结束：  1234567char a[] = &quot;stone&quot;;  //自动在尾部追加空字符char b[2]= &amp;#123;&apos;a&apos;, &apos;\0&apos;&amp;#125;; //空字符也占有一个元素位置char c[2]=&amp;#123;&apos;a&apos;, &apos;b&apos;&amp;#125;; //这并不是一个字符串  以pri">
 
 
@@ -110,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://aa86799.github.io/2017/09/25/c语言注意点/"/>
+  <link rel="canonical" href="http://aa86799.github.io/2017/09/25/C语言字符串指针预处理指令/"/>
 
 
 
 
 
-  <title>C语言注意点 | stone的安卓世界</title>
+  <title>C语言 字符串、指针、预处理指令 | stone的安卓世界</title>
   
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/25/c语言注意点/">
+    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/25/C语言字符串指针预处理指令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="stone">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">C语言注意点</h1>
+          <h1 class="post-title" itemprop="name headline">C语言 字符串、指针、预处理指令</h1>
         
 
         <div class="post-meta">
@@ -370,7 +370,7 @@
 
           
           
-             <span id="/2017/09/25/c语言注意点/" class="leancloud_visitors" data-flag-title="C语言注意点">
+             <span id="/2017/09/25/C语言字符串指针预处理指令/" class="leancloud_visitors" data-flag-title="C语言 字符串、指针、预处理指令">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -534,6 +534,12 @@
           
             <a href="/tags/c-feature/" rel="tag"># C Feature</a>
           
+            <a href="/tags/c字符串/" rel="tag"># C字符串</a>
+          
+            <a href="/tags/c指针/" rel="tag"># C指针</a>
+          
+            <a href="/tags/c-key-include/" rel="tag"># C-key:include</a>
+          
         </div>
       
 
@@ -641,7 +647,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -663,7 +669,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -756,7 +762,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      21.1k
+      21.2k
     </span>
   
 </div>
