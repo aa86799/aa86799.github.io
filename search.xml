@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[C语言中的结构体与联合体]]></title>
-    <url>%2F2017%2F09%2F28%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%8E%E8%81%94%E5%90%88%E4%BD%93%2F</url>
-    <content type="text"><![CDATA[结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 123456struct Person&#123; char name[20]; //char *name; int age; float weight;&#125;; 联合体(union)]]></content>
+    <title><![CDATA[C语言中的结构体]]></title>
+    <url>%2F2017%2F09%2F28%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%2F</url>
+    <content type="text"><![CDATA[结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 12345struct Person &#123; char name[20]; //char *name; int age; float weight;&#125;; 定义 不允许对结构体本身递归定义 如下定义是错误的， 1234truct Student &#123; int age; struct Student stu; //error&#125;; ​ 结构体内可以包含别的结构体 结构体变量占用的内存空间是其成员所占内存之和，而且各成员在内存中按定义的顺序依次排列 三种结构体变量定义形式 先定义结构体类型，再定义变量 1234567struct Person&#123; char name[20]; int age; float weight;&#125;;struct Person person; 结构体类型与变量同时定义 1234struct Student &#123; char *name; int age;&#125; stu; 省略类型，结构体变量名为stu 1234struct &#123; char *name; int age;&#125; stu; 初始化 先定义，后初始化 12345678struct Person &#123; char name[20]; int age; float weight;&#125;;int main() &#123; struct Person person = &#123;"a",28, 55.5f&#125;;&#125; ​ 定义时，并初始化 123456struct Person&#123; char name[20]; int age; float weight;&#125; person = &#123;"a",28, 55.5f&#125;; 不能在初始时，先声明变量，再初始化 如下，是错误的 12struct Person person; person = &#123;"a",28, 55.5f&#125;; //error ​ 使用 以 “变量名.属性”来使用 1person.age = 18; 结构体中， 若以 char name[20]; 字符数组形式声明： 不能直接用 person.name = &quot;name&quot;；来赋值。 要以 strcpy(person.name, &quot;name&quot;); 这样的形式来赋值。 若声明成 char *name; 则不会有这样的问题 结构体数组 跟结构体变量一样，结构体数组也有3种定义方式 初始化与数组类似 struct Person person = { {}, {}, {} } 123456789101112131415//第一种struct Student1 &#123; int grade; &#125;; struct Student1 stu1[3];//先定义结构体类型，再定义变量 //第二种struct Student2 &#123;//直接在变量后声明数组 int grade; &#125;stu2[3]; //第三种struct &#123;//省略结构体名字，并声明为数组 int grade; &#125;stu3[3]; 结构体作为函数参数 值传递: 将结构体变量作为函数参数进行传递时，其实传递的是全部成员的值，也就是将实参中成员的值一一赋值给对应的形参成员。因此，形参的改变不会影响到实参。 指向结构体的指针 结构体指针变量的定义形式：struct 结构体名称 *指针变量名，如: 12struct Person p =&#123;..&#125;; struct *xp = &amp;p; 有了指向结构体的指针，那么就有3种访问结构体成员的方式： 1234printf("%s\n", p.name);//下面两种是用 指针变量来访问结构体成员printf("%s\n", (*xp).name);//因为 .优先级高，所以要括起来(*xp)printf("%s\n", xp-&gt;name);]]></content>
       <categories>
         <category>C 语言</category>
       </categories>

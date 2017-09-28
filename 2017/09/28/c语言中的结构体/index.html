@@ -69,18 +69,18 @@
 
 
 
-<meta name="description" content="结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 123456struct Person&amp;#123;   char name[20]; //char *name;   int age;   float weight;&amp;#125;; 联合体(union)">
+<meta name="description" content="结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 12345struct Person &amp;#123;   char name[20]; //char *name;   int age;   float weight;&amp;#125;; 定义  不允许对结构体本身递归定义 如下定义是错误的， 1234truct Student &amp;#123;	int age;	s">
 <meta name="keywords" content="C-key:struct,C-key:union">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言中的结构体与联合体">
-<meta property="og:url" content="http://aa86799.github.io/2017/09/28/c语言中的结构体与联合体/index.html">
-<meta property="og:site_name" content="stone的安卓世界">
-<meta property="og:description" content="结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 123456struct Person&amp;#123;   char name[20]; //char *name;   int age;   float weight;&amp;#125;; 联合体(union)">
+<meta property="og:title" content="C语言中的结构体">
+<meta property="og:url" content="http://aa86799.github.io/2017/09/28/c语言中的结构体/index.html">
+<meta property="og:site_name" content="stone世界">
+<meta property="og:description" content="结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 12345struct Person &amp;#123;   char name[20]; //char *name;   int age;   float weight;&amp;#125;; 定义  不允许对结构体本身递归定义 如下定义是错误的， 1234truct Student &amp;#123;	int age;	s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-28T08:27:51.000Z">
+<meta property="og:updated_time" content="2017-09-28T10:25:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C语言中的结构体与联合体">
-<meta name="twitter:description" content="结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 123456struct Person&amp;#123;   char name[20]; //char *name;   int age;   float weight;&amp;#125;; 联合体(union)">
+<meta name="twitter:title" content="C语言中的结构体">
+<meta name="twitter:description" content="结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 12345struct Person &amp;#123;   char name[20]; //char *name;   int age;   float weight;&amp;#125;; 定义  不允许对结构体本身递归定义 如下定义是错误的， 1234truct Student &amp;#123;	int age;	s">
 
 
 
@@ -110,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://aa86799.github.io/2017/09/28/c语言中的结构体与联合体/"/>
+  <link rel="canonical" href="http://aa86799.github.io/2017/09/28/c语言中的结构体/"/>
 
 
 
 
 
-  <title>C语言中的结构体与联合体 | stone的安卓世界</title>
+  <title>C语言中的结构体 | stone世界</title>
   
 
 
@@ -160,7 +160,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">stone的安卓世界</span>
+        <span class="site-title">stone世界</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/28/c语言中的结构体与联合体/">
+    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/28/c语言中的结构体/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="stone">
@@ -310,7 +310,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="stone的安卓世界">
+      <meta itemprop="name" content="stone世界">
     </span>
 
     
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">C语言中的结构体与联合体</h1>
+          <h1 class="post-title" itemprop="name headline">C语言中的结构体</h1>
         
 
         <div class="post-meta">
@@ -370,7 +370,7 @@
 
           
           
-             <span id="/2017/09/28/c语言中的结构体与联合体/" class="leancloud_visitors" data-flag-title="C语言中的结构体与联合体">
+             <span id="/2017/09/28/c语言中的结构体/" class="leancloud_visitors" data-flag-title="C语言中的结构体">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -395,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  45
+                  649
                 </span>
               
 
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -434,8 +434,67 @@
       
         <h1 id="结构体-struct"><a href="#结构体-struct" class="headerlink" title="结构体(struct)"></a>结构体(struct)</h1><hr>
 <p>将一组不同类型的元素定义在一起，且以struct声明，就是结构体。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span></span></div><div class="line"><span class="class">&#123;</span></div><div class="line">   <span class="keyword">char</span> name[<span class="number">20</span>]; <span class="comment">//char *name;</span></div><div class="line">   <span class="keyword">int</span> age;</div><div class="line">   <span class="keyword">float</span> weight;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h1 id="联合体-union"><a href="#联合体-union" class="headerlink" title="联合体(union)"></a>联合体(union)</h1><hr>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span> &#123;</span></div><div class="line">   <span class="keyword">char</span> name[<span class="number">20</span>]; <span class="comment">//char *name;</span></div><div class="line">   <span class="keyword">int</span> age;</div><div class="line">   <span class="keyword">float</span> weight;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><hr>
+<ul>
+<li><p>不允许对结构体本身递归定义</p>
+<p>如下定义是错误的，</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">truct Student &#123;</div><div class="line">	<span class="keyword">int</span> age;</div><div class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">Student</span> <span class="title">stu</span>;</span> <span class="comment">//error</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+<li><p>结构体内可以包含别的结构体</p>
+</li>
+<li><p>结构体变量占用的内存空间是其成员所占内存之和，而且各成员在内存中按定义的顺序依次排列</p>
+</li>
+</ul>
+<h2 id="三种结构体变量定义形式"><a href="#三种结构体变量定义形式" class="headerlink" title="三种结构体变量定义形式"></a>三种结构体变量定义形式</h2><ul>
+<li>先定义结构体类型，再定义变量</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span></span></div><div class="line"><span class="class">&#123;</span></div><div class="line">   <span class="keyword">char</span> name[<span class="number">20</span>];</div><div class="line">   <span class="keyword">int</span> age;</div><div class="line">   <span class="keyword">float</span> weight;</div><div class="line">&#125;;</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span> <span class="title">person</span>;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>结构体类型与变量同时定义</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span> &#123;</span></div><div class="line">    <span class="keyword">char</span> *name;</div><div class="line">    <span class="keyword">int</span> age;</div><div class="line">&#125; stu;</div></pre></td></tr></table></figure>
+<ul>
+<li>省略类型，结构体变量名为stu</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> &#123;</span></div><div class="line">    <span class="keyword">char</span> *name;</div><div class="line">    <span class="keyword">int</span> age;</div><div class="line">&#125; stu;</div></pre></td></tr></table></figure>
+<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><hr>
+<ul>
+<li><p>先定义，后初始化</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span> &#123;</span></div><div class="line">   <span class="keyword">char</span> name[<span class="number">20</span>];</div><div class="line">   <span class="keyword">int</span> age;</div><div class="line">   <span class="keyword">float</span> weight;</div><div class="line">&#125;;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Person</span> <span class="title">person</span> = &#123;</span><span class="string">"a"</span>,<span class="number">28</span>, <span class="number">55.5f</span>&#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<ul>
+<li><p>定义时，并初始化</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span></span></div><div class="line"><span class="class">&#123;</span></div><div class="line">   <span class="keyword">char</span> name[<span class="number">20</span>];</div><div class="line">   <span class="keyword">int</span> age;</div><div class="line">   <span class="keyword">float</span> weight;</div><div class="line">&#125; person = &#123;<span class="string">"a"</span>,<span class="number">28</span>, <span class="number">55.5f</span>&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>不能在初始时，先声明变量，再初始化</p>
+<p>如下，是错误的</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span> <span class="title">person</span>;</span> </div><div class="line">person = &#123;<span class="string">"a"</span>,<span class="number">28</span>, <span class="number">55.5f</span>&#125;; <span class="comment">//error</span></div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><hr>
+<p>以 “变量名.属性”来使用</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">person.age = <span class="number">18</span>;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>结构体中， 若以 <code>char name[20];</code>  字符数组形式声明： 不能直接用 <code>person.name = &quot;name&quot;；</code>来赋值。</p>
+<p>要以 <code>strcpy(person.name, &quot;name&quot;);</code> 这样的形式来赋值。</p>
+<p>若声明成 <code>char *name;</code>   则不会有这样的问题</p>
+</blockquote>
+<h1 id="结构体数组"><a href="#结构体数组" class="headerlink" title="结构体数组"></a>结构体数组</h1><hr>
+<p>跟结构体变量一样，结构体数组也有3种定义方式</p>
+<p>初始化与数组类似   struct Person person = { {}, {}, {} }</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一种</span></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student1</span> &#123;</span>  </div><div class="line">    <span class="keyword">int</span> grade;  </div><div class="line">&#125;;  </div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student1</span> <span class="title">stu1</span>[3];</span><span class="comment">//先定义结构体类型，再定义变量 </span></div><div class="line"></div><div class="line"><span class="comment">//第二种</span></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student2</span> &#123;</span><span class="comment">//直接在变量后声明数组  </span></div><div class="line">    <span class="keyword">int</span> grade;  </div><div class="line">&#125;stu2[<span class="number">3</span>];  </div><div class="line"></div><div class="line"><span class="comment">//第三种</span></div><div class="line"><span class="class"><span class="keyword">struct</span>  &#123;</span><span class="comment">//省略结构体名字，并声明为数组  </span></div><div class="line">    <span class="keyword">int</span> grade;  </div><div class="line">&#125;stu3[<span class="number">3</span>];</div></pre></td></tr></table></figure>
+<h1 id="结构体作为函数参数"><a href="#结构体作为函数参数" class="headerlink" title="结构体作为函数参数"></a>结构体作为函数参数</h1><hr>
+<p>值传递: 将结构体变量作为函数参数进行传递时，其实传递的是全部成员的值，也就是将实参中成员的值一一赋值给对应的形参成员。因此，形参的改变不会影响到实参。</p>
+<h1 id="指向结构体的指针"><a href="#指向结构体的指针" class="headerlink" title="指向结构体的指针"></a>指向结构体的指针</h1><hr>
+<p>结构体指针变量的定义形式：<code>struct 结构体名称 *指针变量名</code>，如: </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span> <span class="title">p</span> =&#123;</span>..&#125;; </div><div class="line"><span class="class"><span class="keyword">struct</span> *<span class="title">xp</span> = &amp;<span class="title">p</span>;</span></div></pre></td></tr></table></figure>
+<p>有了指向结构体的指针，那么就有3种访问结构体成员的方式：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">printf</span>(<span class="string">"%s\n"</span>, p.name);</div><div class="line"><span class="comment">//下面两种是用 指针变量来访问结构体成员</span></div><div class="line"><span class="built_in">printf</span>(<span class="string">"%s\n"</span>, (*xp).name);<span class="comment">//因为 .优先级高，所以要括起来(*xp)</span></div><div class="line"><span class="built_in">printf</span>(<span class="string">"%s\n"</span>, xp-&gt;name);</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -637,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#结构体-struct"><span class="nav-number">1.</span> <span class="nav-text">结构体(struct)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#联合体-union"><span class="nav-number">2.</span> <span class="nav-text">联合体(union)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#结构体-struct"><span class="nav-number">1.</span> <span class="nav-text">结构体(struct)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">2.</span> <span class="nav-text">定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#三种结构体变量定义形式"><span class="nav-number">2.1.</span> <span class="nav-text">三种结构体变量定义形式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化"><span class="nav-number">3.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用"><span class="nav-number">4.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结构体数组"><span class="nav-number">5.</span> <span class="nav-text">结构体数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结构体作为函数参数"><span class="nav-number">6.</span> <span class="nav-text">结构体作为函数参数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指向结构体的指针"><span class="nav-number">7.</span> <span class="nav-text">指向结构体的指针</span></a></li></ol></div>
             
 
           </div>
@@ -675,7 +734,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      21.2k
+      21.8k
     </span>
   
 </div>
