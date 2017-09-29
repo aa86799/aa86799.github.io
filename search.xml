@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[c语言中为数据类型定义一个别名:typedef]]></title>
+    <title><![CDATA[C语言中为数据类型定义一个别名:typedef]]></title>
     <url>%2F2017%2F09%2F29%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E4%B8%BA%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%E5%88%AB%E5%90%8D-typedef%2F</url>
     <content type="text"><![CDATA[typedef 作用：为各种数据类型定义一个别名 使用方式 与基本数据类型12typedef int Integer; //别名为IntegerInteger a ＝ 8; 别名的别名 12typedef Integer MyInteger;MyInteger aa = 8; 与指针12typedef char* String;String str = "stone"; 与结构体12typedef struct Person Per;// 这样在定义结构体变量时 就不用带上struct 关键字了Per p = &#123;...&#125;; 定义并取别名 12345678typedef struct Student &#123; int age;&#125; Stu;void processStudent() &#123; Stu student = &#123;18&#125;; student.age =19;&#125; 与指向结构体的指针123456789typedef struct &#123; int age;&#125; Stu;Stu stu = &#123;20&#125;;typedef Stu *S; //指向结构体的指针 取别名 SS s = &amp;stu; 又例： 12345678910111213typedef struct LNode &#123; int data; struct LNode *next;//LNode的指针变量&#125; LinkList, *SList;LinkList l = &#123;1, NULL&#125;;LinkList ll = &#123;2, NULL&#125;;l.next = &amp;ll;printf("%d, ", l.next-&gt;data);SList sl = &amp;ll;if (sl-&gt;next != NULL)printf("%d, ", sl-&gt;data); 与枚举与结构体的使用是一样的。这里来一个复杂点的例子： 12345678910111213typedef enum LNode &#123; A = 10, B&#125; Node, *Pn;// 没有typedef定义时，Node是枚举类型LNode的变量名，Pn是指针变量名// Node = B;// Pn = &amp;Node;//有typedef定义时，Node是枚举类型LNode的别名，Pn是指针类型别名Node node = A;printf("%d\n", node);Pn pp = &amp;node;printf("%d\n", *pp); typdef与#define的区别 #define 是用来定义宏的。而宏的语义就是在预编译时，用宏定义后的字符串来替换宏名。 如， typedef char* String;， 可以用宏来替换 #define String char* 但是，像一些复杂的别名定义，如与结构体、枚举等这样的 复合类型的定义，就不能直接使用#define来定义了。当然，若是分段来定义，还是可以的。结合上面枚举的例子，如: 12#define M enum LNodeM node = B;]]></content>
       <categories>
@@ -12,7 +12,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[c语言中的枚举]]></title>
+    <title><![CDATA[C语言中的枚举]]></title>
     <url>%2F2017%2F09%2F29%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%9E%9A%E4%B8%BE%2F</url>
     <content type="text"><![CDATA[枚举 用于声明一组常数。当一个变量有几个固定的可能取值时，可以将这个变量定义为枚举类型 类型定义 enum Season {Spring, Summer, Autumn, Winter}; 定义变量 与结构体一样，有三种方式： 12enum Season &#123;Spring, Summer, Autumn, Winter&#125;;enum Season s; 1enum Season &#123;Spring, Summer, Autumn, Winter&#125; s; 1enum &#123;Spring, Summer, Autumn, Winter&#125; s; 枚举常量的意义 C语言编译器会将枚举元素(Spring、Summer等)作为整型常量处理，称为枚举常量。 枚举常量默认值 枚举元素的值取决于定义时各枚举元素排列的先后顺序。默认情况下，第一个枚举元素的值为0，第二个为1，依次顺序加1。 enum Season {Spring, Summer, Autumn, Winter}; 也就是说Spring的值为0，Summer的值为1，Autumn的值为2，Winter的值为3 改变枚举常量的值 enum Season {Spring, Summer = 3, Autumn, Winter}; 没有指定值的枚举元素，其值为前一元素加1。也就说Spring的值为0，Summer的值为3，Autumn的值为4，Winter的值为5 使用方式 123456enum Season &#123; Spring, Summer =18, Autumn, Winter&#125; season;season = 9; //可以对变量赋值成其它整型常量值season = Spring; //赋值成 枚举常量值 遍历 普通方式 123for (int i = Spring; i&lt;= Winter; ++i) &#123; printf("枚举元素：%d \n", i);&#125; 如果改变了中间的枚举常量值，那么在 遍历的时候，也无法 遍历出正确的元素值。 所以不要随意改变枚举常量的值，当然仅在声明时改变首元素的值，对遍历还是无影响的。 指针方式(有问题) 1234enum Season *s = &amp;season;for (int i = 0; i &lt;=4; i++) &#123; printf("枚举sea2元素：%d \n", *(s+i)); //跟数组不一样，不是连贯存储的，所以用指针遍历无效&#125; ​]]></content>
       <categories>
@@ -23,8 +23,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[c语言中的共用体]]></title>
-    <url>%2F2017%2F09%2F29%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%85%B1%E7%94%A8%E4%BD%93%2F</url>
+    <title><![CDATA[C语言中的共用体]]></title>
+    <url>%2F2017%2F09%2F29%2FC%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%85%B1%E7%94%A8%E4%BD%93%2F</url>
     <content type="text"><![CDATA[共用体(union) 进行某些算法的C语言编程的时候，需要使几种不同类型的变量存放到同一段内存单元中。也就是使用覆盖技术，几个变量互相覆盖。这种几个不同的变量共同占用一段内存的结构，在C语言中，被称作“共用体”类型结构，简称共用体。 也叫 联合体。 共用体变量的地址和它的各成员的地址都是同一地址。其所占内存，与占用内存最大的成员变量一致。 定义 语法格式： 1234union 共用体名&#123; 成员列表&#125; 变量列表; 使用方式 与结构体的使用方式基本是一样的。也可以出现在结构体类型中；反之，结构体类型也可以出现在共用体类型中。 使用注意点：1234567891011union Combo &#123; int a; float b; char c;&#125; cob;cob.b = 70.8f;cob.a = cob.b + 3;printf("---&gt; %d\n", cob.a);printf("占用字节 %lu\n", sizeof(cob));printf("---&gt;字符 %c\n", cob.c); 输出： 123---&gt; 73占用字节 4---&gt;字符 I 上面的示例，可以看出：cob.c对应的整数值就是cob.a的值，即73。符合，共用体的内存覆盖技术。 但是要注意，在共用体中，整数和浮点数相互间不会自动转换。 将上面的使用代码修改一下： 1234567 cob.a = 70; cob.b = cob.a + 3;// cob.a = cob.b; printf("---&gt; %d\n", cob.a); printf("占用字节 %lu\n", sizeof(cob)); printf("---&gt;字符 %c\n", cob.c); printf("---&gt; %f\n", cob.b); 会发现，cob.a和cob.c的输出结果，都跟预计的不一样，是错误的值。因为，这时存储的最新的值是一个float型，所以也就不能正确输出cob.a和cob.c。 若，将上面的注释行打开，发现cob.a和cob.c 都输出正确了，但cob.b又不对了，因整数和浮点数相互间不会自动转换。]]></content>
       <categories>
         <category>C 语言</category>
@@ -35,19 +35,19 @@
   </entry>
   <entry>
     <title><![CDATA[C语言中的结构体]]></title>
-    <url>%2F2017%2F09%2F28%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%2F</url>
+    <url>%2F2017%2F09%2F28%2FC%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%2F</url>
     <content type="text"><![CDATA[结构体(struct) 将一组不同类型的元素定义在一起，且以struct声明，就是结构体。 12345struct Person &#123; char name[20]; //char *name; int age; float weight;&#125;; 定义 不允许对结构体本身递归定义 如下定义是错误的， 1234truct Student &#123; int age; struct Student stu; //error&#125;; ​ 结构体内可以包含别的结构体 结构体变量占用的内存空间是其成员所占内存之和，而且各成员在内存中按定义的顺序依次排列 三种结构体变量定义形式 先定义结构体类型，再定义变量 1234567struct Person&#123; char name[20]; int age; float weight;&#125;;struct Person person; 结构体类型与变量同时定义 1234struct Student &#123; char *name; int age;&#125; stu; 省略类型，结构体变量名为stu 1234struct &#123; char *name; int age;&#125; stu; 在定义变量的位置，是可以定义多个变量的： 12345&gt; struct &#123;&gt; char *name;&gt; int age;&gt; &#125; stu1, stu2, stu3;&gt; 初始化 先定义，后初始化 12345678struct Person &#123; char name[20]; int age; float weight;&#125;;int main() &#123; struct Person person = &#123;"a", 28, 55.5f&#125;;&#125; ​ 定义时，并初始化 123456struct Person&#123; char name[20]; int age; float weight;&#125; person = &#123;"a", 28, 55.5f&#125;; 初始化的时候，可以按顺序赋值一些变量，而不全部赋值，与数组类似 1234567&gt; struct Person&gt; &#123;&gt; char name[20];&gt; int age;&gt; float weight;&gt; &#125; person = &#123;"a", 28&#125;;&gt; 不能在初始时，先声明变量，再初始化 如下，是错误的 12struct Person person; person = &#123;"a", 28, 55.5f&#125;; //error ​ 使用 以 “变量名.属性”来使用 1person.age = 18; 结构体中， 若以 char name[20]; 字符数组形式声明： 不能直接用 person.name = &quot;name&quot;；来赋值。 要以 strcpy(person.name, &quot;name&quot;); 这样的形式来赋值。 若声明成 char *name; 则不会有这样的问题 结构体数组 跟结构体变量一样，结构体数组也有3种定义方式 初始化与数组类似 struct Person person = { {}, {}, {} } 123456789101112131415//第一种struct Student1 &#123; int grade; &#125;; struct Student1 stu1[3];//先定义结构体类型，再定义变量 //第二种struct Student2 &#123;//直接在变量后声明数组 int grade; &#125;stu2[3]; //第三种struct &#123;//省略结构体名字，并声明为数组 int grade; &#125;stu3[3]; 结构体作为函数参数 值传递: 将结构体变量作为函数参数进行传递时，其实传递的是全部成员的值，也就是将实参中成员的值一一赋值给对应的形参成员。因此，形参的改变不会影响到实参。 指向结构体的指针 结构体指针变量的定义形式：struct 结构体名称 *指针变量名，如: 12struct Person p =&#123;..&#125;; struct *xp = &amp;p; 有了指向结构体的指针，那么就有3种访问结构体成员的方式： 1234printf("%s\n", p.name);//下面两种是用 指针变量来访问结构体成员printf("%s\n", (*xp).name);//因为 .优先级高，所以要括起来(*xp)printf("%s\n", xp-&gt;name);]]></content>
       <categories>
         <category>C 语言</category>
       </categories>
       <tags>
-        <tag>C指针</tag>
         <tag>C-Key:struct</tag>
+        <tag>C指针</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[C语言中的变量与函数]]></title>
-    <url>%2F2017%2F09%2F26%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0%2F</url>
+    <url>%2F2017%2F09%2F26%2FC%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[变量 局部变量在函数内部定义的变量，称为局部变量。 函数的形参也是局部变量 全局变量所有在函数外部定义的变量，称为全局变量 全局变量的作用范围是从定义变量的位置开始到源程序结束，即全局变量可以被在其定义位置之后的其它函数所共享。 变量的存储类型C语言根据变量的存储类型(变量存储的位置：1. 运行时堆栈 2.普通内存 3.寄存器)的不同，可以把变量分为：自动变量、静态变量、寄存器变量 哪些是自动变量：被关键字auto修饰的局部变量都是自动变量，但是极少使用这个关键字， 基本上是废的，因为所有的局部变量在默认情况下都是自动变量。存于堆栈 哪些是静态变量： 存于内存，程序结束才销毁 所有的全局变量都是静态变量 被关键字static修饰的局部变量也是静态变量 哪些变量是寄存器变量： 被关键字register修饰的局部(自动)变量都是寄存器变量 只有局部变量才可以是寄存器变量，全局变量和静态局部变量不行 寄存器变量只限于int、char和指针类型变量使用 static与全局变量、局部变量static修饰的变量，其生命周期是存活于整个程序的运行期间的。 静态局部变量 因其生命周期原因，所以值的变化，会影响之后的操作。 123456789void test_static_params() &#123; static int pp = 8; pp++; printf("%d\n", pp); &#125; for (int i=0; i&lt;5; i++) &#123; test_static_params();&#125; 上例，会输出；9 10 11 12 13 静态全局变量 定义在函数外，如：static int MAX = 10; 这样的变量，即为静态的全局变量，通常定义在”头文件”中。 static 修饰时，不能再有 extern 同时修饰。 extern与全局变量、局部变量 默认情况下 一个函数不可以访问在它后面定义的全局变量，若要使它可以访问，则需要在函数外声明并加上extern，如： 12345extern int xx;void test1() &#123; printf("x===%d\n", xx);&#125;int xx = 99; 声明在函数外的变量，默认就是全局的，extern可以省略。 多次声明同一个全局变量 这种情况下，不会报错，只表示一个变量。 即使在多个源文件中声明的同名的全局变量，也都代表着同一个变量。 前面说过，extern可以省略，都是表示全局变量。 但，如下情况是会报错的： 123456789//file: test.hextern int MAX;//file: main.c#include "test.h"extern int MAX;main &#123; MAX = 10;&#125; 如下这样使用，也是有问题的： 123456789//file: test.hint MAX;//file: main.c#include "test.h"extern int MAX;main &#123; MAX = 10;&#125; 还有，两个文件中都定义成 int MAX， 也不行。 那么除去上面三种情况，只有一种是正确的：test.h 定义成 extern int MAX； 在main.c中 int MAX extern 修饰的全局变量，不建议直接声明时初始化 使用extern 声明后，需要再 『定义』一次，即不使用extern 进行定义。这时会分配内存空间，且可以进行初始化 多个文件中都存在同一个全局变量时：在要使用的地方，需要使用 『定义』式，以分配空间。 在局部变量前 加extern 12345int y = 10; //这样声明并初始化是可以的， 但加上extern后，xcode报了警告，不影响运行void test() &#123; // int y = 11; //这是局部变量 extern int y = 12; //这是全局变量&#125; 同名的局部变量和全局变量，是不能在同一个函数内，同时出现的。 函数 内部函数static 修饰的函数为内部函数，该函数就只能在其定义所在的文件中使用。 1static void inner(void);//无参时，写上一个void， xcode编译器推荐，一般仅定义在头文件上 定义在前面的函数，可以访问定义在后面的所有函数 外部函数extern 修饰的函数为外部函数。一般省略该关键字，即默认就是外部函数 1extern void outer(void); 通常在头文件中，定义好外部函数；在源文件中进行实现。 要引用其它外部函数时，只需要引入其所在的头文件： #include &quot;inner.h&quot; 若，当前源文件中的函数 与 引用的外部函数 同名，且参数个数与类型一致，会报错。]]></content>
       <categories>
         <category>C 语言</category>
@@ -67,14 +67,14 @@
         <category>C 语言</category>
       </categories>
       <tags>
-        <tag>C字符串</tag>
         <tag>C指针</tag>
+        <tag>C字符串</tag>
         <tag>C-Key:include</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[C语言库函数]]></title>
-    <url>%2F2017%2F09%2F25%2Fc%E8%AF%AD%E8%A8%80%E5%BA%93%E5%87%BD%E6%95%B0%2F</url>
+    <url>%2F2017%2F09%2F25%2FC%E8%AF%AD%E8%A8%80%E5%BA%93%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[stdio.h include &lt;stdio.h&gt;; printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 getchar(); 读取输入一个字符。可以读入空格、TAB、回车(读回车时连击两次)，直到遇到回车为止。 scanf(..); 可以接收多个输入 ——接收一个字符串：char a[10]; scanf(“%s”, a); ——接收多个数据：char a[10]; int x; scanf(“%d, %s”, &amp;x, a); ————多个数据间的分隔符可以是任意符号， 这里是 逗号 ————后面的参数为，指定接收的变量的 内存地址 string.h include &lt;string.h&gt; strlen(char*); 返回字符串长度， 不包括 ‘\0’ 结束符 strcpy(char dest, char src); 将src复制到dest中，原dest覆盖。 要注意size: dest是否能容纳src strcat(char dest, char src); 将src追加到dest的尾部。 要注意size: dest是否能容纳 dest+src strcmp(char s1, char s2); 个字符串从左至右逐个字符比较（按照字符的ASCII码值的大小）， ——直到字符不相同或者遇见’\0’为止。如果全部字符都相同，则返回值为0。 ——如果不相同，则返回两个字符串中第一个不相同的字符ASCII码值的差。 ——即字符串1大于字符串2时函数返回值为正，否则为负。 puts(char*); 输出一个字段串。输出时直到遇见’\0’为止。 gets(char); 读取一个字符串。 char buffer[20];char r = gets(buffer);]]></content>
       <categories>
         <category>C 语言</category>
