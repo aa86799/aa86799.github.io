@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C语言内存分配]]></title>
+    <url>%2F2017%2F10%2F09%2Fc%E8%AF%AD%E8%A8%80%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%2F</url>
+    <content type="text"><![CDATA[内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 在&lt;stdlib.h&gt;中，提供了四个用于内存分配与释放的函数: malloc 动态分配内存；返回void* calloc 为一组目标动态分配内存，并将分配后的内存空间初始化；返回void* realloc 重新分配内存；返回void* free 释放内存 mallocvoid *malloc(size_t __size); 返回void指针，即任意类型指针。 这里的size_t，实际上是一个unsigned long类型；参数__size，用于指定分配的内存字节数 1234int *p = malloc(sizeof(int));*p = 100;printf("%d\n", *p);free(p); callocvoid *calloc(size_t __count, size_t __size); 返回void指针，即任意类型指针。 这里的__count表示，要分配的item数量，每个item的所占的内存字节数由__size指定。 1234567891011121314int len = 3;int *p = calloc(len, sizeof(int));for (int i = 0; i &lt; len; ++i) &#123; p[i] = i * 50; printf("%d\n", p[i]);&#125;//使用指针方式遍历for (int i = 0; i &lt; len; ++i) &#123; printf("%d\n", *p); p++;&#125;free(p); reallocvoid *realloc(void *__ptr, size_t __size); 为指针__ptr重新分配内存为__size长 freevoid free(void *); 释放动态分配的内存]]></content>
+      <categories>
+        <category>C 语言</category>
+      </categories>
+      <tags>
+        <tag>C内存分配</tag>
+        <tag>calloc()</tag>
+        <tag>malloc()</tag>
+        <tag>realloc()</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C语言中的跳转语法]]></title>
+    <url>%2F2017%2F10%2F09%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E8%B7%B3%E8%BD%AC%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[goto跳转 例： 12345int a=2, b=3;if(a &lt; b) goto pb;printf("a=%d \n", a);pb:printf("b=%d \n", b); 如上，满足条件跳转到pb标签位置，使用标签:代码语句的形式，表明标签处要处理的代码 建议不使用goto，维护麻烦 非局部跳转 需要引入标准库，#include &lt;setjmp.h&gt; 例： 12345678910111213141516171819202122232425262728293031#include &lt;setjmp.h&gt;jmp_buf jump_buffer, buffer;void func1(void) &#123; printf("Before calling longjmp\n"); longjmp(jump_buffer, 3); printf("After calling longjmp\n");&#125;void func2(void) &#123; printf("Before calling func2\n"); if (setjmp(buffer) == 1) &#123; printf("calling func2\n"); longjmp(buffer, 2); &#125; else &#123; func1(); &#125; printf("After calling func2\n");&#125;int main(int argc, const char * argv[]) &#123; int r = setjmp(jump_buffer); if (r == 0)&#123; printf("first calling set_jmp\n"); func2(); &#125;else &#123; printf("second calling set_jmp r=%d\n", r); &#125; printf("\n"); return 0;&#125; 最后输出 1234first calling set_jmpBefore calling func2Before calling longjmpsecond calling set_jmp r=3 setjmp(env)，会从env中，获取到状态信息，首次调用返回0；longjmp(env, state)，会恢复state，并存入到env中，然后跳转到最近一次执行的setjmp(evn)中去，去重新执行。 setjmp(env)的返回值，只有首次调用才返回0； 其它时候应该由longjmp()传入一个非0的值，以用于后期处理。 同样的，这个跳转方式，也不推荐，看着太晕了]]></content>
+      <categories>
+        <category>C 语言</category>
+      </categories>
+      <tags>
+        <tag>C-Key:goto</tag>
+        <tag>setjmp()</tag>
+        <tag>longjmp()</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[C语言中的void和void指针-void*]]></title>
     <url>%2F2017%2F09%2F30%2Fc%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84void%E5%92%8Cvoid%E6%8C%87%E9%92%88%2F</url>
     <content type="text"><![CDATA[void 关键字 当函数返回值为空时，可以使用void。 1void empty(int a); 当函数参数列表为空时，可以使用void。 1void empty(void); void指针的作用 void指针：void * 可以用其指代任何类型的指针。 但不能用void指针直接进行操作；只能转换成对应类型指针后，才能操作 使用方式 12345678enum Season &#123; Spring, Summer = 18, Autumn, Winter&#125; season;enum Season *s = &amp;season;void* vs = s;//printf("vs= %d\n", vs); //error 不能直接用于操作int* ns = (int*)vs; //转换成对应的 int型指针printf("ns= %d\n", *ns); void指针与函数 因其可以指代任何类型的指针。所以将void指针作为函数参数时，表示接受任意类型的指针参数 12345678void test(void* a) &#123; printf("void* --&gt; %d\n", * (int*)a);&#125;main() &#123; int m = 10; int *p = &amp;m; test(p);&#125;]]></content>
