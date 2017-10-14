@@ -69,18 +69,18 @@
 
 
 
-<meta name="description" content="stdio.h  include &amp;lt;stdio.h&amp;gt;;  printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 getch">
+<meta name="description" content="stdio.h   include &amp;lt;stdio.h&amp;gt;;   printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 get">
 <meta name="keywords" content="C Functions">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言库函数">
 <meta property="og:url" content="http://aa86799.github.io/2017/09/25/C语言库函数/index.html">
 <meta property="og:site_name" content="stone世界">
-<meta property="og:description" content="stdio.h  include &amp;lt;stdio.h&amp;gt;;  printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 getch">
+<meta property="og:description" content="stdio.h   include &amp;lt;stdio.h&amp;gt;;   printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 get">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-26T03:07:59.000Z">
+<meta property="og:updated_time" content="2017-10-14T08:21:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言库函数">
-<meta name="twitter:description" content="stdio.h  include &amp;lt;stdio.h&amp;gt;;  printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 getch">
+<meta name="twitter:description" content="stdio.h   include &amp;lt;stdio.h&amp;gt;;   printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…); sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数 putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的 get">
 
 
 
@@ -395,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  426
+                  1,513
                 </span>
               
 
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  6
                 </span>
               
             </div>
@@ -432,30 +432,130 @@
       
 
       
-        <h1 id="stdio-h"><a href="#stdio-h" class="headerlink" title="stdio.h"></a>stdio.h</h1><blockquote>
+        <h1 id="stdio-h"><a href="#stdio-h" class="headerlink" title="stdio.h"></a>stdio.h</h1><hr>
+<blockquote>
 <p> include &lt;stdio.h&gt;;</p>
 </blockquote>
-<p>printf(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…);</p>
-<p>sizeof(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数</p>
-<p>putchar(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的</p>
-<p>getchar(); 读取输入一个字符。可以读入空格、TAB、回车(读回车时连击两次)，直到遇到回车为止。</p>
-<p>scanf(..); 可以接收多个输入</p>
-<p>——接收一个字符串：char a[10]; scanf(“%s”, a); </p>
-<p>——接收多个数据：char a[10]; int x; scanf(“%d, %s”, &amp;x, a);   </p>
-<p>————多个数据间的分隔符可以是任意符号， 这里是 逗号</p>
-<p>————后面的参数为，指定接收的变量的 内存地址</p>
-<h1 id="string-h"><a href="#string-h" class="headerlink" title="string.h"></a>string.h</h1><blockquote>
+<ul>
+<li><strong><em>printf</em></strong>(“可以在这写要输出的字符串格式，以 %x 的形式，格式化后面的参数”, params…);</li>
+<li><strong><em>sizeof</em></strong>(一个变量或者一个常量、一种数据类型); 可以用来计算参数所占的字节数</li>
+<li><strong><em>putchar</em></strong>(90); 输出一个字符：参数可以是一个字符，或一个字符对应的int值。 注： char c = 90; 是有效的</li>
+<li><strong><em>getchar</em></strong>(); 读取输入一个字符。可以读入空格、TAB、回车(读回车时连击两次)，直到遇到回车为止。</li>
+<li><strong><em>scanf</em></strong>(..); 可以接收多个输入</li>
+</ul>
+<blockquote>
+<p>接收一个字符串：char a[10]; scanf(“%s”, a); </p>
+<p>接收多个数据：char a[10]; int x; scanf(“%d, %s”, &amp;x, a);   </p>
+<p>多个数据间的分隔符可以是任意符号，这里是 逗号；</p>
+<p>后面的参数为，指定接收的变量的 内存地址</p>
+</blockquote>
+<ul>
+<li><p><strong><em>FILE</em></strong> 是一个结构体类型，表示文件。不同的平台，其内部属性不一样。 一般不用关心</p>
+<ul>
+<li><strong><em>stdin</em></strong>    标准输入，宏原型：<code>FILE *__stdinp;</code></li>
+<li><strong><em>stdout</em></strong> 标准输出，宏原型：<code>FILE *__stdoutp;</code></li>
+<li><strong><em>stderr</em></strong>  标准错误，宏原型：<code>FILE *__stderrp;</code></li>
+</ul>
+</li>
+<li><code>int fscanf(FILE * f, const char * format, ...)</code>，从文件流指针f中读取，以format为格式，</li>
+</ul>
+<p>输出到第三个参数中.  函数执行成功返回非零值，否则返回零。format格式参考 printf()</p>
+<ul>
+<li><code>FILE *fopen(const char * __filename, const char * __mode)</code>， 根据指定文件，返回<code>FILE</code>指针</li>
+</ul>
+<p>mode (引自 <a href="http://blog.csdn.net/u011974987/article/details/52354074" target="_blank" rel="external">http://blog.csdn.net/u011974987/article/details/52354074</a> ):</p>
+<blockquote>
+<p>“r”（只读） 为输入打开一个文本文件<br>“w”（只写） 为输出打开一个文本文件<br>“a”（追加） 为追加打开一个文本文件<br>“rb”（只读） 为输入打开一个二进制文件<br>“wb”（只写） 为输出打开一个二进制文件<br>“ab”（追加） 为追加打开一个二进制文件<br>“r+”（读写） 为读／写打开一个文本文件<br>“w+”（读写） 为读／写创建一个文本文件<br>“a+”（读写） 为读／写打开一个文本文件<br>“rb+”（读写） 为读／写打开一个二进制文件<br>“wb+”（读写） 为读／写创建一个二进制文件<br>“ab+”（读写） 为读／写打开一个二进制文件</p>
+<p>一个文件可以以文本模式或二进制模式打开，这两种的区别是：在文本模式中回车被当成一个字符’/n’，而二进制模式认为它是两个字符0x0D,0x0A；如果在文件中读到0x1B，文本模式会认为这是文件结束符，也就是二进制模型不会对文件进行处理，而文本方式会按一定的方式对数据作相应的转换。</p>
+</blockquote>
+<ul>
+<li><p><code>int fputs(const char * __restrict, FILE * file)</code>，将字符串送到文件流中进行输出。输出成功，返回非零值。</p>
+</li>
+<li><p><code>char *fgets(char *buffer, int size, FILE*stream);</code> 从stream中读取最多size-1大小的内容到指定的buffer中，当遇到换行符或EOF时读取结束。读取成功时，系统将自动在最后加’\0’，返回；失败时返回null。</p>
+<blockquote>
+<p>每调用一次，读取一段或最多一行，无法使用 精准的判断来循环读取到文件末尾。</p>
+<p>可以使用，<code>fgetc()==EOF</code>来判断</p>
+</blockquote>
+</li>
+<li><p><code>int fseek(FILE *, long offset, int fromWhere);</code> 重新定位文件指针位置</p>
+</li>
+<li><p><strong><em>SEEK_SET</em></strong>  文件开始位置+偏移，宏  用于<code>fseek()</code></p>
+</li>
+<li><p><strong><em>SEEK_CUR</em></strong> 文件当前位置+偏移，宏  用于<code>fseek()</code></p>
+</li>
+<li><p><strong><em>SEEK_END</em></strong> 文件结束位置+偏移，宏  用于<code>fseek()</code></p>
+</li>
+<li><p><code>long ftell(FILE *);</code> 返回当前文件指针位置</p>
+</li>
+<li><p><code>void rewind(FILE *);</code> 将文件指针重新指向文件的开头</p>
+</li>
+<li><p><code>size_t fread(void * __ptr, size_t __size, size_t __nitems, FILE * __stream);</code></p>
+<p><strong>size_t</strong> 类型是一个无符号整数，其所占内存长度与平台相关</p>
+<p>从文件流<code>__stream</code>中，每次读取<code>__size</code>个长度，共要读取<code>__nitems</code>，读取到的暂存到<code>__ptr</code>指针中</p>
+</li>
+<li><p><code>int fclose(FILE *);</code> 关闭文件流</p>
+</li>
+<li><p><code>int fgetc(FILE *);</code>  从文件流中读取一个字符，返回字符在ASCII表对应的整数值</p>
+</li>
+<li><p><code>int fputc(int, FILE *);</code> 输出一个字符到文件流。返回字符在ASCII表对应的整数值</p>
+</li>
+<li><p><strong><em>EOF</em></strong> 文件结束符，宏。  其实值就是-1</p>
+</li>
+<li><p><code>ssize_t getline(char **__linep, size_t *__linecapp, FILE *__stream);</code>  从文件流<code>__stream</code>中，读取一行字符。<code>__linep</code>为字符串指针的指针，可以用字符串指针的地址形式表示，读取到的一行字符串会用它来保存；<code>__linecapp</code>为一个<code>size_t</code>类型的指针，表示一行最大读取的字符数，是一个2进制数，也是由函数内存计算得出。函数最后返回一个<code>ssize_t</code> 即实际为long类型，表示实际读取的字符数，包含一个字符串的结束符’\0’</p>
+</li>
+<li><p><code>int feof(FILE *);</code> 检测文件流是否结束。返回非零值，表示已结束</p>
+</li>
+<li><p><code>int fflush(FILE *);</code> 将缓冲内容输出到文件，并清空缓冲区</p>
+</li>
+</ul>
+<h1 id="string-h"><a href="#string-h" class="headerlink" title="string.h"></a>string.h</h1><hr>
+<blockquote>
 <p>include &lt;string.h&gt;</p>
 </blockquote>
-<p>strlen(char*); 返回字符串长度， 不包括 ‘\0’ 结束符</p>
-<p>strcpy(char<em> dest, char</em> src);  将src复制到dest中，原dest覆盖。  要注意size: dest是否能容纳src</p>
-<p>strcat(char<em> dest, char</em> src);   将src追加到dest的尾部。   要注意size: dest是否能容纳 dest+src</p>
-<p>strcmp(char<em> s1, char</em> s2);  个字符串从左至右逐个字符比较（按照字符的ASCII码值的大小），</p>
-<p>——直到字符不相同或者遇见’\0’为止。如果全部字符都相同，则返回值为0。</p>
-<p>——如果不相同，则返回两个字符串中第一个不相同的字符ASCII码值的差。</p>
-<p>——即字符串1大于字符串2时函数返回值为正，否则为负。</p>
-<p>puts(char*); 输出一个字段串。输出时直到遇见’\0’为止。</p>
-<p>gets(char<em>); 读取一个字符串。  char buffer[20];char</em> r = gets(buffer);    </p>
+<ul>
+<li><strong><em>strlen</em></strong>(char*); 返回字符串长度， 不包括 ‘\0’ 结束符</li>
+<li><strong><em>strcpy</em></strong>(char<em> dest, char</em> src);  将src复制到dest中，原dest覆盖。  要注意size: dest是否能容纳src</li>
+<li><strong><em>strcat</em></strong>(char<em> dest, char</em> src);   将src追加到dest的尾部。   要注意size: dest是否能容纳 dest+src</li>
+<li><strong><em>strcmp</em></strong>(char<em> s1, char</em> s2);  个字符串从左至右逐个字符比较（按照字符的ASCII码值的大小），</li>
+</ul>
+<p>直到字符不相同或者遇见’\0’为止。如果全部字符都相同，则返回值为0。</p>
+<p>如果不相同，则返回两个字符串中第一个不相同的字符ASCII码值的差。</p>
+<p>即字符串1大于字符串2时函数返回值为正，否则为负。</p>
+<ul>
+<li><strong><em>puts</em></strong>(char*); 输出一个字段串。输出时直到遇见’\0’为止。<ul>
+<li><strong><em>gets</em></strong>(char<em>); 读取一个字符串。  char buffer[20];char</em> r = gets(buffer);</li>
+</ul>
+</li>
+</ul>
+<h1 id="stdlib-h"><a href="#stdlib-h" class="headerlink" title="stdlib.h"></a>stdlib.h</h1><hr>
+<blockquote>
+<p>include <stdlib.h></stdlib.h></p>
+</blockquote>
+<ul>
+<li><strong><em>exit</em></strong>(int)； 退出进程。参数非0表示异常退出，反之为正常退出</li>
+</ul>
+<h1 id="unistd-h"><a href="#unistd-h" class="headerlink" title="unistd.h"></a>unistd.h</h1><hr>
+<blockquote>
+<p>include <unistd.h></unistd.h></p>
+</blockquote>
+<ul>
+<li><p><strong><em>sleep</em></strong>(unsigned int); 线程睡眠；参数为秒</p>
+</li>
+<li><p><strong><em>usleep</em></strong>(useconds_t); 线程睡眠；参数微秒</p>
+<blockquote>
+<p>上面两个函数为linux系统下的。如果是windows系统，则是windows.h中Sleep()，参数为毫秒</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="pthread-h"><a href="#pthread-h" class="headerlink" title="pthread.h"></a>pthread.h</h1><blockquote>
+<p>include <pthread.h></pthread.h></p>
+</blockquote>
+<ul>
+<li><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_create</span><span class="params">(<span class="keyword">pthread_t</span> _Nullable * _Nonnull __restrict,</span></span></div><div class="line"><span class="function"><span class="params">		<span class="keyword">const</span> <span class="keyword">pthread_attr_t</span> * _Nullable __restrict,</span></span></div><div class="line">		void * _Nullable (* _Nonnull)(void * _Nullable),</div><div class="line">		<span class="keyword">void</span> * _Nullable __restrict);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><hr>
+<p>《C语言常用函数速查手册》</p>
 
       
     </div>
@@ -520,8 +620,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/25/C语言字符串指针预处理指令/" rel="prev" title="C语言 字符串、指针、预处理指令">
-                下一篇： C语言 字符串、指针、预处理指令 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/25/C语言字符串指针预处理指令/" rel="prev" title="C语言 字符串、指针、预处理指令(#include|#define|#if)">
+                下一篇： C语言 字符串、指针、预处理指令(#include|#define|#if) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -628,7 +728,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -683,7 +783,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#stdio-h"><span class="nav-number">1.</span> <span class="nav-text">stdio.h</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#string-h"><span class="nav-number">2.</span> <span class="nav-text">string.h</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#stdio-h"><span class="nav-number">1.</span> <span class="nav-text">stdio.h</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#string-h"><span class="nav-number">2.</span> <span class="nav-text">string.h</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#stdlib-h"><span class="nav-number">3.</span> <span class="nav-text">stdlib.h</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#unistd-h"><span class="nav-number">4.</span> <span class="nav-text">unistd.h</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pthread-h"><span class="nav-number">5.</span> <span class="nav-text">pthread.h</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
@@ -721,7 +821,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      24.1k
+      25.4k
     </span>
   
 </div>
