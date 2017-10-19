@@ -73,11 +73,11 @@
 <meta name="keywords" content="C-Key:typedef">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言中为数据类型定义一个别名:typedef">
-<meta property="og:url" content="http://aa86799.github.io/2017/09/29/c语言中为数据类型定义一个别名-typedef/index.html">
+<meta property="og:url" content="http://stone86.top/2017/09/29/c语言中为数据类型定义一个别名-typedef/index.html">
 <meta property="og:site_name" content="stone世界">
 <meta property="og:description" content="typedef 作用：为各种数据类型定义一个别名 使用方式 与基本数据类型12typedef int Integer; //别名为IntegerInteger a ＝ 8;  别名的别名  12typedef Integer MyInteger;MyInteger aa = 8; 与指针12typedef char* String;String str = &quot;stone&quot;; 与结构体12typed">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-29T10:48:19.000Z">
+<meta property="og:updated_time" content="2017-10-18T08:31:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言中为数据类型定义一个别名:typedef">
 <meta name="twitter:description" content="typedef 作用：为各种数据类型定义一个别名 使用方式 与基本数据类型12typedef int Integer; //别名为IntegerInteger a ＝ 8;  别名的别名  12typedef Integer MyInteger;MyInteger aa = 8; 与指针12typedef char* String;String str = &quot;stone&quot;; 与结构体12typed">
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://aa86799.github.io/2017/09/29/c语言中为数据类型定义一个别名-typedef/"/>
+  <link rel="canonical" href="http://stone86.top/2017/09/29/c语言中为数据类型定义一个别名-typedef/"/>
 
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://aa86799.github.io/2017/09/29/c语言中为数据类型定义一个别名-typedef/">
+    <link itemprop="mainEntityOfPage" href="http://stone86.top/2017/09/29/c语言中为数据类型定义一个别名-typedef/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="stone">
@@ -395,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  416
+                  568
                 </span>
               
 
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -451,6 +451,9 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">LNode</span> &#123;</span></div><div class="line">  <span class="keyword">int</span> data;</div><div class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">LNode</span> *<span class="title">next</span>;</span><span class="comment">//LNode的指针变量</span></div><div class="line">&#125; LinkList, *SList;</div><div class="line"></div><div class="line">LinkList l = &#123;<span class="number">1</span>, <span class="literal">NULL</span>&#125;;</div><div class="line">LinkList ll = &#123;<span class="number">2</span>, <span class="literal">NULL</span>&#125;;</div><div class="line">l.next = &amp;ll;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%d, "</span>, l.next-&gt;data);</div><div class="line"></div><div class="line">SList sl = &amp;ll;</div><div class="line"><span class="keyword">if</span> (sl-&gt;next != <span class="literal">NULL</span>)</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%d, "</span>, sl-&gt;data);</div></pre></td></tr></table></figure>
 <h2 id="与枚举"><a href="#与枚举" class="headerlink" title="与枚举"></a>与枚举</h2><p>与结构体的使用是一样的。这里来一个复杂点的例子：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">enum</span> LNode &#123;</div><div class="line">  A = <span class="number">10</span>, B</div><div class="line">&#125; Node, *Pn;</div><div class="line"></div><div class="line"><span class="comment">//  没有typedef定义时，Node是枚举类型LNode的变量名，Pn是指针变量名</span></div><div class="line"><span class="comment">//	Node = B;</span></div><div class="line"><span class="comment">//	Pn = &amp;Node;</span></div><div class="line"></div><div class="line"><span class="comment">//有typedef定义时，Node是枚举类型LNode的别名，Pn是指针类型别名</span></div><div class="line">Node node = A;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, node);</div><div class="line">Pn pp = &amp;node;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *pp);</div></pre></td></tr></table></figure>
+<h1 id="与数组"><a href="#与数组" class="headerlink" title="与数组"></a>与数组</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> line[<span class="number">5</span>];<span class="comment">//表示定义一个长度为5的char类型数组 的别名 为 line</span></div><div class="line">line l = &#123;<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'\0'</span>&#125;;	</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%s"</span>, l);</div></pre></td></tr></table></figure>
+<h2 id="与指针常量"><a href="#与指针常量" class="headerlink" title="与指针常量"></a>与指针常量</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> * Px;  </div><div class="line"><span class="comment">//这时Px 就是 int型的指针类型</span></div><div class="line"><span class="comment">//要声明常量</span></div><div class="line"><span class="keyword">const</span> Px p1; <span class="comment">//error，编译器可能会解释成：int * const </span></div><div class="line"></div><div class="line"><span class="comment">//正确形式：</span></div><div class="line"><span class="keyword">typedef</span> <span class="keyword">const</span> <span class="keyword">int</span> * Px;</div></pre></td></tr></table></figure>
+<h2 id="与函数、函数指针"><a href="#与函数、函数指针" class="headerlink" title="与函数、函数指针"></a>与函数、函数指针</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span>* value, <span class="keyword">void</span>* savedState, <span class="keyword">size_t</span> savedStateSize)</span> </span>&#123;</div><div class="line">  <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *value);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">typedef</span> <span class="keyword">void</span> <span class="title">mf</span><span class="params">(<span class="keyword">int</span>*, <span class="keyword">void</span>*, <span class="keyword">size_t</span>)</span></span>; <span class="comment">//函数别名mf</span></div><div class="line">  mf *a = test;</div><div class="line">  <span class="keyword">int</span> c = <span class="number">80</span>;</div><div class="line">  a(&amp;c, <span class="literal">NULL</span>, <span class="number">0</span>);</div><div class="line">  </div><div class="line">  <span class="function"><span class="keyword">typedef</span> <span class="title">void</span> <span class="params">(*mx)</span><span class="params">()</span></span>; <span class="comment">//函数指针别名 mx</span></div><div class="line">  mx m = test;</div><div class="line">  c = <span class="number">81</span>;</div><div class="line">  m(&amp;c, <span class="literal">NULL</span>, <span class="number">0</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="typdef与-define的区别"><a href="#typdef与-define的区别" class="headerlink" title="typdef与#define的区别"></a>typdef与#define的区别</h1><hr>
 <p><code>#define</code> 是用来定义宏的。而宏的语义就是在预编译时，用宏定义后的字符串来替换宏名。</p>
 <p>如，</p>
@@ -607,7 +610,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -684,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#typedef"><span class="nav-number">1.</span> <span class="nav-text">typedef</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用方式"><span class="nav-number">2.</span> <span class="nav-text">使用方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#与基本数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">与基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与指针"><span class="nav-number">2.2.</span> <span class="nav-text">与指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与结构体"><span class="nav-number">2.3.</span> <span class="nav-text">与结构体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与指向结构体的指针"><span class="nav-number">2.4.</span> <span class="nav-text">与指向结构体的指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与枚举"><span class="nav-number">2.5.</span> <span class="nav-text">与枚举</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#typdef与-define的区别"><span class="nav-number">3.</span> <span class="nav-text">typdef与#define的区别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#typedef"><span class="nav-number">1.</span> <span class="nav-text">typedef</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用方式"><span class="nav-number">2.</span> <span class="nav-text">使用方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#与基本数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">与基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与指针"><span class="nav-number">2.2.</span> <span class="nav-text">与指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与结构体"><span class="nav-number">2.3.</span> <span class="nav-text">与结构体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与指向结构体的指针"><span class="nav-number">2.4.</span> <span class="nav-text">与指向结构体的指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与枚举"><span class="nav-number">2.5.</span> <span class="nav-text">与枚举</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#与数组"><span class="nav-number">3.</span> <span class="nav-text">与数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#与指针常量"><span class="nav-number">3.1.</span> <span class="nav-text">与指针常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与函数、函数指针"><span class="nav-number">3.2.</span> <span class="nav-text">与函数、函数指针</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#typdef与-define的区别"><span class="nav-number">4.</span> <span class="nav-text">typdef与#define的区别</span></a></li></ol></div>
             
 
           </div>
@@ -722,7 +725,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      26.5k
+      26.7k
     </span>
   
 </div>
