@@ -91,8 +91,8 @@
         <category>C 语言</category>
       </categories>
       <tags>
-        <tag>C-Key:struct</tag>
         <tag>C指针</tag>
+        <tag>C-Key:struct</tag>
       </tags>
   </entry>
   <entry>
@@ -117,8 +117,8 @@
         <category>C 语言</category>
       </categories>
       <tags>
-        <tag>C指针</tag>
         <tag>C字符串</tag>
+        <tag>C指针</tag>
         <tag>C-Key:include</tag>
         <tag>C-Key:define</tag>
         <tag>C-Key:if</tag>
