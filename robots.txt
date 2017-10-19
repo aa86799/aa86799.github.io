@@ -8,5 +8,5 @@ Disallow: /css/
 Disallow: /lib/
 Disallow: /images/
 
-Sitemap: https://aa86799.github.io/sitemap.xml
-Sitemap: https://aa86799.github.io/sitemap.xml
+Sitemap: https://stone86.top/sitemap.xml
+Sitemap: https://stone86.top/sitemap.xml
