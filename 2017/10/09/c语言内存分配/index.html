@@ -69,18 +69,18 @@
 
 
 
-<meta name="description" content="内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 在&amp;lt;stdlib.h&amp;gt;中，提供了四个用于内存分配与释放的函数:  malloc 动态分配内存；返回void* calloc 为一组目标动态分配内存，并将分配后的内存空间初始化">
+<meta name="description" content="内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 栈内存是有限的，一般就几MB，是在系统环境下一个确认的常数值。而堆内存，理论上可以申请达到系统剩余内存的最大值；实际上，可能没那么大，但至少也有几个GB。下文的内存分配函数，都是分配在堆">
 <meta name="keywords" content="C内存分配,calloc(),malloc(),realloc()">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言内存分配">
 <meta property="og:url" content="http://stone86.top/2017/10/09/c语言内存分配/index.html">
 <meta property="og:site_name" content="stone世界">
-<meta property="og:description" content="内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 在&amp;lt;stdlib.h&amp;gt;中，提供了四个用于内存分配与释放的函数:  malloc 动态分配内存；返回void* calloc 为一组目标动态分配内存，并将分配后的内存空间初始化">
+<meta property="og:description" content="内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 栈内存是有限的，一般就几MB，是在系统环境下一个确认的常数值。而堆内存，理论上可以申请达到系统剩余内存的最大值；实际上，可能没那么大，但至少也有几个GB。下文的内存分配函数，都是分配在堆">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-15T03:21:20.000Z">
+<meta property="og:updated_time" content="2017-10-20T16:34:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言内存分配">
-<meta name="twitter:description" content="内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 在&amp;lt;stdlib.h&amp;gt;中，提供了四个用于内存分配与释放的函数:  malloc 动态分配内存；返回void* calloc 为一组目标动态分配内存，并将分配后的内存空间初始化">
+<meta name="twitter:description" content="内存分配 内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。 栈内存是有限的，一般就几MB，是在系统环境下一个确认的常数值。而堆内存，理论上可以申请达到系统剩余内存的最大值；实际上，可能没那么大，但至少也有几个GB。下文的内存分配函数，都是分配在堆">
 
 
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  354
+                  440
                 </span>
               
 
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -435,6 +435,7 @@
       
         <h1 id="内存分配"><a href="#内存分配" class="headerlink" title="内存分配"></a>内存分配</h1><hr>
 <p>内存分堆空间与栈空间。栈空间完全操作系统管理：分配与释放。堆空间，在程序启动初始化时，由系统分配一部分，之后在运行过程程，再需要开辟堆空间，就需要手动分配，使用完毕后，需要释放内存，否则就会有内存泄露。</p>
+<p>栈内存是有限的，一般就几MB，是在系统环境下一个确认的常数值。而堆内存，理论上可以申请达到系统剩余内存的最大值；实际上，可能没那么大，但至少也有几个GB。下文的内存分配函数，都是分配在堆内存中的。</p>
 <p>在<code>&lt;stdlib.h&gt;</code>中，提供了四个用于内存分配与释放的函数:</p>
 <ul>
 <li>malloc 动态分配内存；返回void*</li>
@@ -606,7 +607,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -628,7 +629,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">29</span>
+                <span class="site-state-item-count">34</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -724,7 +725,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      26.7k
+      28.6k
     </span>
   
 </div>
